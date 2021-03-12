@@ -1,0 +1,147 @@
+# Group Bus Inspection API
+
+バス点検情報の取得，保存
+
+## 運転手，バス一覧，バス点検項目の取得 [GET /api/v1/bus/inspections]
+バスの点検項目情報を取得する
+
+
+
++ Request
+    + Headers
+        ```
+        Authorization: Bearer {token}
+        ```
+
++ Response 200 (application/json)
+    + Body
+         ```
+        {
+        "drivers": [
+            {
+            "driver_id": "1",
+            "driver_name": "愛大太郎"
+            },
+            {
+            "driver_id": "2",
+            "driver_name": "愛大次郎"
+            }
+        ],
+        "buses": [
+            {
+            "bus_id": "1",
+            "bus_name": "11111"
+            },
+             {
+            "bus_id": "2",
+            "bus_name": "22222"
+            }
+        ],
+        "item": [
+            {
+            "inspection_id": "1",
+            "inspection_name": "燃料"
+            },
+             {
+            "inspection_id": "2",
+            "inspection_name": "エンジン"
+            },
+             {
+            "inspection_id": "3",
+            "inspection_name": "ブレーキ"
+            },
+             {
+            "inspection_id": "4",
+            "inspection_name": "ワイパー"
+            },
+             {
+            "inspection_id": "5",
+            "inspection_name": "クラクション"
+            },
+             {
+            "inspection_id": "6",
+            "inspection_name": "ウィンカー"
+            },
+             {
+            "inspection_id": "7",
+            "inspection_name": "灯火"
+            },
+             {
+            "inspection_id": "8",
+            "inspection_name": "ミラー"
+            },
+             {
+            "inspection_id": "9",
+            "inspection_name": "計器"
+            },
+             {
+            "inspection_id": "10",
+            "inspection_name": "タイヤ"
+            },
+             {
+            "inspection_id": "11",
+            "inspection_name": "排気音"
+            },
+             {
+            "inspection_id": "12",
+            "inspection_name": "冷却水"
+            },
+             {
+            "inspection_id": "13",
+            "inspection_name": "バッテリー"
+            },
+             {
+            "inspection_id": "14",
+            "inspection_name": "乗降ドア"
+            },
+             {
+            "inspection_id": "15",
+            "inspection_name": "車内点検"
+            }
+        ]
+        }
+        ```
+
++ Response 401 (application/json)
+    + Body
+        ```
+        {
+            "error": "Unauthorized"
+        }
+        ```
+
+## 運転手，バス一覧，バス点検項目の登録 [POST /api/v1/bus/inspections/create]
+バスの点検項目情報を登録する
+
++ Request (application/json)
+    + Headers
+        ```
+        Authorization: Bearer {token}
+        ```
+    + Attributes
+        + driver_id: `1` (string) - ドライバーID
+        + bus_id: `1` (string) - バスID
+        + checked: `true` (string) - 点検項目
+        + remark: `text` (string) - 備考
+
++ Response 200 (application/json)
+    + Body
+        ```
+        {
+            "success": "saved information successfully"
+        }
+        ```
++ Response 400 (application/json)
+    + Body
+        ```
+        {
+            "error": "there are missing arguments (driver)"
+        }
+        ```
++ Response 401 (application/json)
+    + Body
+        ```
+        {
+            "error": "Unauthorized"
+        }
+        ```

@@ -1,0 +1,3977 @@
+[
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 1,
+            "route_bus_stop_id": 1,
+            "route_order_id": 1,
+            "arrival_time": "09:47:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 2,
+            "route_bus_stop_id": 2,
+            "route_order_id": 1,
+            "arrival_time": "09:48:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 3,
+            "route_bus_stop_id": 3,
+            "route_order_id": 1,
+            "arrival_time": "09:50:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 4,
+            "route_bus_stop_id": 4,
+            "route_order_id": 1,
+            "arrival_time": "09:51:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 5,
+            "route_bus_stop_id": 5,
+            "route_order_id": 1,
+            "arrival_time": "09:52:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 6,
+            "route_bus_stop_id": 6,
+            "route_order_id": 1,
+            "arrival_time": "09:53:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 7,
+            "route_bus_stop_id": 7,
+            "route_order_id": 1,
+            "arrival_time": "09:54:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 8,
+            "route_bus_stop_id": 8,
+            "route_order_id": 1,
+            "arrival_time": "09:55:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 9,
+            "route_bus_stop_id": 9,
+            "route_order_id": 1,
+            "arrival_time": "09:59:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 10,
+            "route_bus_stop_id": 10,
+            "route_order_id": 1,
+            "arrival_time": "10:02:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 11,
+            "route_bus_stop_id": 11,
+            "route_order_id": 1,
+            "arrival_time": "10:03:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 12,
+            "route_bus_stop_id": 12,
+            "route_order_id": 1,
+            "arrival_time": "10:04:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 13,
+            "route_bus_stop_id": 13,
+            "route_order_id": 1,
+            "arrival_time": "10:06:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 14,
+            "route_bus_stop_id": 14,
+            "route_order_id": 1,
+            "arrival_time": "10:08:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 15,
+            "route_bus_stop_id": 15,
+            "route_order_id": 1,
+            "arrival_time": "10:09:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 16,
+            "route_bus_stop_id": 16,
+            "route_order_id": 1,
+            "arrival_time": "10:12:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 17,
+            "route_bus_stop_id": 17,
+            "route_order_id": 1,
+            "arrival_time": "10:14:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 18,
+            "route_bus_stop_id": 18,
+            "route_order_id": 1,
+            "arrival_time": "10:16:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 19,
+            "route_bus_stop_id": 19,
+            "route_order_id": 1,
+            "arrival_time": "10:18:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 20,
+            "route_bus_stop_id": 20,
+            "route_order_id": 1,
+            "arrival_time": "10:19:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 21,
+            "route_bus_stop_id": 21,
+            "route_order_id": 1,
+            "arrival_time": "10:20:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 22,
+            "route_bus_stop_id": 22,
+            "route_order_id": 1,
+            "arrival_time": "10:21:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 23,
+            "route_bus_stop_id": 23,
+            "route_order_id": 1,
+            "arrival_time": "10:22:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 24,
+            "route_bus_stop_id": 24,
+            "route_order_id": 1,
+            "arrival_time": "10:23:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 25,
+            "route_bus_stop_id": 25,
+            "route_order_id": 1,
+            "arrival_time": "10:24:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 26,
+            "route_bus_stop_id": 26,
+            "route_order_id": 1,
+            "arrival_time": "10:25:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 27,
+            "route_bus_stop_id": 27,
+            "route_order_id": 1,
+            "arrival_time": "10:26:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 28,
+            "route_bus_stop_id": 28,
+            "route_order_id": 1,
+            "arrival_time": "10:27:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 29,
+            "route_bus_stop_id": 29,
+            "route_order_id": 1,
+            "arrival_time": "10:29:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 30,
+            "route_bus_stop_id": 30,
+            "route_order_id": 1,
+            "arrival_time": "10:30:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 31,
+            "route_bus_stop_id": 1,
+            "route_order_id": 2,
+            "arrival_time": "11:25:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 32,
+            "route_bus_stop_id": 2,
+            "route_order_id": 2,
+            "arrival_time": "11:26:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 33,
+            "route_bus_stop_id": 3,
+            "route_order_id": 2,
+            "arrival_time": "11:28:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 34,
+            "route_bus_stop_id": 4,
+            "route_order_id": 2,
+            "arrival_time": "11:29:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 35,
+            "route_bus_stop_id": 5,
+            "route_order_id": 2,
+            "arrival_time": "11:30:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 36,
+            "route_bus_stop_id": 6,
+            "route_order_id": 2,
+            "arrival_time": "11:31:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 37,
+            "route_bus_stop_id": 7,
+            "route_order_id": 2,
+            "arrival_time": "11:32:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 38,
+            "route_bus_stop_id": 8,
+            "route_order_id": 2,
+            "arrival_time": "11:33:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 39,
+            "route_bus_stop_id": 9,
+            "route_order_id": 2,
+            "arrival_time": "11:37:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 40,
+            "route_bus_stop_id": 10,
+            "route_order_id": 2,
+            "arrival_time": "11:40:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 41,
+            "route_bus_stop_id": 11,
+            "route_order_id": 2,
+            "arrival_time": "11:41:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 42,
+            "route_bus_stop_id": 12,
+            "route_order_id": 2,
+            "arrival_time": "11:42:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 43,
+            "route_bus_stop_id": 13,
+            "route_order_id": 2,
+            "arrival_time": "11:44:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 44,
+            "route_bus_stop_id": 14,
+            "route_order_id": 2,
+            "arrival_time": "11:46:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 45,
+            "route_bus_stop_id": 15,
+            "route_order_id": 2,
+            "arrival_time": "11:47:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 46,
+            "route_bus_stop_id": 16,
+            "route_order_id": 2,
+            "arrival_time": "11:50:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 47,
+            "route_bus_stop_id": 17,
+            "route_order_id": 2,
+            "arrival_time": "11:52:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 48,
+            "route_bus_stop_id": 18,
+            "route_order_id": 2,
+            "arrival_time": "11:54:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 49,
+            "route_bus_stop_id": 19,
+            "route_order_id": 2,
+            "arrival_time": "11:56:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 50,
+            "route_bus_stop_id": 20,
+            "route_order_id": 2,
+            "arrival_time": "11:57:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 51,
+            "route_bus_stop_id": 21,
+            "route_order_id": 2,
+            "arrival_time": "11:58:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 52,
+            "route_bus_stop_id": 22,
+            "route_order_id": 2,
+            "arrival_time": "11:59:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 53,
+            "route_bus_stop_id": 23,
+            "route_order_id": 2,
+            "arrival_time": "12:00:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 54,
+            "route_bus_stop_id": 24,
+            "route_order_id": 2,
+            "arrival_time": "12:01:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 55,
+            "route_bus_stop_id": 25,
+            "route_order_id": 2,
+            "arrival_time": "12:02:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 56,
+            "route_bus_stop_id": 26,
+            "route_order_id": 2,
+            "arrival_time": "12:03:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 57,
+            "route_bus_stop_id": 27,
+            "route_order_id": 2,
+            "arrival_time": "12:04:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 58,
+            "route_bus_stop_id": 28,
+            "route_order_id": 2,
+            "arrival_time": "12:05:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 59,
+            "route_bus_stop_id": 29,
+            "route_order_id": 2,
+            "arrival_time": "12:07:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 60,
+            "route_bus_stop_id": 30,
+            "route_order_id": 2,
+            "arrival_time": "12:08:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 61,
+            "route_bus_stop_id": 1,
+            "route_order_id": 3,
+            "arrival_time": "15:17:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 62,
+            "route_bus_stop_id": 2,
+            "route_order_id": 3,
+            "arrival_time": "15:18:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 63,
+            "route_bus_stop_id": 3,
+            "route_order_id": 3,
+            "arrival_time": "15:20:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 64,
+            "route_bus_stop_id": 4,
+            "route_order_id": 3,
+            "arrival_time": "15:21:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 65,
+            "route_bus_stop_id": 5,
+            "route_order_id": 3,
+            "arrival_time": "15:22:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 66,
+            "route_bus_stop_id": 6,
+            "route_order_id": 3,
+            "arrival_time": "15:23:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 67,
+            "route_bus_stop_id": 7,
+            "route_order_id": 3,
+            "arrival_time": "15:24:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 68,
+            "route_bus_stop_id": 8,
+            "route_order_id": 3,
+            "arrival_time": "15:25:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 69,
+            "route_bus_stop_id": 9,
+            "route_order_id": 3,
+            "arrival_time": "15:29:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 70,
+            "route_bus_stop_id": 10,
+            "route_order_id": 3,
+            "arrival_time": "15:32:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 71,
+            "route_bus_stop_id": 11,
+            "route_order_id": 3,
+            "arrival_time": "15:33:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 72,
+            "route_bus_stop_id": 12,
+            "route_order_id": 3,
+            "arrival_time": "15:34:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 73,
+            "route_bus_stop_id": 13,
+            "route_order_id": 3,
+            "arrival_time": "15:36:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 74,
+            "route_bus_stop_id": 14,
+            "route_order_id": 3,
+            "arrival_time": "15:38:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 75,
+            "route_bus_stop_id": 15,
+            "route_order_id": 3,
+            "arrival_time": "15:39:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 76,
+            "route_bus_stop_id": 16,
+            "route_order_id": 3,
+            "arrival_time": "15:42:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 77,
+            "route_bus_stop_id": 17,
+            "route_order_id": 3,
+            "arrival_time": "15:44:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 78,
+            "route_bus_stop_id": 18,
+            "route_order_id": 3,
+            "arrival_time": "15:46:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 79,
+            "route_bus_stop_id": 19,
+            "route_order_id": 3,
+            "arrival_time": "15:48:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 80,
+            "route_bus_stop_id": 20,
+            "route_order_id": 3,
+            "arrival_time": "15:49:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 81,
+            "route_bus_stop_id": 21,
+            "route_order_id": 3,
+            "arrival_time": "15:50:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 82,
+            "route_bus_stop_id": 22,
+            "route_order_id": 3,
+            "arrival_time": "15:51:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 83,
+            "route_bus_stop_id": 23,
+            "route_order_id": 3,
+            "arrival_time": "15:52:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 84,
+            "route_bus_stop_id": 24,
+            "route_order_id": 3,
+            "arrival_time": "15:53:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 85,
+            "route_bus_stop_id": 25,
+            "route_order_id": 3,
+            "arrival_time": "15:54:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 86,
+            "route_bus_stop_id": 26,
+            "route_order_id": 3,
+            "arrival_time": "15:55:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 87,
+            "route_bus_stop_id": 27,
+            "route_order_id": 3,
+            "arrival_time": "15:56:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 88,
+            "route_bus_stop_id": 28,
+            "route_order_id": 3,
+            "arrival_time": "15:57:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 89,
+            "route_bus_stop_id": 29,
+            "route_order_id": 3,
+            "arrival_time": "15:59:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 90,
+            "route_bus_stop_id": 30,
+            "route_order_id": 3,
+            "arrival_time": "16:00:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 91,
+            "route_bus_stop_id": 31,
+            "route_order_id": 4,
+            "arrival_time": "09:42:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 92,
+            "route_bus_stop_id": 32,
+            "route_order_id": 4,
+            "arrival_time": "09:43:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 93,
+            "route_bus_stop_id": 33,
+            "route_order_id": 4,
+            "arrival_time": "09:44:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 94,
+            "route_bus_stop_id": 34,
+            "route_order_id": 4,
+            "arrival_time": "09:45:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 95,
+            "route_bus_stop_id": 35,
+            "route_order_id": 4,
+            "arrival_time": "09:46:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 96,
+            "route_bus_stop_id": 36,
+            "route_order_id": 4,
+            "arrival_time": "09:47:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 97,
+            "route_bus_stop_id": 37,
+            "route_order_id": 4,
+            "arrival_time": "09:48:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 98,
+            "route_bus_stop_id": 38,
+            "route_order_id": 4,
+            "arrival_time": "09:49:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 99,
+            "route_bus_stop_id": 39,
+            "route_order_id": 4,
+            "arrival_time": "09:51:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 100,
+            "route_bus_stop_id": 40,
+            "route_order_id": 4,
+            "arrival_time": "09:53:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 101,
+            "route_bus_stop_id": 41,
+            "route_order_id": 4,
+            "arrival_time": "09:55:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 102,
+            "route_bus_stop_id": 42,
+            "route_order_id": 4,
+            "arrival_time": "09:56:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 103,
+            "route_bus_stop_id": 43,
+            "route_order_id": 4,
+            "arrival_time": "09:57:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 104,
+            "route_bus_stop_id": 44,
+            "route_order_id": 4,
+            "arrival_time": "10:03:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 105,
+            "route_bus_stop_id": 45,
+            "route_order_id": 4,
+            "arrival_time": "10:06:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 106,
+            "route_bus_stop_id": 46,
+            "route_order_id": 4,
+            "arrival_time": "10:07:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 107,
+            "route_bus_stop_id": 47,
+            "route_order_id": 4,
+            "arrival_time": "10:10:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 108,
+            "route_bus_stop_id": 48,
+            "route_order_id": 4,
+            "arrival_time": "10:13:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 109,
+            "route_bus_stop_id": 49,
+            "route_order_id": 4,
+            "arrival_time": "10:14:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 110,
+            "route_bus_stop_id": 50,
+            "route_order_id": 4,
+            "arrival_time": "10:17:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 111,
+            "route_bus_stop_id": 51,
+            "route_order_id": 4,
+            "arrival_time": "10:18:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 112,
+            "route_bus_stop_id": 52,
+            "route_order_id": 4,
+            "arrival_time": "10:19:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 113,
+            "route_bus_stop_id": 53,
+            "route_order_id": 4,
+            "arrival_time": "10:20:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 114,
+            "route_bus_stop_id": 54,
+            "route_order_id": 4,
+            "arrival_time": "10:21:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 115,
+            "route_bus_stop_id": 55,
+            "route_order_id": 4,
+            "arrival_time": "10:22:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 116,
+            "route_bus_stop_id": 56,
+            "route_order_id": 4,
+            "arrival_time": "10:23:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 117,
+            "route_bus_stop_id": 57,
+            "route_order_id": 4,
+            "arrival_time": "10:24:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 118,
+            "route_bus_stop_id": 58,
+            "route_order_id": 4,
+            "arrival_time": "10:25:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 119,
+            "route_bus_stop_id": 59,
+            "route_order_id": 4,
+            "arrival_time": "10:26:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 120,
+            "route_bus_stop_id": 60,
+            "route_order_id": 4,
+            "arrival_time": "10:27:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 121,
+            "route_bus_stop_id": 61,
+            "route_order_id": 4,
+            "arrival_time": "10:28:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 122,
+            "route_bus_stop_id": 31,
+            "route_order_id": 5,
+            "arrival_time": "11:47:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 123,
+            "route_bus_stop_id": 32,
+            "route_order_id": 5,
+            "arrival_time": "11:48:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 124,
+            "route_bus_stop_id": 33,
+            "route_order_id": 5,
+            "arrival_time": "11:49:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 125,
+            "route_bus_stop_id": 34,
+            "route_order_id": 5,
+            "arrival_time": "11:50:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 126,
+            "route_bus_stop_id": 35,
+            "route_order_id": 5,
+            "arrival_time": "11:51:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 127,
+            "route_bus_stop_id": 36,
+            "route_order_id": 5,
+            "arrival_time": "11:52:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 128,
+            "route_bus_stop_id": 37,
+            "route_order_id": 5,
+            "arrival_time": "11:53:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 129,
+            "route_bus_stop_id": 38,
+            "route_order_id": 5,
+            "arrival_time": "11:54:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 130,
+            "route_bus_stop_id": 39,
+            "route_order_id": 5,
+            "arrival_time": "11:56:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 131,
+            "route_bus_stop_id": 40,
+            "route_order_id": 5,
+            "arrival_time": "11:58:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 132,
+            "route_bus_stop_id": 41,
+            "route_order_id": 5,
+            "arrival_time": "12:00:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 133,
+            "route_bus_stop_id": 42,
+            "route_order_id": 5,
+            "arrival_time": "12:01:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 134,
+            "route_bus_stop_id": 43,
+            "route_order_id": 5,
+            "arrival_time": "12:02:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 135,
+            "route_bus_stop_id": 44,
+            "route_order_id": 5,
+            "arrival_time": "12:08:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 136,
+            "route_bus_stop_id": 45,
+            "route_order_id": 5,
+            "arrival_time": "12:11:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 137,
+            "route_bus_stop_id": 46,
+            "route_order_id": 5,
+            "arrival_time": "12:12:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 138,
+            "route_bus_stop_id": 47,
+            "route_order_id": 5,
+            "arrival_time": "12:15:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 139,
+            "route_bus_stop_id": 48,
+            "route_order_id": 5,
+            "arrival_time": "12:18:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 140,
+            "route_bus_stop_id": 49,
+            "route_order_id": 5,
+            "arrival_time": "12:19:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 141,
+            "route_bus_stop_id": 50,
+            "route_order_id": 5,
+            "arrival_time": "12:22:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 142,
+            "route_bus_stop_id": 51,
+            "route_order_id": 5,
+            "arrival_time": "12:23:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 143,
+            "route_bus_stop_id": 52,
+            "route_order_id": 5,
+            "arrival_time": "12:24:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 144,
+            "route_bus_stop_id": 53,
+            "route_order_id": 5,
+            "arrival_time": "12:25:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 145,
+            "route_bus_stop_id": 54,
+            "route_order_id": 5,
+            "arrival_time": "12:26:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 146,
+            "route_bus_stop_id": 55,
+            "route_order_id": 5,
+            "arrival_time": "12:27:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 147,
+            "route_bus_stop_id": 56,
+            "route_order_id": 5,
+            "arrival_time": "12:28:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 148,
+            "route_bus_stop_id": 57,
+            "route_order_id": 5,
+            "arrival_time": "12:29:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 149,
+            "route_bus_stop_id": 58,
+            "route_order_id": 5,
+            "arrival_time": "12:30:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 150,
+            "route_bus_stop_id": 59,
+            "route_order_id": 5,
+            "arrival_time": "12:31:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 151,
+            "route_bus_stop_id": 60,
+            "route_order_id": 5,
+            "arrival_time": "12:32:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 152,
+            "route_bus_stop_id": 61,
+            "route_order_id": 5,
+            "arrival_time": "12:33:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 153,
+            "route_bus_stop_id": 31,
+            "route_order_id": 6,
+            "arrival_time": "13:58:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 154,
+            "route_bus_stop_id": 32,
+            "route_order_id": 6,
+            "arrival_time": "13:57:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 155,
+            "route_bus_stop_id": 33,
+            "route_order_id": 6,
+            "arrival_time": "13:56:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 156,
+            "route_bus_stop_id": 34,
+            "route_order_id": 6,
+            "arrival_time": "13:55:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 157,
+            "route_bus_stop_id": 35,
+            "route_order_id": 6,
+            "arrival_time": "13:54:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 158,
+            "route_bus_stop_id": 36,
+            "route_order_id": 6,
+            "arrival_time": "13:53:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 159,
+            "route_bus_stop_id": 37,
+            "route_order_id": 6,
+            "arrival_time": "13:52:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 160,
+            "route_bus_stop_id": 38,
+            "route_order_id": 6,
+            "arrival_time": "13:51:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 161,
+            "route_bus_stop_id": 39,
+            "route_order_id": 6,
+            "arrival_time": "13:49:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 162,
+            "route_bus_stop_id": 40,
+            "route_order_id": 6,
+            "arrival_time": "13:47:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 163,
+            "route_bus_stop_id": 41,
+            "route_order_id": 6,
+            "arrival_time": "13:45:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 164,
+            "route_bus_stop_id": 42,
+            "route_order_id": 6,
+            "arrival_time": "13:44:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 165,
+            "route_bus_stop_id": 43,
+            "route_order_id": 6,
+            "arrival_time": "13:43:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 166,
+            "route_bus_stop_id": 44,
+            "route_order_id": 6,
+            "arrival_time": "13:37:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 167,
+            "route_bus_stop_id": 45,
+            "route_order_id": 6,
+            "arrival_time": "13:34:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 168,
+            "route_bus_stop_id": 46,
+            "route_order_id": 6,
+            "arrival_time": "13:33:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 169,
+            "route_bus_stop_id": 47,
+            "route_order_id": 6,
+            "arrival_time": "13:30:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 170,
+            "route_bus_stop_id": 48,
+            "route_order_id": 6,
+            "arrival_time": "13:27:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 171,
+            "route_bus_stop_id": 49,
+            "route_order_id": 6,
+            "arrival_time": "13:26:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 172,
+            "route_bus_stop_id": 50,
+            "route_order_id": 6,
+            "arrival_time": "13:23:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 173,
+            "route_bus_stop_id": 51,
+            "route_order_id": 6,
+            "arrival_time": "13:22:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 174,
+            "route_bus_stop_id": 52,
+            "route_order_id": 6,
+            "arrival_time": "13:21:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 175,
+            "route_bus_stop_id": 53,
+            "route_order_id": 6,
+            "arrival_time": "13:20:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 176,
+            "route_bus_stop_id": 54,
+            "route_order_id": 6,
+            "arrival_time": "13:19:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 177,
+            "route_bus_stop_id": 55,
+            "route_order_id": 6,
+            "arrival_time": "13:18:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 178,
+            "route_bus_stop_id": 56,
+            "route_order_id": 6,
+            "arrival_time": "13:17:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 179,
+            "route_bus_stop_id": 57,
+            "route_order_id": 6,
+            "arrival_time": "13:16:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 180,
+            "route_bus_stop_id": 58,
+            "route_order_id": 6,
+            "arrival_time": "13:15:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 181,
+            "route_bus_stop_id": 59,
+            "route_order_id": 6,
+            "arrival_time": "13:14:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 182,
+            "route_bus_stop_id": 60,
+            "route_order_id": 6,
+            "is_enabled": false
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 183,
+            "route_bus_stop_id": 61,
+            "route_order_id": 6,
+            "is_enabled": false
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 184,
+            "route_bus_stop_id": 31,
+            "route_order_id": 7,
+            "is_enabled": false
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 185,
+            "route_bus_stop_id": 32,
+            "route_order_id": 7,
+            "is_enabled": false
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 186,
+            "route_bus_stop_id": 33,
+            "route_order_id": 7,
+            "is_enabled": false
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 187,
+            "route_bus_stop_id": 34,
+            "route_order_id": 7,
+            "is_enabled": false
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 188,
+            "route_bus_stop_id": 35,
+            "route_order_id": 7,
+            "is_enabled": false
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 189,
+            "route_bus_stop_id": 36,
+            "route_order_id": 7,
+            "is_enabled": false
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 190,
+            "route_bus_stop_id": 37,
+            "route_order_id": 7,
+            "is_enabled": false
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 191,
+            "route_bus_stop_id": 38,
+            "route_order_id": 7,
+            "is_enabled": false
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 192,
+            "route_bus_stop_id": 39,
+            "route_order_id": 7,
+            "arrival_time": "16:00:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 193,
+            "route_bus_stop_id": 40,
+            "route_order_id": 7,
+            "arrival_time": "15:58:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 194,
+            "route_bus_stop_id": 41,
+            "route_order_id": 7,
+            "arrival_time": "15:56:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 195,
+            "route_bus_stop_id": 42,
+            "route_order_id": 7,
+            "arrival_time": "15:55:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 196,
+            "route_bus_stop_id": 43,
+            "route_order_id": 7,
+            "arrival_time": "15:54:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 197,
+            "route_bus_stop_id": 44,
+            "route_order_id": 7,
+            "arrival_time": "15:48:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 198,
+            "route_bus_stop_id": 45,
+            "route_order_id": 7,
+            "arrival_time": "15:45:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 199,
+            "route_bus_stop_id": 46,
+            "route_order_id": 7,
+            "arrival_time": "15:44:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 200,
+            "route_bus_stop_id": 47,
+            "route_order_id": 7,
+            "arrival_time": "15:41:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 201,
+            "route_bus_stop_id": 48,
+            "route_order_id": 7,
+            "arrival_time": "15:38:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 202,
+            "route_bus_stop_id": 49,
+            "route_order_id": 7,
+            "arrival_time": "15:37:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 203,
+            "route_bus_stop_id": 50,
+            "route_order_id": 7,
+            "arrival_time": "15:34:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 204,
+            "route_bus_stop_id": 51,
+            "route_order_id": 7,
+            "arrival_time": "15:33:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 205,
+            "route_bus_stop_id": 52,
+            "route_order_id": 7,
+            "arrival_time": "15:32:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 206,
+            "route_bus_stop_id": 53,
+            "route_order_id": 7,
+            "arrival_time": "15:31:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 207,
+            "route_bus_stop_id": 54,
+            "route_order_id": 7,
+            "arrival_time": "15:30:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 208,
+            "route_bus_stop_id": 55,
+            "route_order_id": 7,
+            "arrival_time": "15:29:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 209,
+            "route_bus_stop_id": 56,
+            "route_order_id": 7,
+            "arrival_time": "15:28:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 210,
+            "route_bus_stop_id": 57,
+            "route_order_id": 7,
+            "arrival_time": "15:27:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 211,
+            "route_bus_stop_id": 58,
+            "route_order_id": 7,
+            "arrival_time": "15:26:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 212,
+            "route_bus_stop_id": 59,
+            "route_order_id": 7,
+            "arrival_time": "15:25:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 213,
+            "route_bus_stop_id": 60,
+            "route_order_id": 7,
+            "arrival_time": "15:24:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 214,
+            "route_bus_stop_id": 61,
+            "route_order_id": 7,
+            "arrival_time": "15:23:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 215,
+            "route_bus_stop_id": 62,
+            "route_order_id": 8,
+            "arrival_time": "09:30:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 216,
+            "route_bus_stop_id": 63,
+            "route_order_id": 8,
+            "arrival_time": "09:29:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 217,
+            "route_bus_stop_id": 64,
+            "route_order_id": 8,
+            "arrival_time": "09:27:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 218,
+            "route_bus_stop_id": 65,
+            "route_order_id": 8,
+            "arrival_time": "09:26:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 219,
+            "route_bus_stop_id": 66,
+            "route_order_id": 8,
+            "arrival_time": "09:25:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 220,
+            "route_bus_stop_id": 67,
+            "route_order_id": 8,
+            "arrival_time": "09:24:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 221,
+            "route_bus_stop_id": 68,
+            "route_order_id": 8,
+            "arrival_time": "09:23:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 222,
+            "route_bus_stop_id": 69,
+            "route_order_id": 8,
+            "arrival_time": "09:22:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 223,
+            "route_bus_stop_id": 70,
+            "route_order_id": 8,
+            "arrival_time": "09:19:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 224,
+            "route_bus_stop_id": 71,
+            "route_order_id": 8,
+            "arrival_time": "09:17:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 225,
+            "route_bus_stop_id": 72,
+            "route_order_id": 8,
+            "arrival_time": "09:16:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 226,
+            "route_bus_stop_id": 73,
+            "route_order_id": 8,
+            "arrival_time": "09:14:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 227,
+            "route_bus_stop_id": 74,
+            "route_order_id": 8,
+            "arrival_time": "09:12:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 228,
+            "route_bus_stop_id": 75,
+            "route_order_id": 8,
+            "arrival_time": "09:09:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 229,
+            "route_bus_stop_id": 76,
+            "route_order_id": 8,
+            "arrival_time": "09:08:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 230,
+            "route_bus_stop_id": 77,
+            "route_order_id": 8,
+            "arrival_time": "09:06:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 231,
+            "route_bus_stop_id": 78,
+            "route_order_id": 8,
+            "arrival_time": "09:04:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 232,
+            "route_bus_stop_id": 79,
+            "route_order_id": 8,
+            "arrival_time": "09:03:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 233,
+            "route_bus_stop_id": 80,
+            "route_order_id": 8,
+            "arrival_time": "09:01:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 234,
+            "route_bus_stop_id": 81,
+            "route_order_id": 8,
+            "arrival_time": "09:00:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 235,
+            "route_bus_stop_id": 82,
+            "route_order_id": 8,
+            "arrival_time": "08:59:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 236,
+            "route_bus_stop_id": 83,
+            "route_order_id": 8,
+            "arrival_time": "08:58:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 237,
+            "route_bus_stop_id": 84,
+            "route_order_id": 8,
+            "arrival_time": "08:55:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 238,
+            "route_bus_stop_id": 85,
+            "route_order_id": 8,
+            "arrival_time": "08:53:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 239,
+            "route_bus_stop_id": 86,
+            "route_order_id": 8,
+            "arrival_time": "08:52:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 240,
+            "route_bus_stop_id": 87,
+            "route_order_id": 8,
+            "arrival_time": "08:50:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 241,
+            "route_bus_stop_id": 88,
+            "route_order_id": 8,
+            "arrival_time": "08:49:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 242,
+            "route_bus_stop_id": 89,
+            "route_order_id": 8,
+            "arrival_time": "08:48:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 243,
+            "route_bus_stop_id": 90,
+            "route_order_id": 8,
+            "arrival_time": "08:47:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 244,
+            "route_bus_stop_id": 91,
+            "route_order_id": 8,
+            "is_enabled": false
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 245,
+            "route_bus_stop_id": 92,
+            "route_order_id": 8,
+            "is_enabled": false
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 246,
+            "route_bus_stop_id": 62,
+            "route_order_id": 9,
+            "arrival_time": "10:39:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 247,
+            "route_bus_stop_id": 63,
+            "route_order_id": 9,
+            "arrival_time": "10:40:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 248,
+            "route_bus_stop_id": 64,
+            "route_order_id": 9,
+            "arrival_time": "10:42:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 249,
+            "route_bus_stop_id": 65,
+            "route_order_id": 9,
+            "arrival_time": "10:43:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 250,
+            "route_bus_stop_id": 66,
+            "route_order_id": 9,
+            "arrival_time": "10:44:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 251,
+            "route_bus_stop_id": 67,
+            "route_order_id": 9,
+            "arrival_time": "10:45:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 252,
+            "route_bus_stop_id": 68,
+            "route_order_id": 9,
+            "arrival_time": "10:46:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 253,
+            "route_bus_stop_id": 69,
+            "route_order_id": 9,
+            "arrival_time": "10:47:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 254,
+            "route_bus_stop_id": 70,
+            "route_order_id": 9,
+            "arrival_time": "10:50:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 255,
+            "route_bus_stop_id": 71,
+            "route_order_id": 9,
+            "arrival_time": "10:52:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 256,
+            "route_bus_stop_id": 72,
+            "route_order_id": 9,
+            "arrival_time": "10:53:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 257,
+            "route_bus_stop_id": 73,
+            "route_order_id": 9,
+            "arrival_time": "10:55:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 258,
+            "route_bus_stop_id": 74,
+            "route_order_id": 9,
+            "arrival_time": "10:57:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 259,
+            "route_bus_stop_id": 75,
+            "route_order_id": 9,
+            "arrival_time": "11:00:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 260,
+            "route_bus_stop_id": 76,
+            "route_order_id": 9,
+            "arrival_time": "11:01:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 261,
+            "route_bus_stop_id": 77,
+            "route_order_id": 9,
+            "arrival_time": "11:03:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 262,
+            "route_bus_stop_id": 78,
+            "route_order_id": 9,
+            "arrival_time": "11:05:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 263,
+            "route_bus_stop_id": 79,
+            "route_order_id": 9,
+            "arrival_time": "11:06:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 264,
+            "route_bus_stop_id": 80,
+            "route_order_id": 9,
+            "arrival_time": "11:08:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 265,
+            "route_bus_stop_id": 81,
+            "route_order_id": 9,
+            "arrival_time": "11:09:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 266,
+            "route_bus_stop_id": 82,
+            "route_order_id": 9,
+            "arrival_time": "11:10:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 267,
+            "route_bus_stop_id": 83,
+            "route_order_id": 9,
+            "arrival_time": "11:11:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 268,
+            "route_bus_stop_id": 84,
+            "route_order_id": 9,
+            "arrival_time": "11:14:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 269,
+            "route_bus_stop_id": 85,
+            "route_order_id": 9,
+            "arrival_time": "11:16:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 270,
+            "route_bus_stop_id": 86,
+            "route_order_id": 9,
+            "arrival_time": "11:17:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 271,
+            "route_bus_stop_id": 87,
+            "route_order_id": 9,
+            "arrival_time": "11:19:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 272,
+            "route_bus_stop_id": 88,
+            "route_order_id": 9,
+            "arrival_time": "11:20:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 273,
+            "route_bus_stop_id": 89,
+            "route_order_id": 9,
+            "arrival_time": "11:21:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 274,
+            "route_bus_stop_id": 90,
+            "route_order_id": 9,
+            "arrival_time": "11:22:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 275,
+            "route_bus_stop_id": 91,
+            "route_order_id": 9,
+            "arrival_time": "11:23:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 276,
+            "route_bus_stop_id": 92,
+            "route_order_id": 9,
+            "arrival_time": "11:24:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 277,
+            "route_bus_stop_id": 62,
+            "route_order_id": 10,
+            "arrival_time": "13:58:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 278,
+            "route_bus_stop_id": 63,
+            "route_order_id": 10,
+            "arrival_time": "13:59:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 279,
+            "route_bus_stop_id": 64,
+            "route_order_id": 10,
+            "arrival_time": "14:01:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 280,
+            "route_bus_stop_id": 65,
+            "route_order_id": 10,
+            "arrival_time": "14:02:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 281,
+            "route_bus_stop_id": 66,
+            "route_order_id": 10,
+            "arrival_time": "14:03:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 282,
+            "route_bus_stop_id": 67,
+            "route_order_id": 10,
+            "arrival_time": "14:04:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 283,
+            "route_bus_stop_id": 68,
+            "route_order_id": 10,
+            "arrival_time": "14:05:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 284,
+            "route_bus_stop_id": 69,
+            "route_order_id": 10,
+            "arrival_time": "14:06:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 285,
+            "route_bus_stop_id": 70,
+            "route_order_id": 10,
+            "arrival_time": "14:09:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 286,
+            "route_bus_stop_id": 71,
+            "route_order_id": 10,
+            "arrival_time": "14:11:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 287,
+            "route_bus_stop_id": 72,
+            "route_order_id": 10,
+            "arrival_time": "14:12:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 288,
+            "route_bus_stop_id": 73,
+            "route_order_id": 10,
+            "arrival_time": "14:14:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 289,
+            "route_bus_stop_id": 74,
+            "route_order_id": 10,
+            "arrival_time": "14:16:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 290,
+            "route_bus_stop_id": 75,
+            "route_order_id": 10,
+            "arrival_time": "14:19:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 291,
+            "route_bus_stop_id": 76,
+            "route_order_id": 10,
+            "arrival_time": "14:20:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 292,
+            "route_bus_stop_id": 77,
+            "route_order_id": 10,
+            "arrival_time": "14:22:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 293,
+            "route_bus_stop_id": 78,
+            "route_order_id": 10,
+            "arrival_time": "14:24:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 294,
+            "route_bus_stop_id": 79,
+            "route_order_id": 10,
+            "arrival_time": "14:25:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 295,
+            "route_bus_stop_id": 80,
+            "route_order_id": 10,
+            "arrival_time": "14:27:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 296,
+            "route_bus_stop_id": 81,
+            "route_order_id": 10,
+            "arrival_time": "14:28:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 297,
+            "route_bus_stop_id": 82,
+            "route_order_id": 10,
+            "arrival_time": "14:29:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 298,
+            "route_bus_stop_id": 83,
+            "route_order_id": 10,
+            "arrival_time": "14:30:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 299,
+            "route_bus_stop_id": 84,
+            "route_order_id": 10,
+            "arrival_time": "14:33:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 300,
+            "route_bus_stop_id": 85,
+            "route_order_id": 10,
+            "arrival_time": "14:35:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 301,
+            "route_bus_stop_id": 86,
+            "route_order_id": 10,
+            "arrival_time": "14:36:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 302,
+            "route_bus_stop_id": 87,
+            "route_order_id": 10,
+            "arrival_time": "14:38:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 303,
+            "route_bus_stop_id": 88,
+            "route_order_id": 10,
+            "arrival_time": "14:39:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 304,
+            "route_bus_stop_id": 89,
+            "route_order_id": 10,
+            "arrival_time": "14:40:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 305,
+            "route_bus_stop_id": 90,
+            "route_order_id": 10,
+            "arrival_time": "14:41:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 306,
+            "route_bus_stop_id": 91,
+            "route_order_id": 10,
+            "is_enabled": false
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 307,
+            "route_bus_stop_id": 92,
+            "route_order_id": 10,
+            "is_enabled": false
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 378,
+            "route_bus_stop_id": 93,
+            "route_order_id": 11,
+            "arrival_time": "09:26:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 379,
+            "route_bus_stop_id": 94,
+            "route_order_id": 11,
+            "arrival_time": "09:24:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 380,
+            "route_bus_stop_id": 95,
+            "route_order_id": 11,
+            "arrival_time": "09:22:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 381,
+            "route_bus_stop_id": 96,
+            "route_order_id": 11,
+            "arrival_time": "09:20:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 382,
+            "route_bus_stop_id": 97,
+            "route_order_id": 11,
+            "arrival_time": "09:19:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 383,
+            "route_bus_stop_id": 98,
+            "route_order_id": 11,
+            "arrival_time": "09:18:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 384,
+            "route_bus_stop_id": 99,
+            "route_order_id": 11,
+            "arrival_time": "09:17:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 385,
+            "route_bus_stop_id": 100,
+            "route_order_id": 11,
+            "arrival_time": "09:16:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 386,
+            "route_bus_stop_id": 101,
+            "route_order_id": 11,
+            "arrival_time": "09:15:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 387,
+            "route_bus_stop_id": 102,
+            "route_order_id": 11,
+            "arrival_time": "09:14:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 388,
+            "route_bus_stop_id": 103,
+            "route_order_id": 11,
+            "arrival_time": "09:12:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 389,
+            "route_bus_stop_id": 104,
+            "route_order_id": 11,
+            "arrival_time": "09:11:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 390,
+            "route_bus_stop_id": 105,
+            "route_order_id": 11,
+            "arrival_time": "09:05:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 391,
+            "route_bus_stop_id": 106,
+            "route_order_id": 11,
+            "arrival_time": "09:01:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 392,
+            "route_bus_stop_id": 107,
+            "route_order_id": 11,
+            "arrival_time": "08:59:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 393,
+            "route_bus_stop_id": 108,
+            "route_order_id": 11,
+            "arrival_time": "08:57:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 394,
+            "route_bus_stop_id": 109,
+            "route_order_id": 11,
+            "arrival_time": "08:55:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 395,
+            "route_bus_stop_id": 110,
+            "route_order_id": 11,
+            "arrival_time": "08:53:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 396,
+            "route_bus_stop_id": 111,
+            "route_order_id": 11,
+            "arrival_time": "08:51:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 397,
+            "route_bus_stop_id": 112,
+            "route_order_id": 11,
+            "arrival_time": "08:50:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 398,
+            "route_bus_stop_id": 113,
+            "route_order_id": 11,
+            "arrival_time": "08:49:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 399,
+            "route_bus_stop_id": 114,
+            "route_order_id": 11,
+            "arrival_time": "08:48:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 400,
+            "route_bus_stop_id": 93,
+            "route_order_id": 12,
+            "arrival_time": "10:36:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 401,
+            "route_bus_stop_id": 94,
+            "route_order_id": 12,
+            "arrival_time": "10:38:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 402,
+            "route_bus_stop_id": 95,
+            "route_order_id": 12,
+            "arrival_time": "10:40:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 403,
+            "route_bus_stop_id": 96,
+            "route_order_id": 12,
+            "arrival_time": "10:42:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 404,
+            "route_bus_stop_id": 97,
+            "route_order_id": 12,
+            "arrival_time": "10:43:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 405,
+            "route_bus_stop_id": 98,
+            "route_order_id": 12,
+            "arrival_time": "10:44:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 406,
+            "route_bus_stop_id": 99,
+            "route_order_id": 12,
+            "arrival_time": "10:45:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 407,
+            "route_bus_stop_id": 100,
+            "route_order_id": 12,
+            "arrival_time": "10:46:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 408,
+            "route_bus_stop_id": 101,
+            "route_order_id": 12,
+            "arrival_time": "10:47:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 409,
+            "route_bus_stop_id": 102,
+            "route_order_id": 12,
+            "arrival_time": "10:48:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 410,
+            "route_bus_stop_id": 103,
+            "route_order_id": 12,
+            "arrival_time": "10:50:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 411,
+            "route_bus_stop_id": 104,
+            "route_order_id": 12,
+            "arrival_time": "10:51:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 412,
+            "route_bus_stop_id": 105,
+            "route_order_id": 12,
+            "arrival_time": "10:57:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 413,
+            "route_bus_stop_id": 106,
+            "route_order_id": 12,
+            "arrival_time": "11:01:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 414,
+            "route_bus_stop_id": 107,
+            "route_order_id": 12,
+            "arrival_time": "11:03:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 415,
+            "route_bus_stop_id": 108,
+            "route_order_id": 12,
+            "arrival_time": "11:05:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 416,
+            "route_bus_stop_id": 109,
+            "route_order_id": 12,
+            "arrival_time": "11:07:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 417,
+            "route_bus_stop_id": 110,
+            "route_order_id": 12,
+            "arrival_time": "11:09:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 418,
+            "route_bus_stop_id": 111,
+            "route_order_id": 12,
+            "arrival_time": "11:11:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 419,
+            "route_bus_stop_id": 112,
+            "route_order_id": 12,
+            "arrival_time": "11:12:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 420,
+            "route_bus_stop_id": 113,
+            "route_order_id": 12,
+            "arrival_time": "11:13:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 421,
+            "route_bus_stop_id": 114,
+            "route_order_id": 12,
+            "arrival_time": "11:14:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 422,
+            "route_bus_stop_id": 93,
+            "route_order_id": 13,
+            "arrival_time": "14:09:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 423,
+            "route_bus_stop_id": 94,
+            "route_order_id": 13,
+            "arrival_time": "14:11:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 424,
+            "route_bus_stop_id": 95,
+            "route_order_id": 13,
+            "arrival_time": "14:13:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 425,
+            "route_bus_stop_id": 96,
+            "route_order_id": 13,
+            "arrival_time": "14:15:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 426,
+            "route_bus_stop_id": 97,
+            "route_order_id": 13,
+            "arrival_time": "14:16:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 427,
+            "route_bus_stop_id": 98,
+            "route_order_id": 13,
+            "arrival_time": "14:17:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 428,
+            "route_bus_stop_id": 99,
+            "route_order_id": 13,
+            "arrival_time": "14:18:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 429,
+            "route_bus_stop_id": 100,
+            "route_order_id": 13,
+            "arrival_time": "14:19:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 430,
+            "route_bus_stop_id": 101,
+            "route_order_id": 13,
+            "arrival_time": "14:20:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 431,
+            "route_bus_stop_id": 102,
+            "route_order_id": 13,
+            "arrival_time": "14:21:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 432,
+            "route_bus_stop_id": 103,
+            "route_order_id": 13,
+            "arrival_time": "14:23:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 433,
+            "route_bus_stop_id": 104,
+            "route_order_id": 13,
+            "arrival_time": "14:24:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 434,
+            "route_bus_stop_id": 105,
+            "route_order_id": 13,
+            "arrival_time": "14:30:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 435,
+            "route_bus_stop_id": 106,
+            "route_order_id": 13,
+            "arrival_time": "14:34:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 436,
+            "route_bus_stop_id": 107,
+            "route_order_id": 13,
+            "arrival_time": "14:36:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 437,
+            "route_bus_stop_id": 108,
+            "route_order_id": 13,
+            "arrival_time": "14:38:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 438,
+            "route_bus_stop_id": 109,
+            "route_order_id": 13,
+            "arrival_time": "14:40:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 439,
+            "route_bus_stop_id": 110,
+            "route_order_id": 13,
+            "arrival_time": "14:42:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 440,
+            "route_bus_stop_id": 111,
+            "route_order_id": 13,
+            "arrival_time": "14:44:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 441,
+            "route_bus_stop_id": 112,
+            "route_order_id": 13,
+            "arrival_time": "14:45:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 442,
+            "route_bus_stop_id": 113,
+            "route_order_id": 13,
+            "arrival_time": "14:46:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 443,
+            "route_bus_stop_id": 114,
+            "route_order_id": 13,
+            "arrival_time": "14:47:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 444,
+            "route_bus_stop_id": 115,
+            "route_order_id": 14,
+            "arrival_time": "07:23:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 445,
+            "route_bus_stop_id": 116,
+            "route_order_id": 14,
+            "arrival_time": "07:25:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 446,
+            "route_bus_stop_id": 117,
+            "route_order_id": 14,
+            "arrival_time": "07:26:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 447,
+            "route_bus_stop_id": 118,
+            "route_order_id": 14,
+            "arrival_time": "07:27:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 448,
+            "route_bus_stop_id": 119,
+            "route_order_id": 14,
+            "arrival_time": "07:30:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 449,
+            "route_bus_stop_id": 120,
+            "route_order_id": 14,
+            "arrival_time": "07:32:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 450,
+            "route_bus_stop_id": 121,
+            "route_order_id": 14,
+            "arrival_time": "07:34:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 451,
+            "route_bus_stop_id": 115,
+            "route_order_id": 15,
+            "arrival_time": "16:23:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 452,
+            "route_bus_stop_id": 116,
+            "route_order_id": 15,
+            "arrival_time": "16:21:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 453,
+            "route_bus_stop_id": 117,
+            "route_order_id": 15,
+            "arrival_time": "16:20:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 454,
+            "route_bus_stop_id": 118,
+            "route_order_id": 15,
+            "arrival_time": "16:19:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 455,
+            "route_bus_stop_id": 119,
+            "route_order_id": 15,
+            "arrival_time": "16:15:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 456,
+            "route_bus_stop_id": 120,
+            "route_order_id": 15,
+            "arrival_time": "16:13:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 457,
+            "route_bus_stop_id": 121,
+            "route_order_id": 15,
+            "arrival_time": "16:12:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 458,
+            "route_bus_stop_id": 122,
+            "route_order_id": 16,
+            "arrival_time": "07:30:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 459,
+            "route_bus_stop_id": 123,
+            "route_order_id": 16,
+            "arrival_time": "07:33:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 460,
+            "route_bus_stop_id": 124,
+            "route_order_id": 16,
+            "arrival_time": "07:34:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 461,
+            "route_bus_stop_id": 125,
+            "route_order_id": 16,
+            "arrival_time": "07:37:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 462,
+            "route_bus_stop_id": 126,
+            "route_order_id": 16,
+            "arrival_time": "07:38:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 463,
+            "route_bus_stop_id": 127,
+            "route_order_id": 16,
+            "arrival_time": "07:39:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 464,
+            "route_bus_stop_id": 122,
+            "route_order_id": 17,
+            "arrival_time": "16:19:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 465,
+            "route_bus_stop_id": 123,
+            "route_order_id": 17,
+            "arrival_time": "16:16:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 466,
+            "route_bus_stop_id": 124,
+            "route_order_id": 17,
+            "arrival_time": "16:15:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 467,
+            "route_bus_stop_id": 125,
+            "route_order_id": 17,
+            "arrival_time": "16:12:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 468,
+            "route_bus_stop_id": 126,
+            "route_order_id": 17,
+            "arrival_time": "16:11:00+00:00",
+            "is_enabled": true
+        }
+    },
+    {
+        "model": "bus.RouteOrderBusStops",
+        "fields": {
+            "id": 469,
+            "route_bus_stop_id": 127,
+            "route_order_id": 17,
+            "is_enabled": false
+        }
+    }
+]

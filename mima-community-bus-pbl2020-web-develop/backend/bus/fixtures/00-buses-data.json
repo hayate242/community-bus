@@ -1,0 +1,18 @@
+[
+    {
+        "model": "bus.MasterBuses",
+        "fields": {
+            "id": 1,
+            "bus_name": "1号車",
+            "bus_number": "愛媛 12 12-345"
+        }
+    },
+    {
+        "model": "bus.MasterBuses",
+        "fields": {
+            "id": 2,
+            "bus_name": "2号車",
+            "bus_number": "愛媛 12 12-346"
+        }
+    }
+]

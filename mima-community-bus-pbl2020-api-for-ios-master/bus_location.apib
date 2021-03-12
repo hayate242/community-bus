@@ -1,0 +1,82 @@
+# Group Bus Location API
+
+バスロケーションの取得，保存
+
+## バスロケーションの取得 [GET /api/v1/bus/locations]
+バスロケーションを取得する
+
++ Request
+    + Headers
+        ```
+        Authorization: Bearer {token}
+        ```
+    + Attributes
+        + bus_id: `1` (string) - バスID
+        + start_from: `2020-09-11` (string) - 開始日
+        + end_at: `2020-09-11` (string) - 終了日
+
++ Response 200 (application/json)
+    + Attributes
+        + bus_id: `1` (string) - ドライバーID
+        + locations (array[object], fixed-type) - ロケーション一覧
+            + (object)
+                + date_time: `2020-09-11 00:00:00` (string) - 記録日
+                + longitude: `33.687781` (string) - 緯度
+                + latitude: `132.802734` (string) - 経度
+
++ Response 400 (application/json)
+    + Body
+        ```
+        {
+            "error": "there are no record"
+        }
+        ```
++ Response 401 (application/json)
+    + Body
+        ```
+        {
+            "error": "Unauthorized"
+        }
+        ```
+
+## バスロケーションの保存 [POST /api/v1/bus/locations/create]
+バスロケーションを登録する
+
++ Request (application/json)
+    + Headers
+        ```
+        Authorization: Bearer {token}
+        ```
+    + Attributes
+        + course_id: `1` (string) - コースID
+        + bus_id: `1` (string) - バスID
+        + route_order_id: `1` (string) - 便ID
+        + route_name: `音地線` (string) - 路線名
+        + longitude: `132.802734` (string) - 緯度
+        + latitude: `33.687781` (string) - 経度
+        + vacancy_num: `4` (string) - 空席数
+        + next_bus_stop_name: `田川集会所` (string) - 次のバス停情報
+        + send_at: `2020-09-11 00:00:00` - 送信時間
+
+
++ Response 200 (application/json)
+    + Body
+        ```
+        {
+            "success": "saved location successfully"
+        }
+        ```
++ Response 400 (application/json)
+    + Body
+        ```
+        {
+            "error": "there are missing arguments (bus_id)"
+        }
+        ```
++ Response 401 (application/json)
+    + Body
+        ```
+        {
+            "error": "Unauthorized"
+        }
+        ```

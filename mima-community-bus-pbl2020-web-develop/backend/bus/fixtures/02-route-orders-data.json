@@ -1,0 +1,155 @@
+[
+    {
+        "model": "bus.MasterRouteOrders",
+        "fields": {
+            "id": 1,
+            "route_id": 1,
+            "course_id": 2,
+            "order": 1
+        }
+    },
+    {
+        "model": "bus.MasterRouteOrders",
+        "fields": {
+            "id": 2,
+            "route_id": 1,
+            "course_id": 2,
+            "order": 2
+        }
+    },
+    {
+        "model": "bus.MasterRouteOrders",
+        "fields": {
+            "id": 3,
+            "route_id": 1,
+            "course_id": 1,
+            "order": 3
+        }
+    },
+    {
+        "model": "bus.MasterRouteOrders",
+        "fields": {
+            "id": 4,
+            "route_id": 2,
+            "course_id": 1,
+            "order": 1
+        }
+    },
+    {
+        "model": "bus.MasterRouteOrders",
+        "fields": {
+            "id": 5,
+            "route_id": 2,
+            "course_id": 1,
+            "order": 2
+        }
+    },
+    {
+        "model": "bus.MasterRouteOrders",
+        "fields": {
+            "id": 6,
+            "route_id": 2,
+            "course_id": 2,
+            "order": 3
+        }
+    },
+    {
+        "model": "bus.MasterRouteOrders",
+        "fields": {
+            "id": 7,
+            "route_id": 2,
+            "course_id": 2,
+            "order": 4
+        }
+    },
+    {
+        "model": "bus.MasterRouteOrders",
+        "fields": {
+            "id": 8,
+            "route_id": 3,
+            "course_id": 2,
+            "order": 1
+        }
+    },
+    {
+        "model": "bus.MasterRouteOrders",
+        "fields": {
+            "id": 9,
+            "route_id": 3,
+            "course_id": 1,
+            "order": 2
+        }
+    },
+    {
+        "model": "bus.MasterRouteOrders",
+        "fields": {
+            "id": 10,
+            "route_id": 3,
+            "course_id": 1,
+            "order": 3
+        }
+    },
+    {
+        "model": "bus.MasterRouteOrders",
+        "fields": {
+            "id": 11,
+            "route_id": 4,
+            "course_id": 1,
+            "order": 1
+        }
+    },
+    {
+        "model": "bus.MasterRouteOrders",
+        "fields": {
+            "id": 12,
+            "route_id": 4,
+            "course_id": 2,
+            "order": 2
+        }
+    },
+    {
+        "model": "bus.MasterRouteOrders",
+        "fields": {
+            "id": 13,
+            "route_id": 4,
+            "course_id": 2,
+            "order": 3
+        }
+    },
+    {
+        "model": "bus.MasterRouteOrders",
+        "fields": {
+            "id": 14,
+            "route_id": 5,
+            "course_id": 1,
+            "order": 1
+        }
+    },
+    {
+        "model": "bus.MasterRouteOrders",
+        "fields": {
+            "id": 15,
+            "route_id": 5,
+            "course_id": 1,
+            "order": 2
+        }
+    },
+    {
+        "model": "bus.MasterRouteOrders",
+        "fields": {
+            "id": 16,
+            "route_id": 6,
+            "course_id": 2,
+            "order": 1
+        }
+    },
+    {
+        "model": "bus.MasterRouteOrders",
+        "fields": {
+            "id": 17,
+            "route_id": 6,
+            "course_id": 2,
+            "order": 2
+        }
+    }
+]

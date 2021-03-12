@@ -1,0 +1,125 @@
+# Group Bus Fare API
+
+バス運賃情報の取得
+
+## バスの運賃情報の取得 [GET /api/v1/bus/fare]
+バスの運賃情報を取得する
+
++ Request
+    + Headers
+        ```
+        Authorization: Bearer {token}
+        ```
+
++ Response 200 (application/json)
+    + Body
+        ```
+        {
+            "table": [
+                {
+                    "row1_name": "降車数",
+                    "row2": [
+                        {
+                            "row2_name": "",
+                            "row3": [
+                                {
+                                    "row3_name": "",
+                                    "fare_id": "1"
+                                },
+                            ]
+                        },
+                    ]
+                },
+                {
+                    "row1_name": "乗車数",
+                    "row2": [
+                        {
+                            "row2_name": "現金",
+                            "row3": [
+                                {
+                                    "row3_name": "大人",
+                                    "fare_id": "2"
+                                },
+                                {
+                                    "row3_name": "子供",
+                                    "fare_id": "3"
+                                },
+                                {
+                                    "row3_name": "障大人",
+                                    "fare_id": "4"
+                                },
+                                {
+                                    "row3_name": "障子人",
+                                    "fare_id": "5"
+                                }
+                            ]
+                        },
+                        {
+                            "row2_name": "回数券",
+                            "row3": [
+                                {
+                                    "row3_name": "大人",
+                                    "fare_id": "6"
+                                },
+                                {
+                                    "row3_name": "子供",
+                                    "fare_id": "7"
+                                },
+                                {
+                                    "row3_name": "障害者",
+                                    "fare_id": "8"
+                                },
+                            ]
+                        },
+                        {
+                            "row2_name": "定期券",
+                            "row3": [
+                                {
+                                    "row3_name": "",
+                                    "fare_id": "9"
+                                },
+                            ]
+                        },
+                        {
+                            "row2_name": "無賃",
+                            "row3": [
+                                {
+                                    "row3_name": "",
+                                    "fare_id": "10"
+                                },
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "row1_name": "回数券の販売数",
+                    "row2": [
+                        {
+                            "row2_name": "",
+                            "row3": [
+                                {
+                                    "row3_name": "大人",
+                                    "fare_id": "11"
+                                },
+                                {
+                                    "row3_name": "子供",
+                                    "fare_id": "12"
+                                },
+                                {
+                                    "row3_name": "障害者",
+                                    "fare_id": "13"
+                                }
+                            ]
+                        },
+                    ]
+                }
+            ]
+        }
+        ```
++ Response 401 (application/json)
+    + Body
+        ```
+        {
+            "error": "Unauthorized"
+        }
+        ```

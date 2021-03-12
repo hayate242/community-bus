@@ -1,0 +1,10 @@
+{
+    "driver": "$driver_id_1",
+    "bus": "$bus_id_1",
+    "item": {
+        "fuel": "true",
+        "engine": "true",
+        "brake": "true"
+    },
+    "remark": "text"
+}

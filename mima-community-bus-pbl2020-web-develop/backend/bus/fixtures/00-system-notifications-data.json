@@ -1,0 +1,8 @@
+[
+  {
+    "model": "bus.SystemNotifications",
+    "fields":{
+      "notification_message": "平常運行しています"
+    }
+  }
+]

@@ -1,0 +1,44 @@
+# Group Bus Initial API
+
+業務開始・終了情報の保存
+
+
+
+## 業務開始・終了情報の保存 [POST /api/v1/bus/init/create]
+業務開始・終了情報を登録する
+
++ Request (application/json)
+    + Headers
+        ```
+        Authorization: Bearer {token}
+        ```
+    + Attributes
+        + bus_id: `1` (string) - バスID
+        + driver_id: `1` (string) - ドライバーID
+        + course_id: `1` (string) - コースID
+        + trip_meter: `1234` (string) - トリップメーターの値
+        + money: `10200` (string) - 所持金額
+        + work_start_end_flag: `0` (string) - 業務開始終了フラグ
+        + send_at: `2020-09-11 00:00:00` - 送信時間
+
++ Response 200 (application/json)
+    + Body
+        ```
+        {
+            "success": "情報の保存に成功しました．"
+        }
+        ```
++ Response 400 (application/json)
+    + Body
+        ```
+        {
+            "error": "バスIDが渡されていません．"
+        }
+        ```
++ Response 401 (application/json)
+    + Body
+        ```
+        {
+            "error": "認証に失敗しました．"
+        }
+        ```

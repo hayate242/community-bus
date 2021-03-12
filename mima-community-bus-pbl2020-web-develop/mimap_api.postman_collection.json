@@ -1,0 +1,1999 @@
+{
+	"info": {
+		"_postman_id": "0efc710d-a387-448f-a53d-cae1316a7746",
+		"name": "mimap_api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "認証",
+			"item": [
+				{
+					"name": "ログイン（宇和島市職員）",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\": \"ehimeict@gmail.com\",\r\n  \"password\": \"1xU35jQy\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/v1/login/",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"login",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ログイン（委託バス会社職員）",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "",
+								"disabled": true
+							},
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\": \"nakayama@example.com\",\r\n  \"password\": \"nakayama\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/v1/login/",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"login",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ログイン（運転手）",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "",
+								"disabled": true
+							},
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\": \"tagawa@example.com\",\r\n  \"password\": \"tagawa\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/v1/login/",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"login",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ログイン（見守り利用者）",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "",
+								"disabled": true
+							},
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\": \"komori@example.com\",\r\n  \"password\": \"komori\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/v1/login/",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"login",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ログイン（ICTコース）",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "",
+								"disabled": true
+							},
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\": \"ehimeictpbl2020@gmail.com\",\r\n  \"password\": \"ictxict0\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/v1/login/",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"login",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ユーザー登録",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"user_name\": \"ehimeict23\",\r\n  \"phone_number\": \"08038473847\",\r\n  \"email\": \"ehimeict23@gmail.com\",\r\n  \"password\": \"1xU35jQy\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/v1/user/",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"user",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ログインユーザー情報の取得",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/v1/user/info/",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"info",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Web",
+			"item": [
+				{
+					"name": "見守り",
+					"item": [
+						{
+							"name": "見守り履歴",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"selected_user\": \"大西くん\",\r\n    \"start_date\": \"2020-10-12\",\r\n    \"end_date\": \"2020-10-12\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/v1/web/monitor/history/",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"web",
+										"monitor",
+										"history",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "見守り管理",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/api/v1/web/monitor/management/",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"web",
+										"monitor",
+										"management",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "見守り通知文",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/api/v1/web/monitor/notification/",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"web",
+										"monitor",
+										"notification",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "見守り利用者登録",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"monitor_user_name\": \"鈴木\",\r\n    \"monitor_email\": \"suzuki@example.com\",\r\n    \"card_number\": \"0123456789ABCEDF\",\r\n    \"monitor_target_user_name\": \"佐藤\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/v1/web/monitor/management/register/",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"web",
+										"monitor",
+										"management",
+										"register",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "見守り利用者削除",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"user_id\":\"1\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/v1/web/monitor/management/delete/",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"web",
+										"monitor",
+										"management",
+										"delete",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "見守り利用者更新 Copy",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"user_id\":\"2\",\r\n    \"monitor_user_name\": \"鈴木\",\r\n    \"monitor_email\": \"suzuki@example.com\",\r\n    \"card_number\": \"0123456789ABCEDF\",\r\n    \"monitor_target_user_name\": \"佐藤\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/v1/web/monitor/management/update/",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"web",
+										"monitor",
+										"management",
+										"update",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "コース",
+					"item": [
+						{
+							"name": "コース一覧取得",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/api/v1/web/course/",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"web",
+										"course",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "コース新規登録",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": \"3\",\r\n    \"name\": \"Cコース\",\r\n    \"course\": [\r\n        {\r\n            \"id\": \"1\",\r\n            \"name\": \"川之内線\",\r\n            \"order\": \"4\",\r\n            \"route\": [\r\n                {\r\n                    \"id\": \"8\",\r\n                    \"name\": \"道の駅みま\",\r\n                    \"time\": \"15:17\",\r\n                    \"is_used\": true,\r\n                    \"order\": \"1\"\r\n                },\r\n                {\r\n                    \"id\": \"9\",\r\n                    \"name\": \"森ヶ鼻\",\r\n                    \"time\": \"15:18\",\r\n                    \"is_used\": true,\r\n                    \"order\": \"2\"\r\n                },\r\n                {\r\n                    \"id\": \"7\",\r\n                    \"name\": \"三間小学校前\",\r\n                    \"time\": \"15:20\",\r\n                    \"is_used\": true,\r\n                    \"order\": \"3\"\r\n                },\r\n                {\r\n                    \"id\": \"6\",\r\n                    \"name\": \"JR宮野下駅前\",\r\n                    \"time\": \"15:21\",\r\n                    \"is_used\": true,\r\n                    \"order\": \"4\"\r\n                },\r\n                {\r\n                    \"id\": \"10\",\r\n                    \"name\": \"宮野下\",\r\n                    \"time\": \"15:22\",\r\n                    \"is_used\": true,\r\n                    \"order\": \"5\"\r\n                },\r\n                {\r\n                    \"id\": \"5\",\r\n                    \"name\": \"三間支所\",\r\n                    \"time\": \"15:23\",\r\n                    \"is_used\": true,\r\n                    \"order\": \"6\"\r\n                },\r\n                {\r\n                    \"id\": \"11\",\r\n                    \"name\": \"宮野下下組\",\r\n                    \"time\": \"15:24\",\r\n                    \"is_used\": true,\r\n                    \"order\": \"7\"\r\n                },\r\n                {\r\n                    \"id\": \"12\",\r\n                    \"name\": \"もみの木前\",\r\n                    \"time\": \"15:25\",\r\n                    \"is_used\": true,\r\n                    \"order\": \"8\"\r\n                },\r\n                {\r\n                    \"id\": \"13\",\r\n                    \"name\": \"北増穂\",\r\n                    \"time\": \"15:29\",\r\n                    \"is_used\": true,\r\n                    \"order\": \"9\"\r\n                },\r\n                {\r\n                    \"id\": \"4\",\r\n                    \"name\": \"鬼ヶ峠\",\r\n                    \"time\": \"15:32\",\r\n                    \"is_used\": true,\r\n                    \"order\": \"10\"\r\n                },\r\n                {\r\n                    \"id\": \"3\",\r\n                    \"name\": \"小沢川\",\r\n                    \"time\": \"15:33\",\r\n                    \"is_used\": true,\r\n                    \"order\": \"11\"\r\n                },\r\n                {\r\n                    \"id\": \"2\",\r\n                    \"name\": \"波岡口\",\r\n                    \"time\": \"15:34\",\r\n                    \"is_used\": true,\r\n                    \"order\": \"12\"\r\n                },\r\n                {\r\n                    \"id\": \"1\",\r\n                    \"name\": \"川之内\",\r\n                    \"time\": \"15:36\",\r\n                    \"is_used\": true,\r\n                    \"order\": \"13\"\r\n                },\r\n                {\r\n                    \"id\": \"2\",\r\n                    \"name\": \"波岡口\",\r\n                    \"time\": \"15:38\",\r\n                    \"is_used\": true,\r\n                    \"order\": \"14\"\r\n                },\r\n                {\r\n                    \"id\": \"14\",\r\n                    \"name\": \"波岡\",\r\n                    \"time\": \"15:39\",\r\n                    \"is_used\": true,\r\n                    \"order\": \"15\"\r\n                },\r\n                {\r\n                    \"id\": \"15\",\r\n                    \"name\": \"田川集会所\",\r\n                    \"time\": \"15:42\",\r\n                    \"is_used\": true,\r\n                    \"order\": \"16\"\r\n                },\r\n                {\r\n                    \"id\": \"16\",\r\n                    \"name\": \"田川\",\r\n                    \"time\": \"15:44\",\r\n                    \"is_used\": true,\r\n                    \"order\": \"17\"\r\n                },\r\n                {\r\n                    \"id\": \"15\",\r\n                    \"name\": \"田川集会所\",\r\n                    \"time\": \"15:46\",\r\n                    \"is_used\": true,\r\n                    \"order\": \"18\"\r\n                },\r\n                {\r\n                    \"id\": \"17\",\r\n                    \"name\": \"金銅橋\",\r\n                    \"time\": \"15:48\",\r\n                    \"is_used\": true,\r\n                    \"order\": \"19\"\r\n                },\r\n                {\r\n                    \"id\": \"18\",\r\n                    \"name\": \"JR二名駅前\",\r\n                    \"time\": \"15:49\",\r\n                    \"is_used\": true,\r\n                    \"order\": \"20\"\r\n                },\r\n                {\r\n                    \"id\": \"19\",\r\n                    \"name\": \"元宗\",\r\n                    \"time\": \"15:50\",\r\n                    \"is_used\": true,\r\n                    \"order\": \"21\"\r\n                },\r\n                {\r\n                    \"id\": \"20\",\r\n                    \"name\": \"増田口\",\r\n                    \"time\": \"15:51\",\r\n                    \"is_used\": true,\r\n                    \"order\": \"22\"\r\n                },\r\n                {\r\n                    \"id\": \"12\",\r\n                    \"name\": \"もみの木前\",\r\n                    \"time\": \"15:52\",\r\n                    \"is_used\": true,\r\n                    \"order\": \"23\"\r\n                },\r\n                {\r\n                    \"id\": \"11\",\r\n                    \"name\": \"宮野下下組\",\r\n                    \"time\": \"15:53\",\r\n                    \"is_used\": true,\r\n                    \"order\": \"24\"\r\n                },\r\n                {\r\n                    \"id\": \"5\",\r\n                    \"name\": \"三間支所\",\r\n                    \"time\": \"15:54\",\r\n                    \"is_used\": true,\r\n                    \"order\": \"25\"\r\n                },\r\n                {\r\n                    \"id\": \"10\",\r\n                    \"name\": \"宮野下\",\r\n                    \"time\": \"15:55\",\r\n                    \"is_used\": true,\r\n                    \"order\": \"26\"\r\n                },\r\n                {\r\n                    \"id\": \"6\",\r\n                    \"name\": \"JR宮野下駅前\",\r\n                    \"time\": \"15:56\",\r\n                    \"is_used\": true,\r\n                    \"order\": \"27\"\r\n                },\r\n                {\r\n                    \"id\": \"7\",\r\n                    \"name\": \"三間小学校前\",\r\n                    \"time\": \"15:57\",\r\n                    \"is_used\": true,\r\n                    \"order\": \"28\"\r\n                },\r\n                {\r\n                    \"id\": \"9\",\r\n                    \"name\": \"森ヶ鼻\",\r\n                    \"time\": \"15:59\",\r\n                    \"is_used\": true,\r\n                    \"order\": \"29\"\r\n                },\r\n                {\r\n                    \"id\": \"8\",\r\n                    \"name\": \"道の駅みま\",\r\n                    \"time\": \"16:00\",\r\n                    \"is_used\": true,\r\n                    \"order\": \"30\"\r\n                }\r\n            ]\r\n        }\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/v1/web/course/register/",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"web",
+										"course",
+										"register",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "コース情報編集",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": \"6\",\r\n    \"name\": \"Cコース\",\r\n    \"course\": [\r\n        {\r\n            \"id\": \"1\",\r\n            \"name\": \"川之内線\",\r\n            \"order\": \"4\",\r\n            \"route\": [\r\n                {\r\n                    \"id\": \"8\",\r\n                    \"name\": \"道の駅みま\",\r\n                    \"time\": \"15:17\",\r\n                    \"is_used\": true,\r\n                    \"order\": \"1\"\r\n                },\r\n                {\r\n                    \"id\": \"9\",\r\n                    \"name\": \"森ヶ鼻\",\r\n                    \"time\": \"15:18\",\r\n                    \"is_used\": true,\r\n                    \"order\": \"2\"\r\n                },\r\n                {\r\n                    \"id\": \"7\",\r\n                    \"name\": \"三間小学校前\",\r\n                    \"time\": \"15:20\",\r\n                    \"is_used\": true,\r\n                    \"order\": \"3\"\r\n                },\r\n                {\r\n                    \"id\": \"6\",\r\n                    \"name\": \"JR宮野下駅前\",\r\n                    \"time\": \"15:21\",\r\n                    \"is_used\": true,\r\n                    \"order\": \"4\"\r\n                },\r\n                {\r\n                    \"id\": \"10\",\r\n                    \"name\": \"宮野下\",\r\n                    \"time\": \"15:22\",\r\n                    \"is_used\": true,\r\n                    \"order\": \"5\"\r\n                },\r\n                {\r\n                    \"id\": \"5\",\r\n                    \"name\": \"三間支所\",\r\n                    \"time\": \"15:23\",\r\n                    \"is_used\": true,\r\n                    \"order\": \"6\"\r\n                },\r\n                {\r\n                    \"id\": \"11\",\r\n                    \"name\": \"宮野下下組\",\r\n                    \"time\": \"15:24\",\r\n                    \"is_used\": true,\r\n                    \"order\": \"7\"\r\n                },\r\n                {\r\n                    \"id\": \"12\",\r\n                    \"name\": \"もみの木前\",\r\n                    \"time\": \"15:25\",\r\n                    \"is_used\": true,\r\n                    \"order\": \"8\"\r\n                },\r\n                {\r\n                    \"id\": \"13\",\r\n                    \"name\": \"北増穂\",\r\n                    \"time\": \"15:29\",\r\n                    \"is_used\": true,\r\n                    \"order\": \"9\"\r\n                },\r\n                {\r\n                    \"id\": \"4\",\r\n                    \"name\": \"鬼ヶ峠\",\r\n                    \"time\": \"15:32\",\r\n                    \"is_used\": true,\r\n                    \"order\": \"10\"\r\n                },\r\n                {\r\n                    \"id\": \"3\",\r\n                    \"name\": \"小沢川\",\r\n                    \"time\": \"15:33\",\r\n                    \"is_used\": true,\r\n                    \"order\": \"11\"\r\n                },\r\n                {\r\n                    \"id\": \"2\",\r\n                    \"name\": \"波岡口\",\r\n                    \"time\": \"15:34\",\r\n                    \"is_used\": true,\r\n                    \"order\": \"12\"\r\n                },\r\n                {\r\n                    \"id\": \"1\",\r\n                    \"name\": \"川之内\",\r\n                    \"time\": \"15:36\",\r\n                    \"is_used\": true,\r\n                    \"order\": \"13\"\r\n                },\r\n                {\r\n                    \"id\": \"2\",\r\n                    \"name\": \"波岡口\",\r\n                    \"time\": \"15:38\",\r\n                    \"is_used\": true,\r\n                    \"order\": \"14\"\r\n                },\r\n                {\r\n                    \"id\": \"14\",\r\n                    \"name\": \"波岡\",\r\n                    \"time\": \"15:39\",\r\n                    \"is_used\": true,\r\n                    \"order\": \"15\"\r\n                },\r\n                {\r\n                    \"id\": \"15\",\r\n                    \"name\": \"田川集会所\",\r\n                    \"time\": \"15:42\",\r\n                    \"is_used\": true,\r\n                    \"order\": \"16\"\r\n                },\r\n                {\r\n                    \"id\": \"16\",\r\n                    \"name\": \"田川\",\r\n                    \"time\": \"15:44\",\r\n                    \"is_used\": true,\r\n                    \"order\": \"17\"\r\n                },\r\n                {\r\n                    \"id\": \"15\",\r\n                    \"name\": \"田川集会所\",\r\n                    \"time\": \"15:46\",\r\n                    \"is_used\": true,\r\n                    \"order\": \"18\"\r\n                },\r\n                {\r\n                    \"id\": \"17\",\r\n                    \"name\": \"金銅橋\",\r\n                    \"time\": \"15:48\",\r\n                    \"is_used\": true,\r\n                    \"order\": \"19\"\r\n                },\r\n                {\r\n                    \"id\": \"18\",\r\n                    \"name\": \"JR二名駅前\",\r\n                    \"time\": \"15:49\",\r\n                    \"is_used\": true,\r\n                    \"order\": \"20\"\r\n                },\r\n                {\r\n                    \"id\": \"19\",\r\n                    \"name\": \"元宗\",\r\n                    \"time\": \"15:50\",\r\n                    \"is_used\": true,\r\n                    \"order\": \"21\"\r\n                },\r\n                {\r\n                    \"id\": \"20\",\r\n                    \"name\": \"増田口\",\r\n                    \"time\": \"15:51\",\r\n                    \"is_used\": true,\r\n                    \"order\": \"22\"\r\n                },\r\n                {\r\n                    \"id\": \"12\",\r\n                    \"name\": \"もみの木前\",\r\n                    \"time\": \"15:52\",\r\n                    \"is_used\": true,\r\n                    \"order\": \"23\"\r\n                },\r\n                {\r\n                    \"id\": \"11\",\r\n                    \"name\": \"宮野下下組\",\r\n                    \"time\": \"15:53\",\r\n                    \"is_used\": true,\r\n                    \"order\": \"24\"\r\n                },\r\n                {\r\n                    \"id\": \"5\",\r\n                    \"name\": \"三間支所\",\r\n                    \"time\": \"15:54\",\r\n                    \"is_used\": true,\r\n                    \"order\": \"25\"\r\n                },\r\n                {\r\n                    \"id\": \"10\",\r\n                    \"name\": \"宮野下\",\r\n                    \"time\": \"15:55\",\r\n                    \"is_used\": true,\r\n                    \"order\": \"26\"\r\n                },\r\n                {\r\n                    \"id\": \"6\",\r\n                    \"name\": \"JR宮野下駅前\",\r\n                    \"time\": \"15:56\",\r\n                    \"is_used\": true,\r\n                    \"order\": \"27\"\r\n                },\r\n                {\r\n                    \"id\": \"7\",\r\n                    \"name\": \"三間小学校前\",\r\n                    \"time\": \"15:57\",\r\n                    \"is_used\": true,\r\n                    \"order\": \"28\"\r\n                },\r\n                {\r\n                    \"id\": \"9\",\r\n                    \"name\": \"森ヶ鼻\",\r\n                    \"time\": \"15:59\",\r\n                    \"is_used\": true,\r\n                    \"order\": \"29\"\r\n                },\r\n                {\r\n                    \"id\": \"8\",\r\n                    \"name\": \"道の駅みま\",\r\n                    \"time\": \"16:00\",\r\n                    \"is_used\": true,\r\n                    \"order\": \"30\"\r\n                }\r\n            ]\r\n        }\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/v1/web/course/update/",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"web",
+										"course",
+										"update",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "コース削除",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"course_id\": \"1\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/v1/web/course/delete/",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"web",
+										"course",
+										"delete",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "路線",
+					"item": [
+						{
+							"name": "路線一覧取得",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/api/v1/web/route/",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"web",
+										"route",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "路線新規登録",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": \"7\",\r\n    \"name\": \"hogehoge線\",\r\n    \"route\": [\r\n        {\r\n            \"id\": \"1\",\r\n            \"name\": \"バス停1\",\r\n            \"order\": 1\r\n        },\r\n        {\r\n            \"id\": \"1\",\r\n            \"name\": \"バス停1\",\r\n            \"order\": 2\r\n        }\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/v1/web/route/register/",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"web",
+										"route",
+										"register",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "路線編集",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": \"1\",\r\n    \"name\": \"hogehoge線\",\r\n    \"route\": [\r\n        {\r\n            \"id\": \"1\",\r\n            \"name\": \"バス停1\",\r\n            \"order\": \"1\"\r\n        },\r\n        {\r\n            \"id\": \"1\",\r\n            \"name\": \"バス停1\",\r\n            \"order\": \"2\"\r\n        }\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/v1/web/route/update/",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"web",
+										"route",
+										"update",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "路線削除",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"route_id\": \"7\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/v1/web/route/delete/",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"web",
+										"route",
+										"delete",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "バス停",
+					"item": [
+						{
+							"name": "バス停一覧",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/api/v1/web/busStop/",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"web",
+										"busStop",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "バス停登録",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"bus_stop_name\": \"バス停1\",\r\n    \"longitude\": \"123.45\",\r\n    \"latitude\": \"67.89\",\r\n    \"is_passing_point\": false\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/v1/web/busStop/register/",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"web",
+										"busStop",
+										"register",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "バス停編集",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": \"1\",\r\n    \"bus_stop_name\": \"バス停1\",\r\n    \"latitude\": \"123.45\",\r\n    \"longitude\": \"678.90\",\r\n    \"is_passing_point\": false\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/v1/web/busStop/update/",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"web",
+										"busStop",
+										"update",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "バス停削除",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"bus_stop_id\": \"51\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/v1/web/busStop/delete/",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"web",
+										"busStop",
+										"delete",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Map",
+					"item": [
+						{
+							"name": "バスの現在位置の取得API",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/v1/web/map/location/bus/",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"web",
+										"map",
+										"location",
+										"bus",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "バス路線位置情報取得API",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/v1/web/map/location/route/",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"web",
+										"map",
+										"location",
+										"route",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "お知らせ管理",
+					"item": [
+						{
+							"name": "お知らせ更新API",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"notification\": \"明日の運行はありません\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/v1/web/notification/update/",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"web",
+										"notification",
+										"update",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "お知らせ取得API",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/api/v1/web/notification/",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"web",
+										"notification",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "バス車両",
+					"item": [
+						{
+							"name": "取得",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{url}}/api/v1/web/buses/",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"web",
+										"buses",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "登録",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"bus_name\": \"3号車\",\n    \"bus_number\": \"愛媛 123 45-678\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/v1/web/buses/register/",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"web",
+										"buses",
+										"register",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "編集",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": \"1\",\n    \"bus_name\": \"3号車\",\n    \"bus_number\": \"愛媛 123 45-678\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/v1/web/buses/update/",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"web",
+										"buses",
+										"update",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "削除",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": \"1\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/v1/web/buses/delete/",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"web",
+										"buses",
+										"delete",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "運転手",
+					"item": [
+						{
+							"name": "運転手一覧取得",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/api/v1/web/drivers/",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"web",
+										"drivers",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "運転手登録",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"driver_name\": \"三好くん\",\n    \"email\": \"miyosi@gmail.com\",\n    \"password\": \"hogefugamiyoshi\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/v1/web/drivers/register/",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"web",
+										"drivers",
+										"register",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "運転手削除",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"driver_id\": 4\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/v1/web/drivers/delete/",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"web",
+										"drivers",
+										"delete",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "運転手更新",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"driver_id\": 9,\n    \"driver_name\": \"小林先生\",\n    \"email\": \"koblab@example.com\",\n    \"password\": \"kobkob\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/v1/web/drivers/update/",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"web",
+										"drivers",
+										"update",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "日報",
+					"item": [
+						{
+							"name": "日報取得",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"date\": \"2021-1-12\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/v1/web/report/day/",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"web",
+										"report",
+										"day",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "日報編集",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"course_id\": \"2\",\r\n    \"date\": \"2020-11-10\",\r\n    \"dailyReport\": [\r\n        {\r\n            \"year\": \"2020\",\r\n            \"month\": \"11\",\r\n            \"day\": \"10\",\r\n            \"driver_name\": \"tagawa\",\r\n            \"bus_number\": \"愛媛 12 12-345\",\r\n            \"course_name\": \"Bコース\",\r\n            \"mileage_start\": \"100\",\r\n            \"mileage_end\": \"\",\r\n            \"route_name\": \"川之内線\",\r\n            \"route_order__order\": \"第1便\",\r\n            \"bus_stop_name\": \"道の駅みま\",\r\n            \"get_off\": {\r\n                \"number\": \"2\",\r\n                \"boarding_id\": \"1\"\r\n            },\r\n            \"cash_adult\": {\r\n                \"number\": \"0\",\r\n                \"boarding_id\": \"\"\r\n            },\r\n            \"cash_child\": {\r\n                \"number\": \"0\",\r\n                \"boarding_id\": \"\"\r\n            },\r\n            \"cash_handicapped_adult\": {\r\n                \"number\": \"0\",\r\n                \"boarding_id\": \"\"\r\n            },\r\n            \"cash_handicapped_child\": {\r\n                \"number\": \"0\",\r\n                \"boarding_id\": \"\"\r\n            },\r\n            \"coupon_adult\": {\r\n                \"number\": \"0\",\r\n                \"boarding_id\": \"\"\r\n            },\r\n            \"coupon_child\": {\r\n                \"number\": \"0\",\r\n                \"boarding_id\": \"\"\r\n            },\r\n            \"coupon_handicapped\": {\r\n                \"number\": \"0\",\r\n                \"boarding_id\": \"\"\r\n            },\r\n            \"commuter_pass\": {\r\n                \"number\": \"0\",\r\n                \"boarding_id\": \"\"\r\n            },\r\n            \"free\": {\r\n                \"number\": \"0\",\r\n                \"boarding_id\": \"\"\r\n            },\r\n            \"sum\": \"1\"\r\n        },\r\n        {\r\n            \"year\": \"2020\",\r\n            \"month\": \"11\",\r\n            \"day\": \"10\",\r\n            \"driver_name\": \"tagawa\",\r\n            \"bus_number\": \"愛媛 12 12-345\",\r\n            \"course_name\": \"Bコース\",\r\n            \"mileage_start\": \"100\",\r\n            \"mileage_end\": \"\",\r\n            \"route_name\": \"川之内線\",\r\n            \"route_order__order\": \"第1便\",\r\n            \"bus_stop_name\": \"森ヶ鼻\",\r\n            \"get_off\": {\r\n                \"number\": \"0\",\r\n                \"boarding_id\": \"\"\r\n            },\r\n            \"cash_adult\": {\r\n                \"number\": \"2\",\r\n                \"boarding_id\": \"2\"\r\n            },\r\n            \"cash_child\": {\r\n                \"number\": \"0\",\r\n                \"boarding_id\": \"\"\r\n            },\r\n            \"cash_handicapped_adult\": {\r\n                \"number\": \"0\",\r\n                \"boarding_id\": \"\"\r\n            },\r\n            \"cash_handicapped_child\": {\r\n                \"number\": \"0\",\r\n                \"boarding_id\": \"\"\r\n            },\r\n            \"coupon_adult\": {\r\n                \"number\": \"0\",\r\n                \"boarding_id\": \"\"\r\n            },\r\n            \"coupon_child\": {\r\n                \"number\": \"0\",\r\n                \"boarding_id\": \"\"\r\n            },\r\n            \"coupon_handicapped\": {\r\n                \"number\": \"0\",\r\n                \"boarding_id\": \"\"\r\n            },\r\n            \"commuter_pass\": {\r\n                \"number\": \"0\",\r\n                \"boarding_id\": \"\"\r\n            },\r\n            \"free\": {\r\n                \"number\": \"0\",\r\n                \"boarding_id\": \"\"\r\n            },\r\n            \"sum\": \"2\"\r\n        },\r\n        {\r\n            \"year\": \"2020\",\r\n            \"month\": \"11\",\r\n            \"day\": \"10\",\r\n            \"driver_name\": \"tagawa\",\r\n            \"bus_number\": \"愛媛 12 12-345\",\r\n            \"course_name\": \"Bコース\",\r\n            \"mileage_start\": \"100\",\r\n            \"mileage_end\": \"\",\r\n            \"route_name\": \"川之内線\",\r\n            \"route_order__order\": \"第1便\",\r\n            \"bus_stop_name\": \"宮野下\",\r\n            \"get_off\": {\r\n                \"number\": \"0\",\r\n                \"boarding_id\": \"\"\r\n            },\r\n            \"cash_adult\": {\r\n                \"number\": \"0\",\r\n                \"boarding_id\": \"\"\r\n            },\r\n            \"cash_child\": {\r\n                \"number\": \"2\",\r\n                \"boarding_id\": \"3\"\r\n            },\r\n            \"cash_handicapped_adult\": {\r\n                \"number\": \"0\",\r\n                \"boarding_id\": \"\"\r\n            },\r\n            \"cash_handicapped_child\": {\r\n                \"number\": \"0\",\r\n                \"boarding_id\": \"\"\r\n            },\r\n            \"coupon_adult\": {\r\n                \"number\": \"0\",\r\n                \"boarding_id\": \"\"\r\n            },\r\n            \"coupon_child\": {\r\n                \"number\": \"0\",\r\n                \"boarding_id\": \"\"\r\n            },\r\n            \"coupon_handicapped\": {\r\n                \"number\": \"0\",\r\n                \"boarding_id\": \"\"\r\n            },\r\n            \"commuter_pass\": {\r\n                \"number\": \"0\",\r\n                \"boarding_id\": \"\"\r\n            },\r\n            \"free\": {\r\n                \"number\": \"0\",\r\n                \"boarding_id\": \"\"\r\n            },\r\n            \"sum\": \"2\"\r\n        },\r\n        {\r\n            \"year\": \"2020\",\r\n            \"month\": \"11\",\r\n            \"day\": \"10\",\r\n            \"driver_name\": \"tagawa\",\r\n            \"bus_number\": \"愛媛 12 12-345\",\r\n            \"course_name\": \"Bコース\",\r\n            \"mileage_start\": \"100\",\r\n            \"mileage_end\": \"\",\r\n            \"route_name\": \"川之内線\",\r\n            \"route_order__order\": \"第1便\",\r\n            \"bus_stop_name\": \"宮野下下組\",\r\n            \"get_off\": {\r\n                \"number\": \"0\",\r\n                \"boarding_id\": \"\"\r\n            },\r\n            \"cash_adult\": {\r\n                \"number\": \"0\",\r\n                \"boarding_id\": \"\"\r\n            },\r\n            \"cash_child\": {\r\n                \"number\": \"0\",\r\n                \"boarding_id\": \"\"\r\n            },\r\n            \"cash_handicapped_adult\": {\r\n                \"number\": \"2\",\r\n                \"boarding_id\": \"4\"\r\n            },\r\n            \"cash_handicapped_child\": {\r\n                \"number\": \"0\",\r\n                \"boarding_id\": \"\"\r\n            },\r\n            \"coupon_adult\": {\r\n                \"number\": \"0\",\r\n                \"boarding_id\": \"\"\r\n            },\r\n            \"coupon_child\": {\r\n                \"number\": \"0\",\r\n                \"boarding_id\": \"\"\r\n            },\r\n            \"coupon_handicapped\": {\r\n                \"number\": \"0\",\r\n                \"boarding_id\": \"\"\r\n            },\r\n            \"commuter_pass\": {\r\n                \"number\": \"0\",\r\n                \"boarding_id\": \"\"\r\n            },\r\n            \"free\": {\r\n                \"number\": \"0\",\r\n                \"boarding_id\": \"\"\r\n            },\r\n            \"sum\": \"2\"\r\n        },\r\n        {\r\n            \"year\": \"2020\",\r\n            \"month\": \"11\",\r\n            \"day\": \"10\",\r\n            \"driver_name\": \"tagawa\",\r\n            \"bus_number\": \"愛媛 12 12-345\",\r\n            \"course_name\": \"Bコース\",\r\n            \"mileage_start\": \"100\",\r\n            \"mileage_end\": \"\",\r\n            \"route_name\": \"川之内線\",\r\n            \"route_order__order\": \"第1便\",\r\n            \"bus_stop_name\": \"もみの木前\",\r\n            \"get_off\": {\r\n                \"number\": \"0\",\r\n                \"boarding_id\": \"\"\r\n            },\r\n            \"cash_adult\": {\r\n                \"number\": \"0\",\r\n                \"boarding_id\": \"\"\r\n            },\r\n            \"cash_child\": {\r\n                \"number\": \"0\",\r\n                \"boarding_id\": \"\"\r\n            },\r\n            \"cash_handicapped_adult\": {\r\n                \"number\": \"0\",\r\n                \"boarding_id\": \"\"\r\n            },\r\n            \"cash_handicapped_child\": {\r\n                \"number\": \"2\",\r\n                \"boarding_id\": \"5\"\r\n            },\r\n            \"coupon_adult\": {\r\n                \"number\": \"0\",\r\n                \"boarding_id\": \"\"\r\n            },\r\n            \"coupon_child\": {\r\n                \"number\": \"0\",\r\n                \"boarding_id\": \"\"\r\n            },\r\n            \"coupon_handicapped\": {\r\n                \"number\": \"0\",\r\n                \"boarding_id\": \"\"\r\n            },\r\n            \"commuter_pass\": {\r\n                \"number\": \"0\",\r\n                \"boarding_id\": \"\"\r\n            },\r\n            \"free\": {\r\n                \"number\": \"0\",\r\n                \"boarding_id\": \"\"\r\n            },\r\n            \"sum\": \"2\"\r\n        },\r\n        {\r\n            \"year\": \"2020\",\r\n            \"month\": \"11\",\r\n            \"day\": \"10\",\r\n            \"driver_name\": \"tagawa\",\r\n            \"bus_number\": \"愛媛 12 12-345\",\r\n            \"course_name\": \"Bコース\",\r\n            \"mileage_start\": \"100\",\r\n            \"mileage_end\": \"\",\r\n            \"route_name\": \"川之内線\",\r\n            \"route_order__order\": \"第1便\",\r\n            \"bus_stop_name\": \"北増穂\",\r\n            \"get_off\": {\r\n                \"number\": \"0\",\r\n                \"boarding_id\": \"\"\r\n            },\r\n            \"cash_adult\": {\r\n                \"number\": \"0\",\r\n                \"boarding_id\": \"\"\r\n            },\r\n            \"cash_child\": {\r\n                \"number\": \"0\",\r\n                \"boarding_id\": \"\"\r\n            },\r\n            \"cash_handicapped_adult\": {\r\n                \"number\": \"0\",\r\n                \"boarding_id\": \"\"\r\n            },\r\n            \"cash_handicapped_child\": {\r\n                \"number\": \"0\",\r\n                \"boarding_id\": \"\"\r\n            },\r\n            \"coupon_adult\": {\r\n                \"number\": \"2\",\r\n                \"boarding_id\": \"6\"\r\n            },\r\n            \"coupon_child\": {\r\n                \"number\": \"0\",\r\n                \"boarding_id\": \"\"\r\n            },\r\n            \"coupon_handicapped\": {\r\n                \"number\": \"0\",\r\n                \"boarding_id\": \"\"\r\n            },\r\n            \"commuter_pass\": {\r\n                \"number\": \"0\",\r\n                \"boarding_id\": \"\"\r\n            },\r\n            \"free\": {\r\n                \"number\": \"0\",\r\n                \"boarding_id\": \"\"\r\n            },\r\n            \"sum\": \"2\"\r\n        },\r\n        {\r\n            \"year\": \"2020\",\r\n            \"month\": \"11\",\r\n            \"day\": \"10\",\r\n            \"driver_name\": \"tagawa\",\r\n            \"bus_number\": \"愛媛 12 12-345\",\r\n            \"course_name\": \"Bコース\",\r\n            \"mileage_start\": \"100\",\r\n            \"mileage_end\": \"\",\r\n            \"route_name\": \"川之内線\",\r\n            \"route_order__order\": \"第1便\",\r\n            \"bus_stop_name\": \"波岡\",\r\n            \"get_off\": {\r\n                \"number\": \"0\",\r\n                \"boarding_id\": \"\"\r\n            },\r\n            \"cash_adult\": {\r\n                \"number\": \"0\",\r\n                \"boarding_id\": \"\"\r\n            },\r\n            \"cash_child\": {\r\n                \"number\": \"0\",\r\n                \"boarding_id\": \"\"\r\n            },\r\n            \"cash_handicapped_adult\": {\r\n                \"number\": \"0\",\r\n                \"boarding_id\": \"\"\r\n            },\r\n            \"cash_handicapped_child\": {\r\n                \"number\": \"0\",\r\n                \"boarding_id\": \"\"\r\n            },\r\n            \"coupon_adult\": {\r\n                \"number\": \"0\",\r\n                \"boarding_id\": \"\"\r\n            },\r\n            \"coupon_child\": {\r\n                \"number\": \"2\",\r\n                \"boarding_id\": \"7\"\r\n            },\r\n            \"coupon_handicapped\": {\r\n                \"number\": \"0\",\r\n                \"boarding_id\": \"\"\r\n            },\r\n            \"commuter_pass\": {\r\n                \"number\": \"0\",\r\n                \"boarding_id\": \"\"\r\n            },\r\n            \"free\": {\r\n                \"number\": \"0\",\r\n                \"boarding_id\": \"\"\r\n            },\r\n            \"sum\": \"2\"\r\n        },\r\n        {\r\n            \"year\": \"2020\",\r\n            \"month\": \"11\",\r\n            \"day\": \"10\",\r\n            \"driver_name\": \"tagawa\",\r\n            \"bus_number\": \"愛媛 12 12-345\",\r\n            \"course_name\": \"Bコース\",\r\n            \"mileage_start\": \"100\",\r\n            \"mileage_end\": \"\",\r\n            \"route_name\": \"川之内線\",\r\n            \"route_order__order\": \"第1便\",\r\n            \"bus_stop_name\": \"田川集会所\",\r\n            \"get_off\": {\r\n                \"number\": \"0\",\r\n                \"boarding_id\": \"\"\r\n            },\r\n            \"cash_adult\": {\r\n                \"number\": \"0\",\r\n                \"boarding_id\": \"\"\r\n            },\r\n            \"cash_child\": {\r\n                \"number\": \"0\",\r\n                \"boarding_id\": \"\"\r\n            },\r\n            \"cash_handicapped_adult\": {\r\n                \"number\": \"0\",\r\n                \"boarding_id\": \"\"\r\n            },\r\n            \"cash_handicapped_child\": {\r\n                \"number\": \"0\",\r\n                \"boarding_id\": \"\"\r\n            },\r\n            \"coupon_adult\": {\r\n                \"number\": \"0\",\r\n                \"boarding_id\": \"\"\r\n            },\r\n            \"coupon_child\": {\r\n                \"number\": \"0\",\r\n                \"boarding_id\": \"\"\r\n            },\r\n            \"coupon_handicapped\": {\r\n                \"number\": \"2\",\r\n                \"boarding_id\": \"8\"\r\n            },\r\n            \"commuter_pass\": {\r\n                \"number\": \"0\",\r\n                \"boarding_id\": \"\"\r\n            },\r\n            \"free\": {\r\n                \"number\": \"0\",\r\n                \"boarding_id\": \"\"\r\n            },\r\n            \"sum\": \"2\"\r\n        },\r\n        {\r\n            \"year\": \"2020\",\r\n            \"month\": \"11\",\r\n            \"day\": \"10\",\r\n            \"driver_name\": \"tagawa\",\r\n            \"bus_number\": \"愛媛 12 12-345\",\r\n            \"course_name\": \"Bコース\",\r\n            \"mileage_start\": \"100\",\r\n            \"mileage_end\": \"\",\r\n            \"route_name\": \"川之内線\",\r\n            \"route_order__order\": \"第1便\",\r\n            \"bus_stop_name\": \"田川\",\r\n            \"get_off\": {\r\n                \"number\": \"0\",\r\n                \"boarding_id\": \"\"\r\n            },\r\n            \"cash_adult\": {\r\n                \"number\": \"0\",\r\n                \"boarding_id\": \"\"\r\n            },\r\n            \"cash_child\": {\r\n                \"number\": \"0\",\r\n                \"boarding_id\": \"\"\r\n            },\r\n            \"cash_handicapped_adult\": {\r\n                \"number\": \"0\",\r\n                \"boarding_id\": \"\"\r\n            },\r\n            \"cash_handicapped_child\": {\r\n                \"number\": \"0\",\r\n                \"boarding_id\": \"\"\r\n            },\r\n            \"coupon_adult\": {\r\n                \"number\": \"0\",\r\n                \"boarding_id\": \"\"\r\n            },\r\n            \"coupon_child\": {\r\n                \"number\": \"0\",\r\n                \"boarding_id\": \"\"\r\n            },\r\n            \"coupon_handicapped\": {\r\n                \"number\": \"0\",\r\n                \"boarding_id\": \"\"\r\n            },\r\n            \"commuter_pass\": {\r\n                \"number\": \"2\",\r\n                \"boarding_id\": \"9\"\r\n            },\r\n            \"free\": {\r\n                \"number\": \"0\",\r\n                \"boarding_id\": \"\"\r\n            },\r\n            \"sum\": \"2\"\r\n        },\r\n        {\r\n            \"year\": \"2020\",\r\n            \"month\": \"11\",\r\n            \"day\": \"10\",\r\n            \"driver_name\": \"tagawa\",\r\n            \"bus_number\": \"愛媛 12 12-345\",\r\n            \"course_name\": \"Bコース\",\r\n            \"mileage_start\": \"100\",\r\n            \"mileage_end\": \"\",\r\n            \"route_name\": \"川之内線\",\r\n            \"route_order__order\": \"第1便\",\r\n            \"bus_stop_name\": \"金銅橋\",\r\n            \"get_off\": {\r\n                \"number\": \"0\",\r\n                \"boarding_id\": \"\"\r\n            },\r\n            \"cash_adult\": {\r\n                \"number\": \"0\",\r\n                \"boarding_id\": \"\"\r\n            },\r\n            \"cash_child\": {\r\n                \"number\": \"0\",\r\n                \"boarding_id\": \"\"\r\n            },\r\n            \"cash_handicapped_adult\": {\r\n                \"number\": \"0\",\r\n                \"boarding_id\": \"\"\r\n            },\r\n            \"cash_handicapped_child\": {\r\n                \"number\": \"0\",\r\n                \"boarding_id\": \"\"\r\n            },\r\n            \"coupon_adult\": {\r\n                \"number\": \"0\",\r\n                \"boarding_id\": \"\"\r\n            },\r\n            \"coupon_child\": {\r\n                \"number\": \"0\",\r\n                \"boarding_id\": \"\"\r\n            },\r\n            \"coupon_handicapped\": {\r\n                \"number\": \"0\",\r\n                \"boarding_id\": \"\"\r\n            },\r\n            \"commuter_pass\": {\r\n                \"number\": \"0\",\r\n                \"boarding_id\": \"\"\r\n            },\r\n            \"free\": {\r\n                \"number\": \"2\",\r\n                \"boarding_id\": \"10\"\r\n            },\r\n            \"sum\": \"2\"\r\n        }\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/v1/web/report/day/update/",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"web",
+										"report",
+										"day",
+										"update",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "月報",
+					"item": [
+						{
+							"name": "月報取得",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"year\": \"2020\",\r\n    \"month\": \"11\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/v1/web/report/month/",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"web",
+										"report",
+										"month",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "運賃",
+					"item": [
+						{
+							"name": "運賃一覧",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/api/v1/web/fare/",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"web",
+										"fare",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "運賃登録",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "[\r\n    {\r\n        \"group\": \"大人 - 現金\",\r\n        \"amount\": \"300\"\r\n    },\r\n    {\r\n        \"group\": \"小人 - 現金\",\r\n        \"amount\": \"200\"\r\n    },\r\n    {\r\n        \"group\": \"障害者（大） - 現金\",\r\n        \"amount\": \"200\"\r\n    },\r\n    {\r\n        \"group\": \"障害者（小） - 現金\",\r\n        \"amount\": \"200\"\r\n    },\r\n    {\r\n        \"group\": \"大人 - 回数券販売\",\r\n        \"amount\": \"3000\"\r\n    },\r\n    {\r\n        \"group\": \"小人 - 回数券販売\",\r\n        \"amount\": \"2000\"\r\n    },\r\n    {\r\n        \"group\": \"障害者 - 回数券販売\",\r\n        \"amount\": \"2000\"\r\n    }\r\n]",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/v1/web/fare/create/",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"web",
+										"fare",
+										"create",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "運行記録",
+					"item": [
+						{
+							"name": "取得",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"date\": \"2020-12-02\",\n    \"course_id\": \"1\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/v1/web/bus/history/",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"web",
+										"bus",
+										"history",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "システムユーザー管理",
+					"item": [
+						{
+							"name": "ユーザー情報管理",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/api/v1/user/",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"user",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "ユーザー情報登録",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"user_name\": \"社畜ちゃん\",\n    \"email\": \"shachiku@gmail.com\",\n    \"password\": \"shachiku\",\n    \"user_group_id\": \"1\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/v1/web/user/register/",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"web",
+										"user",
+										"register",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "ユーザー情報編集",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\"id\": \"1\",\n\"user_name\": \"後輩ちゃん\",\n\"email\": \"kouhai@gmail.com\",\n\"password\": \"kouhai\",\n\"user_group_id\": \"2\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/v1/web/user/update/",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"web",
+										"user",
+										"update",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "ユーザー情報削除",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\"id\": \"1\",\n\"name\": \"後輩ちゃん\",\n\"email\": \"kouhai@gmail.com\",\n\"password\": \"kouhai\",\n\"usesr_group_id\": \"2\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/v1/web/user/update/",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"web",
+										"user",
+										"update",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "iOS",
+			"item": [
+				{
+					"name": "運行開始・終了",
+					"item": [
+						{
+							"name": "Bus Initial API",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"bus_id\": \"1\",\r\n  \"driver_id\": \"2\",\r\n  \"course_id\": \"1\",\r\n  \"trip_meter\": \"1234\",\r\n  \"money\": \"10200\",\r\n  \"work_start_end_flag\": \"0\",\r\n  \"send_at\": \"2020-09-11 00:00:00\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/v1/bus/init/create/",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"bus",
+										"init",
+										"create",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "点検",
+					"item": [
+						{
+							"name": "登録",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"driver_id\": \"1\",\r\n  \"bus_id\": \"1\",\r\n  \"checked\": \"true\",\r\n  \"remark\": \"text\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/v1/bus/inspections/create/",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"bus",
+										"inspections",
+										"create",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "一覧",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/api/v1/bus/inspections/",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"bus",
+										"inspections",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "コース、バス、便、路線",
+					"item": [
+						{
+							"name": "コース",
+							"item": [
+								{
+									"name": "一覧",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/api/v1/bus/course/",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"bus",
+												"course",
+												""
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "詳細",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"course_id\": \"1\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/api/v1/bus/course/info/",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"bus",
+												"course",
+												"info",
+												""
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "路線、便",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/api/v1/bus/routes/",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"bus",
+										"routes",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "バス停一覧",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"route_id\": \"1\",\r\n  \"route_order_id\": \"1\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/v1/bus/bus_stops/",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"bus",
+										"bus_stops",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "運賃",
+					"item": [
+						{
+							"name": "取得",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/api/v1/bus/fare/",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"bus",
+										"fare",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "乗降客数",
+					"item": [
+						{
+							"name": "登録",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"boardings\": [\r\n    {\r\n      \"bus_id\": \"1\",\r\n      \"route_id\": \"1\",\r\n      \"route_order_id\": \"1\",\r\n      \"bus_stop_id\": \"1\",\r\n      \"bus_stop_order\": \"1\",\r\n      \"driver_id\": \"3\",\r\n      \"fare_id\": \"1\",\r\n      \"number\": \"1\",\r\n      \"memo\": \"memo\",\r\n      \"send_at\": \"2020-09-11 00:00:00\"\r\n    }\r\n  ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/v1/bus/boardings/create/",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"bus",
+										"boardings",
+										"create",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "見守り情報",
+					"item": [
+						{
+							"name": "登録",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"driver_id\": \"3\",\r\n  \"bus_id\": \"1\",\r\n  \"card_id\": \"1\",\r\n  \"bus_stop_id\": \"1\",\r\n  \"send_at\": \"2020-09-11 00:00:00\",\r\n  \"boarding_type\": \"1\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/v1/bus/watch_over_boarding/create/",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"bus",
+										"watch_over_boarding",
+										"create",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "バスロケーション",
+					"item": [
+						{
+							"name": "保存",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"course_id\": \"1\",\r\n    \"route_order_id\": \"1\",\r\n    \"bus_stop_order\": \"1\",\r\n    \"bus_id\": \"1\",\r\n    \"latitude\": \"33.286049\",\r\n    \"longitude\": \"132.595601\",\r\n    \"send_at\": \"2021-02-02 09:50:00\",\r\n    \"route_name\": \"増田線\",\r\n    \"vacancy_num\": 6,\r\n    \"next_bus_stop_name\": \"務田公民館前\"\r\n    \r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/v1/bus/locations/create/",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"bus",
+										"locations",
+										"create",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "IDm",
+					"item": [
+						{
+							"name": "保存",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"driver_id\": 4,\r\n  \"card_id\": 1,\r\n  \"send_at\": \"2020-09-11 00:00:00\",\r\n  \"boarding_type\": 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/v1/bus/card/IDm/create/",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"bus",
+										"card",
+										"IDm",
+										"create",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "IDm一覧の取得",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"course_id\": \"1\",\r\n    \"route_order_id\": \"1\",\r\n    \"bus_id\": \"1\",\r\n    \"latitude\": \"33.2905044\",\r\n    \"longitude\": \"132.6072449\",\r\n    \"send_at\": \"2020-12-02 00:00:00\",\r\n    \"route_name\": \"音地線\",\r\n    \"vacancy_num\": 6,\r\n    \"next_bus_stop_name\": \"三間小学校前\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/v1/bus/card/IDm/info/",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"bus",
+										"card",
+										"IDm",
+										"info",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "認証",
+					"item": [
+						{
+							"name": "ログイン（運転手）",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"email\": \"tagawa@example.com\",\r\n  \"password\": \"tagawa\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/v1/bus/login/",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"bus",
+										"login",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjEyODQ0OTA3LCJqdGkiOiJhNGYwYTRmMTMxNjc0MjEyOGI1MTQzNTJjMWU4ZGEwZCIsInVzZXJfaWQiOjN9.XoLO5imI-zr0njEIamgc6WNejyXU9ja8D1mB8omY6XI",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

@@ -1,0 +1,8 @@
+title: 400 error
+type: object
+x-examples:
+  example-1:
+    error: 不足している引数があります
+properties:
+  error:
+    type: string

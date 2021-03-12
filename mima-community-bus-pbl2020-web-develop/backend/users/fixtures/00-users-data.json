@@ -1,0 +1,128 @@
+[
+    {
+        "model": "users.users",
+        "pk": 1,
+        "fields": {
+            "password": "pbkdf2_sha256$216000$osYsPon61IDx$4NcbcHglzlfwissnaSrQQH3W6ZGQNPCCesVBRvImP3E=",
+            "last_login": null,
+            "is_superuser": true,
+            "first_name": "",
+            "last_name": "",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2020-10-25T21:31:47",
+            "email": "ehimeictpbl2020@gmail.com",
+            "phone_number": "080-9139-4853",
+            "username": "ictc",
+            "groups": [
+                5
+            ],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "users.users",
+        "pk": 2,
+        "fields": {
+            "password": "pbkdf2_sha256$216000$5zhhlXNBrxRw$Plh6gcVmej01Bh6BUimQexpk1bDfrmksud5PBibIjWQ=",
+            "last_login": "2020-11-26T08:14:02.692",
+            "is_superuser": false,
+            "first_name": "",
+            "last_name": "",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2020-10-28T02:55:49",
+            "email": "ehimeict@gmail.com",
+            "phone_number": "08038473847",
+            "username": "ehimeict",
+            "groups": [
+                1
+            ],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "users.users",
+        "pk": 3,
+        "fields": {
+            "password": "pbkdf2_sha256$216000$m7dIkH7lopsU$ZbMTOLbQiXffp+XcR1JXduxYO1VgbSpnSqvkYie7P2o=",
+            "last_login": null,
+            "is_superuser": false,
+            "first_name": "",
+            "last_name": "",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2020-11-03T06:54:11",
+            "email": "tagawa@example.com",
+            "phone_number": "",
+            "username": "tagawa",
+            "groups": [
+                3
+            ],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "users.users",
+        "pk": 4,
+        "fields": {
+            "password": "pbkdf2_sha256$216000$m7dIkH7lopsU$ZbMTOLbQiXffp+XcR1JXduxYO1VgbSpnSqvkYie7P2o=",
+            "last_login": null,
+            "is_superuser": false,
+            "first_name": "",
+            "last_name": "",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2020-11-03T06:54:48",
+            "email": "mukai@example.com",
+            "phone_number": "",
+            "username": "mukai",
+            "groups": [
+                3
+            ],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "users.users",
+        "pk": 5,
+        "fields": {
+            "password": "pbkdf2_sha256$216000$FtfsJtNY0qnD$uHvhpNgtY1ImpbAt5nIbUcJqv76t6Nn+7BYnMjKk/4k=",
+            "last_login": null,
+            "is_superuser": false,
+            "first_name": "",
+            "last_name": "",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2020-11-26T09:09:09.368",
+            "email": "nakayama@example.com",
+            "phone_number": "",
+            "username": "nakayama",
+            "groups": [
+                2
+            ],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "users.users",
+        "pk": 6,
+        "fields": {
+            "password": "pbkdf2_sha256$216000$fAIhnAGBv0id$W6zYvnx1y9C1YVOT/GlKNHRMfrEq6nEFFOaw7s1rTD4=",
+            "last_login": "2020-11-26T09:47:36.319",
+            "is_superuser": false,
+            "first_name": "",
+            "last_name": "",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2020-11-26T09:14:38.274",
+            "email": "h847002y@mails.cc.ehime-u.ac.jp",
+            "phone_number": "",
+            "username": "komori",
+            "groups": [
+                4
+            ],
+            "user_permissions": []
+        }
+    }
+]

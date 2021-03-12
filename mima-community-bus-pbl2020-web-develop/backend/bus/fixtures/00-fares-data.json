@@ -1,0 +1,106 @@
+[
+    {
+        "model": "bus.MasterFares",
+        "fields": {
+            "id": 1,
+            "group": "降車",
+            "amount": 0
+        }
+    },
+    {
+        "model": "bus.MasterFares",
+        "fields": {
+            "id": 2,
+            "group": "大人 - 現金",
+            "amount": 200
+        }
+    },
+    {
+        "model": "bus.MasterFares",
+        "fields": {
+            "id": 3,
+            "group": "小人 - 現金",
+            "amount": 100
+        }
+    },
+    {
+        "model": "bus.MasterFares",
+        "fields": {
+            "id": 4,
+            "group": "障害者（大） - 現金",
+            "amount": 100
+        }
+    },
+    {
+        "model": "bus.MasterFares",
+        "fields": {
+            "id": 5,
+            "group": "障害者（小） - 現金",
+            "amount": 100
+        }
+    },
+    {
+        "model": "bus.MasterFares",
+        "fields": {
+            "id": 6,
+            "group": "大人 - 回数券",
+            "amount": 0
+        }
+    },
+    {
+        "model": "bus.MasterFares",
+        "fields": {
+            "id": 7,
+            "group": "小人 - 回数券",
+            "amount": 0
+        }
+    },
+    {
+        "model": "bus.MasterFares",
+        "fields": {
+            "id": 8,
+            "group": "障害者 - 回数券",
+            "amount": 0
+        }
+    },
+    {
+        "model": "bus.MasterFares",
+        "fields": {
+            "id": 9,
+            "group": "定期券",
+            "amount": 0
+        }
+    },
+    {
+        "model": "bus.MasterFares",
+        "fields": {
+            "id": 10,
+            "group": "無料",
+            "amount": 0
+        }
+    },
+    {
+        "model": "bus.MasterFares",
+        "fields": {
+            "id": 11,
+            "group": "大人 - 回数券販売",
+            "amount": 2000
+        }
+    },
+    {
+        "model": "bus.MasterFares",
+        "fields": {
+            "id": 12,
+            "group": "小人 - 回数券販売",
+            "amount": 1000
+        }
+    },
+    {
+        "model": "bus.MasterFares",
+        "fields": {
+            "id": 13,
+            "group": "障害者 - 回数券販売",
+            "amount": 1000
+        }
+    }
+]

@@ -1,0 +1,18 @@
+[
+    {
+        "model": "bus.MasterViaPoints",
+        "fields": {
+            "id": 1,
+            "longitude": 33.687781,
+            "latitude": 132.802734
+        }
+    },
+    {
+        "model": "bus.MasterViaPoints",
+        "fields": {
+            "id": 2,
+            "longitude": 33.687781,
+            "latitude": 132.802734
+        }
+    }
+]

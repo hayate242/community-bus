@@ -1,0 +1,62 @@
+[
+    {
+        "model": "bus.WatchOverBoardings",
+        "fields": {
+            "id": 1,
+            "driver_id": 3,
+            "bus_id": 1,
+            "card_id": 1,
+            "bus_stop_id": 1,
+            "send_at": "2020-09-11 00:00:00",
+            "boarding_type": 1
+        }
+    },
+    {
+        "model": "bus.WatchOverBoardings",
+        "fields": {
+            "id": 2,
+            "driver_id": 4,
+            "bus_id": 1,
+            "card_id": 1,
+            "bus_stop_id": 1,
+            "send_at": "2020-09-11 12:00:00",
+            "boarding_type": 2
+        }
+    },
+    {
+        "model": "bus.WatchOverBoardings",
+        "fields": {
+            "id": 3,
+            "driver_id": 1,
+            "bus_id": 1,
+            "card_id": 2,
+            "bus_stop_id": 1,
+            "send_at": "2020-09-11 00:00:00",
+            "boarding_type": 1
+        }
+    },
+    {
+        "model": "bus.WatchOverBoardings",
+        "fields": {
+            "id": 4,
+            "driver_id": 1,
+            "bus_id": 1,
+            "card_id": 1,
+            "bus_stop_id": 1,
+            "send_at": "2020-10-12 12:00:00",
+            "boarding_type": 2
+        }
+    },
+    {
+        "model": "bus.WatchOverBoardings",
+        "fields": {
+            "id": 5,
+            "driver_id": 1,
+            "bus_id": 1,
+            "card_id": 2,
+            "bus_stop_id": 1,
+            "send_at": "2020-10-12 15:00:00",
+            "boarding_type": 1
+        }
+    }
+]

@@ -1,0 +1,50 @@
+[
+    {
+        "model": "bus.MasterRoutes",
+        "fields": {
+            "id": 1,
+            "user_id": "1",
+            "route_name": "川之内線"
+        }
+    },
+    {
+        "model": "bus.MasterRoutes",
+        "fields": {
+            "id": 2,
+            "user_id": "1",
+            "route_name": "音地線"
+        }
+    },
+    {
+        "model": "bus.MasterRoutes",
+        "fields": {
+            "id": 3,
+            "user_id": "1",
+            "route_name": "大藤線"
+        }
+    },
+    {
+        "model": "bus.MasterRoutes",
+        "fields": {
+            "id": 4,
+            "user_id": "1",
+            "route_name": "増田線"
+        }
+    },
+    {
+        "model": "bus.MasterRoutes",
+        "fields": {
+            "id": 5,
+            "user_id": "1",
+            "route_name": "川之内線（三間小学校便）"
+        }
+    },
+    {
+        "model": "bus.MasterRoutes",
+        "fields": {
+            "id": 6,
+            "user_id": "1",
+            "route_name": "音地線（二名小学校便）"
+        }
+    }
+]

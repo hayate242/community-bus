@@ -1,0 +1,131 @@
+# Group Bus List API
+便，路線，バス停の一覧取得
+
+
+
+## 路線情報の一覧取得 [GET /api/v1/bus/routes]
+路線，便情報の一覧を取得する
+
++ Request
+    + Headers
+        ```
+        Authorization: Bearer {token}
+        ```
+
+
++ Response 200 (application/json)
+    + Body
+    ```
+    {
+        "routes": [
+            {
+                "route_id": "1",
+                "route_name": "河内線",
+                "route_orders": [
+                    {
+                        "route_order_id": "1",
+                        "route_order_name": "第一便"
+                    },
+                    {
+                        "route_order_id": "2",
+                        "route_order_name": "第二便"
+                    },
+                    {
+                        "route_order_id": "3",
+                        "route_order_name": "第三便"
+                    },
+                    {
+                        "route_order_id": "4",
+                        "route_order_name": "第四便"
+                    },
+                    {
+                        "route_order_id": "5",
+                        "route_order_name": "第五便"
+                    }
+                ]
+            },
+            {
+                "route_id": "2",
+                "route_name": "音地線",
+                "route_orders": [
+                    {
+                        "route_order_id": "1",
+                        "route_order_name": "第一便"
+                    },
+                    {
+                        "route_order_id": "2",
+                        "route_order_name": "第二便"
+                    },
+                    {
+                        "route_order_id": "3",
+                        "route_order_name": "第三便"
+                    },
+                    {
+                        "route_order_id": "4",
+                        "route_order_name": "第四便"
+                    },
+                    {
+                        "route_order_id": "5",
+                        "route_order_name": "第五便"
+                    },
+                    {
+                        "route_order_id": "6",
+                        "route_order_name": "第六便"
+                    }
+                ]
+            },
+            {
+                "route_id": "3",
+                "route_name": "大藤線",
+                "route_orders": [
+                    {
+                        "route_order_id": "1",
+                        "route_order_name": "第一便"
+                    },
+                    {
+                        "route_order_id": "2",
+                        "route_order_name": "第二便"
+                    },
+                    {
+                        "route_order_id": "3",
+                        "route_order_name": "第三便"
+                    }
+                ]
+            },
+            {
+                "route_id": "4",
+                "route_name": "増田線",
+                "route_orders": [
+                    {
+                        "route_order_id": "1",
+                        "route_order_name": "第一便"
+                    },
+                    {
+                        "route_order_id": "2",
+                        "route_order_name": "第二便"
+                    },
+                    {
+                        "route_order_id": "3",
+                        "route_order_name": "第三便"
+                    }
+                ]
+            }
+        ]
+    }
+    ```
+
+
++ Response 400 (application/json)
+    + Body
+        ```
+        {
+            "error": "there are no record"
+        }
+        ```
++ Response 401 (application/json)
+    + Body
+        ```
+        {
+            "error": "Unauthorized"
+        }
+        ```

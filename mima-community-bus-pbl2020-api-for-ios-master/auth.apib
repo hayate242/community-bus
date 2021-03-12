@@ -1,0 +1,112 @@
+# Group Login API
+認証用WebAPI
+iOSアプリで使用
+
+## ユーザ登録 [POST /api/v1/user]
+新規ユーザを登録する
+
++ Request (application/json)
+    + Attributes
+        + user_name: `ehimeict` (string, required) - 氏名
+        + phone_number: `08038473847` (string, required) - 電話番号
+        + email: `ehimeict@gmail.com` (string, required) - メールアドレス
+        + password: `1xU35jQy` (string, required) - パスワード
+
++ Response 200 (application/json)
+    + Attributes
+        + result: `true` (boolean) - 登録結果
+        + name: `ehimeict` (string) - ユーザ名
+        + phone_number: `08038473847` (string, required) - 電話番号
+        + email: `ehimeict@gmail.com` (string) - メールアドレス
+        + message: `User creation succeeded.` (string) - 登録メッセージ
+
++ Response 400 (application/json)
+    + Body
+        ```
+        {
+            "error": "there are missing arguments (user_name,phone_number)"
+        }
+        ```
++ Response 401 (application/json)
+    + Body
+        ```
+        {
+            "error": "failed to create user"
+        }
+        ```
+
+
+## トークン発行 [POST /api/v1/login]
+JWT認証用のトークンを発行する
+
++ Request (application/json)
+    + Attributes
+        + email: `ehimeict@gmail.com` (string, required)
+        + password: `1xU35jQy` (string, required)
+
++ Response 200 (application/json)
+    + Attributes
+        + access_token: `{token}` (string)
+        + token_type: `bearer` (string)
+        + expire_in: `60` (number) - トークンの有効期限(日)
+
++ Response 400 (application/json)
+    + Body
+        ```
+        {
+            "error": "there are missing arguments (email,password)"
+        }
+        ```
++ Response 401 (application/json)
+    + Body
+        ```
+        {
+            "error": "Unauthorized"
+        }
+        ```
+
+## ログアウト [POST /api/v1/logout]
+JWT認証用のトークンを破棄する
+
++ Request
+    + Headers
+        ```
+        Authorization: Bearer {token}
+        ```
+
++ Response 200 (application/json)
+    + Attributes
+        + success: `Successfully logged out from application` (string)
+
++ Response 401 (application/json)
+    + Body
+        ```
+        {
+            "error": "Unauthorized"
+        }
+        ```
+
+
+## ユーザ情報取得 [GET /api/v1/user/info]
+自分自身のアカウント情報を取得する
+
++ Request
+    + Headers
+        ```
+        Authorization: Bearer {token}
+        ```
+
++ Response 200 (application/json)
+    + Attributes
+        + id: `1` (string) - ユーザーID
+        + name: `ehimeict` (string) - ユーザ名
+        + phone_number: `08038473847` (string, required) - 電話番号
+        + email: `ehimeict@gmail.com` (string) - メールアドレス
+
++ Response 401 (application/json)
+    + Body
+        ```
+        {
+            "error": "Unauthorized"
+        }
+        ```

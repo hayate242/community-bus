@@ -1,0 +1,24 @@
+name: Deploy
+on:
+  push:
+    branches: [ release ]
+jobs:
+  # deploy only pull-request merged into master branch
+  deploy:
+    if: github.event.pull_request.merged
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install SSH key
+        uses: shimataro/ssh-key-action@v2
+        with:
+          host: ${{ secrets.SERVER_IP }}
+          port: ${{ secrets.SSH_PORT }}
+          username: ${{ secrets.SERVER_USERNAME }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          passphrase: ${{ secrets.SSH_PASSPHRASE }}
+          script: |
+            cd ${{ secrets.SERVER_PROJECT_DIR }}
+            git pull origin release
+            make release-migrate
+            make release-back-dev
+

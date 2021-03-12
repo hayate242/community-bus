@@ -1,0 +1,92 @@
+# Data Structures
+## Buses
++ bus_stops (array, fixed-type) - バス停一覧
+    + (Bus stops)
+
+## Bus stops
++ bus_stop_id: `1` (string) - バス停ID
++ bus_stop_name: `川乃内` (string) - バス停名
+
+# Group Bus stop API
+バス停一覧の取得
+
+## バス停一覧の取得 [POST /api/v1/bus/bus_stops]
+バス停一覧を取得する
+
++ Request
+    + Headers
+        ```
+        Authorization: Bearer {token}
+        ```
+    + Body
+        ```
+        {
+            "route_id": "1",
+            "route_order_id": "1"
+        }
+        ```
+
++ Response 200 (application/json)
+    + Body
+    ```
+    {
+        "bus_stops": [
+            {
+                "bus_stop_id": "1",
+                "bus_stop_order": "1",
+                "bus_stop_name": "川乃内",
+                "latitude": "33.3096041",
+                "longitude": "132.6281472"
+            },
+            {
+                "bus_stop_id": "2",
+                "bus_stop_order": "2",
+                "bus_stop_name": "波岡口",
+                "latitude": "33.3014375",
+                "longitude": "132.6259722"
+            },
+            {
+                "bus_stop_id": "3",
+                "bus_stop_order": "3",
+                "bus_stop_name": "小沢川",
+                "latitude": "33.3005573",
+                "longitude": "132.6229964"
+            },
+            {
+                "bus_stop_id": "4",
+                "bus_stop_order": "4",
+                "bus_stop_name": "鬼ヶ峠",
+                "latitude": "33.3002357",
+                "longitude": "132.6166102"
+            },
+            {
+                "bus_stop_id": "5",
+                "bus_stop_order": "5",
+                "bus_stop_name": "三間支所",
+                "latitude": "33.2904506",
+                "longitude": "132.6082669"
+            },
+            {
+                "bus_stop_id": "6",
+                "bus_stop_order": "6",
+                "bus_stop_name": "JR宮野下駅前",
+                "latitude": "33.2893542",
+                "longitude": "132.6060407"
+            },
+            {
+                "bus_stop_id": "7",
+                "bus_stop_order": "7",
+                "bus_stop_name": "三間小学校",
+                "latitude": "33.2898029",
+                "longitude": "132.6040426"
+            }
+        ]
+    }
+    ```
++ Response 401 (application/json)
+    + Body
+        ```
+        {
+            "error": "Unauthorized"
+        }
+        ```

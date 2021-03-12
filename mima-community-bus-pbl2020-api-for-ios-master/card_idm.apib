@@ -1,0 +1,77 @@
+# Group Card Information API
+
+IDmの取得・保存
+
+## IDm一覧の取得 [GET /api/v1/bus/card/IDm/info/]
+IDm一覧を取得する
+
+
++ Request
+    + Headers
+        ```
+        Authorization: Bearer {token}
+        ```
+
++ Response 200 (application/json)
+    + Body
+        ```
+        {
+            "cards": [
+                {
+                    "card_id": "1",
+                    "card_number": "112e4ce3af0d9a9e"
+                },
+                {
+                    "card_id": "2",
+                    "card_number": "012e4ce16ace5b31"
+                }
+            ]
+        }
+        ```
+
++ Response 401 (application/json)
+    + Body
+        ```
+        {
+            "error": "Unauthorized"
+        }
+        ```
+
+## IDm，時刻の登録 [POST /api/v1/bus/card/IDm/create]
+IDm，時刻を登録する
+
+boarding_typeは固定値で１
+
++ Request (application/json)
+    + Headers
+        ```
+        Authorization: Bearer {token}
+        ```
+
+    + Attributes
+        + driver_id: `1` (string) - ドライバーid
+        + card_id: `1` (string) - カードid
+        + send_at: `2020-09-11 00:00:00` - 送信時刻
+        + boarding_type: `1` (string) - 乗車区分
+
++ Response 200 (application/json)
+    + Body
+        ```
+        {
+            "success": "saved information successfully"
+        }
+        ```
++ Response 400 (application/json)
+    + Body
+        ```
+        {
+            "error": "there are missing arguments (driver)"
+        }
+        ```
++ Response 401 (application/json)
+    + Body
+        ```
+        {
+            "error": "Unauthorized"
+        }
+        ```

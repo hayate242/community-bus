@@ -1,0 +1,9 @@
+[
+    {
+        "model": "bus.watchingnotificationsentences",
+        "pk": 1,
+        "fields": {
+            "sentence": "{{datetime}}に{{name}}さんが「{{bus-stop}}」で利用しました。"
+        }
+    }
+]

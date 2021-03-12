@@ -1,0 +1,554 @@
+[
+    {
+        "model": "bus.MasterBusStops",
+        "fields": {
+            "id": 1,
+            "bus_stop_name": "川之内",
+            "latitude": 33.3096041,
+            "longitude": 132.6281472,
+            "is_passing_point": 0
+        }
+    },
+    {
+        "model": "bus.MasterBusStops",
+        "fields": {
+            "id": 2,
+            "bus_stop_name": "波岡口",
+            "latitude": 33.3014375,
+            "longitude": 132.6259722,
+            "is_passing_point": 0
+        }
+    },
+    {
+        "model": "bus.MasterBusStops",
+        "fields": {
+            "id": 3,
+            "bus_stop_name": "小沢川",
+            "latitude": 33.3005573,
+            "longitude": 132.6229964,
+            "is_passing_point": 0
+        }
+    },
+    {
+        "model": "bus.MasterBusStops",
+        "fields": {
+            "id": 4,
+            "bus_stop_name": "鬼ヶ峠",
+            "latitude": 33.3002357,
+            "longitude": 132.6166102,
+            "is_passing_point": 0
+        }
+    },
+    {
+        "model": "bus.MasterBusStops",
+        "fields": {
+            "id": 5,
+            "bus_stop_name": "三間支所",
+            "latitude": 33.290439,
+            "longitude": 132.608086,
+            "is_passing_point": 0
+        }
+    },
+    {
+        "model": "bus.MasterBusStops",
+        "fields": {
+            "id": 6,
+            "bus_stop_name": "JR宮野下駅前",
+            "latitude": 33.2893542,
+            "longitude": 132.6060407,
+            "is_passing_point": 0
+
+        }
+    },
+    {
+        "model": "bus.MasterBusStops",
+        "fields": {
+            "id": 7,
+            "bus_stop_name": "三間小学校前",
+            "latitude": 33.289770,
+            "longitude": 132.604090,
+            "is_passing_point": 0
+        }
+    },
+    {
+        "model": "bus.MasterBusStops",
+        "fields": {
+            "id": 8,
+            "bus_stop_name": "道の駅みま",
+            "latitude": 33.286049,
+            "longitude": 132.595601,
+            "is_passing_point": 0
+        }
+    },
+    {
+        "model": "bus.MasterBusStops",
+        "fields": {
+            "id": 9,
+            "bus_stop_name": "森ヶ鼻",
+            "latitude": 33.2889851,
+            "longitude": 132.597634,
+            "is_passing_point": 0
+        }
+    },
+    {
+        "model": "bus.MasterBusStops",
+        "fields": {
+            "id": 10,
+            "bus_stop_name": "宮野下",
+            "latitude": 33.2905044,
+            "longitude": 132.6072449,
+            "is_passing_point": 0
+        }
+    },
+    {
+        "model": "bus.MasterBusStops",
+        "fields": {
+            "id": 11,
+            "bus_stop_name": "宮野下下組",
+            "latitude": 33.2903537,
+            "longitude": 132.6099587,
+            "is_passing_point": 0
+        }
+    },
+    {
+        "model": "bus.MasterBusStops",
+        "fields": {
+            "id": 12,
+            "bus_stop_name": "もみの木前",
+            "latitude": 33.2908141,
+            "longitude": 132.6141433,
+            "is_passing_point": 0
+        }
+    },
+    {
+        "model": "bus.MasterBusStops",
+        "fields": {
+            "id": 13,
+            "bus_stop_name": "北増穂",
+            "latitude": 33.303232,
+            "longitude": 132.613617,
+            "is_passing_point": 0
+        }
+    },
+    {
+        "model": "bus.MasterBusStops",
+        "fields": {
+            "id": 14,
+            "bus_stop_name": "波岡",
+            "latitude": 33.2977669,
+            "longitude": 132.6272608,
+            "is_passing_point": 0
+        }
+    },
+    {
+        "model": "bus.MasterBusStops",
+        "fields": {
+            "id": 15,
+            "bus_stop_name": "田川集会所",
+            "latitude": 33.3027871,
+            "longitude": 132.6358839,
+            "is_passing_point": 0
+        }
+    },
+    {
+        "model": "bus.MasterBusStops",
+        "fields": {
+            "id": 16,
+            "bus_stop_name": "田川",
+            "latitude": 33.3071348,
+            "longitude": 132.6388353,
+            "is_passing_point": 0
+        }
+    },
+    {
+        "model": "bus.MasterBusStops",
+        "fields": {
+            "id": 17,
+            "bus_stop_name": "金銅橋",
+            "latitude": 33.292395,
+            "longitude": 132.6335625,
+            "is_passing_point": 0
+        }
+    },
+    {
+        "model": "bus.MasterBusStops",
+        "fields": {
+            "id": 18,
+            "bus_stop_name": "JR二名駅前",
+            "latitude": 33.291762,
+            "longitude": 132.6289732,
+            "is_passing_point": 0
+        }
+    },
+    {
+        "model": "bus.MasterBusStops",
+        "fields": {
+            "id": 19,
+            "bus_stop_name": "元宗",
+            "latitude": 33.290944,
+            "longitude": 132.622269,
+            "is_passing_point": 0
+        }
+    },
+    {
+        "model": "bus.MasterBusStops",
+        "fields": {
+            "id": 20,
+            "bus_stop_name": "増田口",
+            "latitude": 33.2911794,
+            "longitude": 132.6174341,
+            "is_passing_point": 0
+        }
+    },
+    {
+        "model": "bus.MasterBusStops",
+        "fields": {
+            "id": 21,
+            "bus_stop_name": "音地口",
+            "latitude": 33.2947002,
+            "longitude": 132.6633851,
+            "is_passing_point": 0
+        }
+    },
+    {
+        "model": "bus.MasterBusStops",
+        "fields": {
+            "id": 22,
+            "bus_stop_name": "音地集会所",
+            "latitude": 33.3064428,
+            "longitude": 132.6589455,
+            "is_passing_point": 0
+        }
+    },
+    {
+        "model": "bus.MasterBusStops",
+        "fields": {
+            "id": 23,
+            "bus_stop_name": "告森",
+            "latitude": 33.2921514,
+            "longitude": 132.6616808,
+            "is_passing_point": 0
+        }
+    },
+    {
+        "model": "bus.MasterBusStops",
+        "fields": {
+            "id": 24,
+            "bus_stop_name": "大内下組",
+            "latitude": 33.2859354,
+            "longitude": 132.6461196,
+            "is_passing_point": 0
+        }
+    },
+    {
+        "model": "bus.MasterBusStops",
+        "fields": {
+            "id": 25,
+            "bus_stop_name": "二名小学校前",
+            "latitude": 33.286768,
+            "longitude": 132.644229,
+            "is_passing_point": 0
+        }
+    },
+    {
+        "model": "bus.MasterBusStops",
+        "fields": {
+            "id": 26,
+            "bus_stop_name": "JR大内駅前",
+            "latitude": 33.2869703,
+            "longitude": 132.6424568,
+            "is_passing_point": 0
+        }
+    },
+    {
+        "model": "bus.MasterBusStops",
+        "fields": {
+            "id": 27,
+            "bus_stop_name": "戸雁",
+            "latitude": 33.3013986,
+            "longitude": 132.6020701,
+            "is_passing_point": 0
+        }
+    },
+    {
+        "model": "bus.MasterBusStops",
+        "fields": {
+            "id": 28,
+            "bus_stop_name": "黒井地集会所",
+            "latitude": 33.3080915,
+            "longitude": 132.6022545,
+            "is_passing_point": 0
+        }
+    },
+    {
+        "model": "bus.MasterBusStops",
+        "fields": {
+            "id": 29,
+            "bus_stop_name": "運動公園",
+            "latitude": 33.3085726,
+            "longitude": 132.5967744,
+            "is_passing_point": 0
+        }
+    },
+    {
+        "model": "bus.MasterBusStops",
+        "fields": {
+            "id": 30,
+            "bus_stop_name": "大藤集会所",
+            "latitude": 33.3097146,
+            "longitude": 132.58998,
+            "is_passing_point": 0
+        }
+    },
+    {
+        "model": "bus.MasterBusStops",
+        "fields": {
+            "id": 31,
+            "bus_stop_name": "大藤",
+            "latitude": 33.3053506,
+            "longitude": 132.5890994,
+            "is_passing_point": 0
+        }
+    },
+    {
+        "model": "bus.MasterBusStops",
+        "fields": {
+            "id": 32,
+            "bus_stop_name": "正地",
+            "latitude": 33.3066883,
+            "longitude": 132.586778,
+            "is_passing_point": 0
+        }
+    },
+    {
+        "model": "bus.MasterBusStops",
+        "fields": {
+            "id": 33,
+            "bus_stop_name": "仏木寺",
+            "latitude": 33.3103826,
+            "longitude": 132.5812469,
+            "is_passing_point": 0
+        }
+    },
+    {
+        "model": "bus.MasterBusStops",
+        "fields": {
+            "id": 34,
+            "bus_stop_name": "成妙小学校前",
+            "latitude": 33.2990796,
+            "longitude": 132.5926818,
+            "is_passing_point": 0
+        }
+    },
+    {
+        "model": "bus.MasterBusStops",
+        "fields": {
+            "id": 35,
+            "bus_stop_name": "石ヶ鼻",
+            "latitude": 33.2922595,
+            "longitude": 132.5946146,
+            "is_passing_point": 0
+        }
+    },
+    {
+        "model": "bus.MasterBusStops",
+        "fields": {
+            "id": 36,
+            "bus_stop_name": "曽根",
+            "latitude": 33.2898446,
+            "longitude": 132.5895978,
+            "is_passing_point": 0
+        }
+    },
+    {
+        "model": "bus.MasterBusStops",
+        "fields": {
+            "id": 37,
+            "bus_stop_name": "コスモスタウン",
+            "latitude": 33.2884834,
+            "longitude": 132.5870594,
+            "is_passing_point": 0
+        }
+    },
+    {
+        "model": "bus.MasterBusStops",
+        "fields": {
+            "id": 38,
+            "bus_stop_name": "是能集会所",
+            "latitude": 33.2862133,
+            "longitude": 132.5824761,
+            "is_passing_point": 0
+        }
+    },
+    {
+        "model": "bus.MasterBusStops",
+        "fields": {
+            "id": 39,
+            "bus_stop_name": "是能西",
+            "latitude": 33.28358,
+            "longitude": 132.580253,
+            "is_passing_point": 0
+        }
+    },
+    {
+        "model": "bus.MasterBusStops",
+        "fields": {
+            "id": 40,
+            "bus_stop_name": "内田",
+            "latitude": 33.286149,
+            "longitude": 132.5901634,
+            "is_passing_point": 0
+        }
+    },
+    {
+        "model": "bus.MasterBusStops",
+        "fields": {
+            "id": 41,
+            "bus_stop_name": "年岡",
+            "latitude": 33.281427,
+            "longitude": 132.641363,
+            "is_passing_point": 0
+        }
+    },
+    {
+        "model": "bus.MasterBusStops",
+        "fields": {
+            "id": 42,
+            "bus_stop_name": "是延集会所",
+            "latitude": 33.2766498,
+            "longitude": 132.643423,
+            "is_passing_point": 0
+        }
+    },
+    {
+        "model": "bus.MasterBusStops",
+        "fields": {
+            "id": 43,
+            "bus_stop_name": "兼近集会所",
+            "latitude": 33.2796957,
+            "longitude": 132.649548,
+            "is_passing_point": 0
+        }
+    },
+    {
+        "model": "bus.MasterBusStops",
+        "fields": {
+            "id": 44,
+            "bus_stop_name": "三間中間",
+            "latitude": 33.284498,
+            "longitude": 132.665524,
+            "is_passing_point": 0
+        }
+    },
+    {
+        "model": "bus.MasterBusStops",
+        "fields": {
+            "id": 45,
+            "bus_stop_name": "務田公民館前",
+            "latitude": 33.2847909,
+            "longitude": 132.5963447,
+            "is_passing_point": 0
+        }
+    },
+    {
+        "model": "bus.MasterBusStops",
+        "fields": {
+            "id": 46,
+            "bus_stop_name": "JR務田駅前",
+            "latitude": 33.2827095,
+            "longitude": 132.6001562,
+            "is_passing_point": 0
+        }
+    },
+    {
+        "model": "bus.MasterBusStops",
+        "fields": {
+            "id": 47,
+            "bus_stop_name": "Aコープ三間",
+            "latitude": 33.2887579,
+            "longitude": 132.6047926,
+            "is_passing_point": 0
+        }
+    },
+    {
+        "model": "bus.MasterBusStops",
+        "fields": {
+            "id": 48,
+            "bus_stop_name": "増田集会所",
+            "latitude": 33.2851931,
+            "longitude": 132.6175706,
+            "is_passing_point": 0
+        }
+    },
+    {
+        "model": "bus.MasterBusStops",
+        "fields": {
+            "id": 49,
+            "bus_stop_name": "土居中",
+            "latitude": 33.2839869,
+            "longitude": 132.6151636,
+            "is_passing_point": 0
+        }
+    },
+    {
+        "model": "bus.MasterBusStops",
+        "fields": {
+            "id": 50,
+            "bus_stop_name": "迫目南",
+            "latitude": 33.2784216,
+            "longitude": 132.6021632,
+            "is_passing_point": 0
+        }
+    },
+    {
+        "model": "bus.MasterBusStops",
+        "fields": {
+            "id": 51,
+            "bus_stop_name": "是延集会所・兼近集会所間通過ポイント",
+            "latitude": 33.279559,
+            "longitude": 132.645718,
+            "is_passing_point": 1
+        }
+    },
+    {
+        "model": "bus.MasterBusStops",
+        "fields": {
+            "id": 52,
+            "bus_stop_name": "増田集会所・土居中間通過ポイント1",
+            "latitude": 33.28275,
+            "longitude": 132.617754,
+            "is_passing_point": 1
+        }
+    },
+    {
+        "model": "bus.MasterBusStops",
+        "fields": {
+            "id": 53,
+            "bus_stop_name": "増田集会所・土居中間通過ポイント2",
+            "latitude": 33.283928,
+            "longitude": 132.617284,
+            "is_passing_point": 1
+        }
+    },
+    {
+        "model": "bus.MasterBusStops",
+        "fields": {
+            "id": 54,
+            "bus_stop_name": "土居中・迫目南間通過ポイント1",
+            "latitude": 33.28586,
+            "longitude": 132.613642,
+            "is_passing_point": 1
+        }
+    },
+    {
+        "model": "bus.MasterBusStops",
+        "fields": {
+            "id": 55,
+            "bus_stop_name": "土居中・迫目南間通過ポイント2",
+            "latitude": 33.283208,
+            "longitude": 132.607886,
+            "is_passing_point": 1
+        }
+    }
+
+]

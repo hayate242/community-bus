@@ -1,0 +1,80 @@
+# Group Bus Watch Over Boarding API
+見守り情報の取得，保存
+
+## 見守り情報の取得 [GET /api/v1/bus/watch_over_boarding]
+見守り情報を取得する
+
++ Request
+    + Headers
+        ```
+        Authorization: Bearer {token}
+        ```
+    + Attributes
+        + card_id: `1` (string) - cardID
+        + start_from: `2020-09-11` (string) - 開始日
+        + end_at: `2020-09-11` (string) - 終了日
+        + send_at: `2020-09-11 00:00:00` (string) - 送信時間
+        + boarding_type: `1` (string) - 降車or乗車(1 or 2)
+
++ Response 200 (application/json)
+    + Attributes
+        + bus_id: `1` (string) - ドライバーID
+        + locations (array[object], fixed-type) - ロケーション一覧
+            + (object)
+                + boarding_type: `1` (string) - 降車or乗車(1 or 2)
+                + route_name: `路線名` (string) - 路線名
+                + bus_stop_name: `バス停名` (string) - バス停名
+                + date_time: `2020-09-11 00:00:00` (string) - 乗降時間
+
++ Response 400 (application/json)
+    + Body
+        ```
+        {
+            "error": "there are no record"
+        }
+        ```
++ Response 401 (application/json)
+    + Body
+        ```
+        {
+            "error": "Unauthorized"
+        }
+        ```
+
+## バスロケーションの保存 [POST /api/v1/bus/watch_over_boarding/create]
+見守り情報を登録する
+
++ Request (application/json)
+    + Headers
+        ```
+        Authorization: Bearer {token}
+        ```
+    + Attributes
+        + driver_id: `1` (string) - 運転手ID
+        + bus_id: `1` (string) - バスID
+        + card_id: `1` (string) - カードID
+        + bus_stop_id: `1` (string) - バス停ID
+        + send_at: `2020-09-11 00:00:00` (string) - 送信時間
+        + boarding_type: `1` (string) - 降車or乗車(1 or 2)
+
++ Response 200 (application/json)
+    + Body
+        ```
+        {
+            "success": "saved watch orver information successfully"
+        }
+        ```
++ Response 400 (application/json)
+    + Body
+        ```
+        {
+            "error": "there are missing arguments (bus_id)"
+        }
+        ```
++ Response 401 (application/json)
+    + Body
+        ```
+        {
+            "error": "Unauthorized"
+        }
+        ```

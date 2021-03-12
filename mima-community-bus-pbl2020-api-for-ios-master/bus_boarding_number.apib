@@ -1,0 +1,47 @@
+# Group Bus Boarding Number API
+乗降情報記録API
+
+
+## 乗降情報の保存 [POST /api/v1/bus/boardings/create]
+乗降情報を登録する
+
++ Request (application/json)
+    + Headers
+        ```
+        Authorization: Bearer {token}
+        ```
+    + Attributes
+        + boardings (array[object], fixed-type) - 乗降情報
+            + (object)
+                + bus_id: `1` (string) - バスID
+                + route_id: `1` (string) - 路線ID
+                + route_order_id: `1` (string) - 便ID
+                + bus_stop_id: `1` (string) - バス停ID
+                + bus_stop_order: `1` (string) - バス停の順番
+                + driver_id: `1` (string) - ドライバーID
+                + fare_id: `1` (string) - 運賃ID
+                + number: `1` (string) - 乗降者数
+                + memo: `memo` (string) - メモ
+                + send_at: `2020-09-11 00:00:00` (string) - 乗降時刻
+
++ Response 200 (application/json)
+    + Body
+        ```
+        {
+            "success": "saved information successfully"
+        }
+        ```
++ Response 400 (application/json)
+    + Body
+        ```
+        {
+            "error": "there are missing arguments (bus_id)"
+        }
+        ```
++ Response 401 (application/json)
+    + Body
+        ```
+        {
+            "error": "Unauthorized"
+        }
+        ```

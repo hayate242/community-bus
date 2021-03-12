@@ -1,0 +1,4201 @@
+openapi: 3.0.0
+info:
+  title: mima-community-bus-pbl2020-web
+  version: '1.0'
+  description: 三間地区コミュニティバス運行管理システムWeb用API
+servers:
+  - url: 'http://localhost:8081'
+paths:
+  /api/v1/web/map/location/bus/:
+    get:
+      summary: バスの現在位置の取得API
+      tags: []
+      responses:
+        '200':
+          description: OK
+          headers:
+            header-0:
+              schema:
+                type: string
+              description: ''
+          content:
+            application/json:
+              schema:
+                description: ''
+                type: object
+                properties:
+                  bus_locations:
+                    type: array
+                    uniqueItems: true
+                    minItems: 1
+                    items:
+                      type: object
+                      properties:
+                        bus_id:
+                          type: string
+                          minLength: 1
+                        latitude:
+                          type: string
+                          minLength: 1
+                        longitude:
+                          type: string
+                          minLength: 1
+                        route_name:
+                          type: string
+                          minLength: 1
+                        vacancy_num:
+                          type: string
+                          minLength: 1
+                        next_bus_stop_name:
+                          type: string
+                          minLength: 1
+                        translucent_flg:
+                          type: string
+                      required:
+                        - bus_id
+                        - latitude
+                        - longitude
+                        - route_name
+                        - vacancy_num
+                        - next_bus_stop_name
+                        - translucent_flg
+                required:
+                  - bus_locations
+              examples:
+                example-1:
+                  value:
+                    bus_locations:
+                      - bus_id: '1'
+                        latitude: '33.288574'
+                        longitude: '132.604877'
+                        route_name: 音地線
+                        vacancy_num: '6'
+                        next_bus_stop_name: 三間小学校前
+                        translucent_flg: '0'
+                      - bus_id: '2'
+                        latitude: '33.290915'
+                        longitude: '132.608580'
+                        route_name: 川野内線
+                        vacancy_num: '6'
+                        next_bus_stop_name: 三間市役所前
+                        translucent_flg: '1'
+      operationId: get-bus-location
+      description: バスの現在位置を取得する
+      parameters:
+        - schema:
+            type: string
+          in: header
+          name: 'Content-Type: application/json'
+    parameters: []
+  /api/v1/web/drivers/:
+    get:
+      summary: 運転手一覧
+      tags: []
+      responses:
+        '200':
+          description: OK
+          headers:
+            header-0:
+              schema:
+                type: string
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  drivers:
+                    type: array
+                    uniqueItems: false
+                    items:
+                      type: object
+                      properties:
+                        driver_id:
+                          type: string
+                        driver_name:
+                          type: string
+                        email:
+                          type: string
+              examples:
+                example-1:
+                  value:
+                    drivers:
+                      - driver_id: '1'
+                        driver_name: 田川くん
+                        email: tagawa@example.com
+                      - driver_id: '2'
+                        driver_name: 向井くん
+                        email: mukai@example.com
+      operationId: get-api-bus-drivers
+      security:
+        - Bearer: []
+      parameters:
+        - schema:
+            type: string
+          in: header
+          name: 'Content-Type: application/json'
+      description: 運転手一覧の取得
+    parameters: []
+  /api/v1/login/:
+    post:
+      summary: ユーザー認証
+      tags: []
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  access_token:
+                    type: string
+                  token_type:
+                    type: string
+                  expire_in:
+                    type: string
+                  user_id:
+                    type: string
+                  user_name:
+                    type: string
+                  group:
+                    type: string
+              examples:
+                example-1:
+                  value:
+                    access_token: '{token}'
+                    token_type: bearer
+                    expire_in: 60
+                    user_id: '1'
+                    user_name: user01
+                    group: admin
+      operationId: post-api-v1-login
+      description: ユーザー認証
+      security: []
+      parameters:
+        - schema:
+            type: string
+          in: header
+          name: 'Content-Type: application/json'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                email:
+                  type: string
+                password:
+                  type: string
+            examples:
+              example-1:
+                value:
+                  email: ehimeict@gmail.com
+                  password: 1xU35jQy
+    parameters: []
+  /api/v1/web/buses/:
+    get:
+      summary: バス車両API
+      tags: []
+      responses:
+        '200':
+          description: OK
+          headers:
+            header-0:
+              schema:
+                type: string
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  buses:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        bus_number:
+                          type: string
+                        bus_name:
+                          type: string
+                        id:
+                          type: string
+              examples:
+                example-1:
+                  value:
+                    buses:
+                      - id: '1'
+                        bus_number: 愛媛 12 12-345
+                        bus_name: 1号車
+                      - id: '2'
+                        bus_number: 愛媛 12 12-346
+                        bus_name: 2号車
+      operationId: get-api-v1-bus-buses
+      security:
+        - Bearer: []
+      parameters:
+        - schema:
+            type: string
+          in: header
+          name: 'Content-Type: application/json'
+      description: 車両一覧を取得できます
+    parameters: []
+  /api/v1/web/monitor/notification/:
+    get:
+      summary: 見守り通知文API
+      tags: []
+      responses:
+        '200':
+          description: OK
+          headers:
+            header-0:
+              schema:
+                type: string
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+              examples:
+                example-2:
+                  value:
+                    message: '{datetime}に{name}さんが「{bus-stop}」で乗車しました．'
+      operationId: get-api-v1-monitor-notification
+      parameters:
+        - schema:
+            type: string
+          in: header
+          name: 'Content-Type: application/json'
+      security:
+        - Bearer: []
+      description: monitor#notificationに必要なデータを返します
+    parameters: []
+  /api/v1/web/monitor/management/:
+    get:
+      summary: 見守り管理API
+      tags: []
+      responses:
+        '200':
+          description: OK
+          headers:
+            header-0:
+              schema:
+                type: string
+          content:
+            application/json:
+              schema:
+                description: ''
+                type: object
+                properties:
+                  monitor_user:
+                    type: array
+                    uniqueItems: true
+                    minItems: 1
+                    items:
+                      type: object
+                      properties:
+                        usesr_id:
+                          type: string
+                          minLength: 1
+                        monitor_user_name:
+                          type: string
+                          minLength: 1
+                        monitor_email:
+                          type: string
+                          minLength: 1
+                        card_number:
+                          type: string
+                          minLength: 1
+                        monitor_target_user_name:
+                          type: string
+                          minLength: 1
+                        created_at:
+                          type: string
+                          minLength: 1
+                        last_used_date:
+                          type: string
+                          minLength: 1
+                      required:
+                        - usesr_id
+                        - monitor_user_name
+                        - monitor_email
+                        - card_number
+                        - monitor_target_user_name
+                        - created_at
+                        - last_used_date
+                required:
+                  - monitor_user
+              examples:
+                example-1:
+                  value:
+                    monitor_user:
+                      - usesr_id: '1'
+                        monitor_user_name: 見守りユーザー01（保護者）
+                        monitor_email: test@test.com
+                        card_number: '1234567890123456'
+                        monitor_target_user_name: 見守り対象ユーザー01
+                        created_at: '2020-10-13'
+                        last_used_date: '2020-10-13'
+                      - user_id: '2'
+                        monitor_user_name: 見守りユーザー02（保護者）
+                        monitor_email: test1@test.com
+                        card_number: '2345678901234567'
+                        monitor_target_user_name: 見守り対象ユーザー01
+                        created_at: '2020-10-11'
+                        last_used_date: '2020-10-15'
+      operationId: get-api-v1-monitor-management
+      parameters:
+        - schema:
+            type: string
+          in: header
+          name: 'Content-Type: application/json'
+      description: monitor#managementに必要なデータを返します
+      security:
+        - Bearer: []
+    parameters: []
+  /api/v1/web/monitor/history/:
+    post:
+      summary: 見守り履歴API
+      tags: []
+      responses:
+        '200':
+          description: OK
+          headers:
+            header-0:
+              schema:
+                type: string
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  history:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: string
+                        name:
+                          type: string
+                        date:
+                          type: string
+                        time:
+                          type: string
+                        bus_stop:
+                          type: string
+                        type:
+                          type: string
+                        user_id:
+                          type: string
+              examples:
+                example-1:
+                  value:
+                    history:
+                      - id: '1'
+                        user_id: '1'
+                        name: uwajima
+                        date: '2020-10-12'
+                        time: '12:00'
+                        bus_stop: 停留所A
+                        type: 乗車
+                      - id: '2'
+                        user_id: '1'
+                        name: uwajima
+                        date: '2020-10-12'
+                        time: '13:00'
+                        bus_stop: 停留所B
+                        type: 降車
+                      - id: '3'
+                        user_id: '2'
+                        name: uwajima2
+                        date: '2020-10-12'
+                        time: '12:00'
+                        bus_stop: 停留所C
+                        type: 乗車
+                      - id: '4'
+                        user_id: '2'
+                        name: uwajima2
+                        date: '2020-10-12'
+                        time: '13:00'
+                        bus_stop: 停留所D
+                        type: 降車
+      operationId: get-api-v1-monitor-history
+      description: monitor#historyに必要なデータを返します
+      parameters:
+        - schema:
+            type: string
+          in: header
+          name: 'Content-Type: application/json'
+      security:
+        - Bearer: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                start_date:
+                  type: string
+                end_date:
+                  type: string
+                selected_user:
+                  type: string
+            examples:
+              example-1:
+                value:
+                  start_date: '2020-10-12'
+                  end_date: '2020-10-12'
+                  selected_user: ''
+        description: select_user→""なら全てのユーザー，user_nameが入っていればそのユーザーの情報のみを返す
+    parameters: []
+  /api/v1/web/notification/:
+    get:
+      summary: お知らせ管理API
+      tags: []
+      responses:
+        '200':
+          description: OK
+          headers:
+            header-0:
+              schema:
+                type: string
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                  schedule:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        message:
+                          type: string
+                        start_date:
+                          type: string
+                        end_date:
+                          type: string
+                        start_time:
+                          type: string
+                        end_time:
+                          type: string
+                        week:
+                          type: string
+                        id:
+                          type: string
+              examples:
+                example-1:
+                  value:
+                    message: 通常運行しています．
+                    schedule:
+                      - message: 11月12日は運行いたしません
+                        start_date: '2020-11-01'
+                        end_date: '2020-11-08'
+                        start_time: '08:00'
+                        end_time: '17:00'
+                        week: '日,月，木'
+                        id: '1'
+                      - message: 11月12日は運行いたしません
+                        start_date: '2020-11-01'
+                        end_date: '2020-11-08'
+                        start_time: '08:00'
+                        end_time: '17:00'
+                        week: '日,月，木'
+                        id: '2'
+      operationId: get-api-v1-notification
+      description: お知らせ管理ページで必要な情報を取得します
+      security:
+        - Bearer: []
+      parameters:
+        - schema:
+            type: string
+          in: header
+          name: 'Content-Type: application/json'
+    parameters: []
+  /api/v1/web/bus/history/:
+    post:
+      summary: バス運行記録取得API
+      tags: []
+      responses:
+        '200':
+          description: OK
+          headers:
+            header-0:
+              schema:
+                type: string
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  bus_record:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: string
+                        bus_stop:
+                          type: string
+                        estimated_time:
+                          type: string
+                        arrival_time:
+                          type: string
+              examples:
+                example-1:
+                  value:
+                    bus_record:
+                      - id: '1'
+                        bus_stop: バス停A
+                        estimated_time: '12:30'
+                        arrival_time: '12:35'
+                      - id: '2'
+                        bus_stop: バス停B
+                        estimated_time: '12:38'
+                        arrival_time: '12:42'
+      operationId: get-api-v1-bus_record
+      parameters:
+        - schema:
+            type: string
+          in: header
+          name: 'Content-Type: application/json'
+      security:
+        - Bearer: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                date:
+                  type: string
+                course_id:
+                  type: string
+            examples:
+              example-1:
+                value:
+                  date: '2020-10-21'
+                  course_id: '1'
+      description: バスの現在の運行状況の表示
+    parameters: []
+  /api/v1/web/user/:
+    get:
+      summary: ユーザー情報管理API
+      tags: []
+      responses:
+        '200':
+          description: OK
+          headers:
+            header-0:
+              schema:
+                type: string
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  users:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: string
+                        name:
+                          type: string
+                        email:
+                          type: string
+              examples:
+                example-1:
+                  value:
+                    users:
+                      - id: '1'
+                        name: test
+                        email: test@example.com
+                      - id: '2'
+                        name: test2
+                        email: test2@example.com
+      operationId: get-api-v1-user
+      security:
+        - Bearer: []
+      parameters:
+        - schema:
+            type: string
+          in: header
+          name: 'Content-Type: application/json'
+    parameters: []
+  /api/v1/web/busStop/:
+    get:
+      summary: バス停一覧取得API
+      tags: []
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  bus_stop:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: string
+                        name:
+                          type: string
+                        longitude:
+                          type: string
+                        latitude:
+                          type: string
+                        used_by:
+                          type: array
+                          items:
+                            type: string
+                        is_passing_point:
+                          type: boolean
+                      required:
+                        - id
+                        - name
+                        - longitude
+                        - latitude
+                        - used_by
+                required:
+                  - bus_stop
+              examples:
+                example-1:
+                  value:
+                    bus_stop:
+                      - id: '1'
+                        name: バス停1
+                        longitude: '133.222'
+                        latitude: '33.444'
+                        used_by:
+                          - hogehoge線
+                          - hogefuga線
+                        is_passing_point: false
+                      - id: '2'
+                        name: バス停2
+                        longitude: '134.666'
+                        latitude: '45.888'
+                        used_by: []
+                        is_passing_point: false
+      operationId: get-api-v1-bus-route
+      parameters:
+        - schema:
+            type: string
+          in: header
+          name: 'Content-Type: application/json'
+      security:
+        - Bearer: []
+      description: |-
+        http://localhost:8080/admin/bus#busStop
+        バス停＞バス停一覧の表示，編集で使用
+    parameters: []
+  /api/v1/web/route/:
+    get:
+      summary: 路線一覧取得API
+      tags: []
+      responses:
+        '200':
+          description: OK
+          headers:
+            header-0:
+              schema:
+                type: string
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  routes:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: string
+                        name:
+                          type: string
+                        route:
+                          type: array
+                          items:
+                            type: object
+                            properties:
+                              id:
+                                type: string
+                              name:
+                                type: string
+                              order:
+                                type: string
+                        used_by:
+                          type: array
+                          items:
+                            type: string
+              examples:
+                example-1:
+                  value:
+                    routes:
+                      - id: '1'
+                        name: hogehoge線
+                        used_by:
+                          - hogeコース
+                          - fugaコース
+                        route:
+                          - id: '1'
+                            name: バス停1
+                            order: '1'
+                          - id: '2'
+                            name: バス停2
+                            order: '2'
+                      - id: '2'
+                        name: hogefuga線
+                        used_by: []
+                        route:
+                          - id: '3'
+                            name: バス停3
+                            order: '1'
+                          - id: '4'
+                            name: バス停4
+                            order: '2'
+      operationId: get-api-v1-bus-route
+      security:
+        - Bearer: []
+      parameters:
+        - schema:
+            type: string
+          in: header
+          name: 'Content-Type: application/json'
+      description: |-
+        http://localhost:8080/admin/bus#route
+        路線＞路線一覧の表示，編集で使用
+    parameters: []
+  /api/v1/web/course/:
+    get:
+      summary: コース一覧取得API
+      tags: []
+      responses:
+        '200':
+          description: OK
+          headers:
+            header-0:
+              schema:
+                type: string
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  courses:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: string
+                        name:
+                          type: string
+                        course:
+                          type: array
+                          items:
+                            type: object
+                            properties:
+                              id:
+                                type: string
+                              name:
+                                type: string
+                              route:
+                                type: array
+                                items:
+                                  type: object
+                                  properties:
+                                    id:
+                                      type: string
+                                    name:
+                                      type: string
+                                    time:
+                                      type: string
+                                    is_used:
+                                      type: boolean
+                                    order:
+                                      type: string
+              examples:
+                example-1:
+                  value:
+                    courses:
+                      - id: '1'
+                        name: Aコース
+                        course:
+                          - id: '1'
+                            name: hogehoge線
+                            order: '1'
+                            route:
+                              - id: '1'
+                                name: バス停1
+                                time: '00:00'
+                                is_used: true
+                                order: '1'
+                              - id: '2'
+                                name: バス停2
+                                time: '01:00'
+                                is_used: true
+                                order: '2'
+                          - id: '2'
+                            name: hogefuga線
+                            order: '2'
+                            route:
+                              - id: '3'
+                                name: バス停3
+                                time: '00:00'
+                                is_used: true
+                                order: '1'
+                              - id: '4'
+                                name: バス停4
+                                time: '01:00'
+                                is_used: true
+                                order: '2'
+      operationId: get-api-v1-bus-course
+      security:
+        - Bearer: []
+      parameters:
+        - schema:
+            type: string
+          in: header
+          name: 'Content-Type: application/json'
+      description: |-
+        http://localhost:8080/admin/bus#course
+        コース＞コース一覧の表示，編集で使用
+    parameters: []
+  /api/v1/web/map/location/route/:
+    get:
+      summary: バス路線位置情報取得API
+      tags: []
+      responses:
+        '200':
+          description: OK
+          headers:
+            header-0:
+              schema:
+                type: string
+          content:
+            application/json:
+              schema:
+                description: ''
+                type: object
+                properties:
+                  routes:
+                    type: array
+                    uniqueItems: true
+                    minItems: 1
+                    items:
+                      required:
+                        - route_id
+                        - route_name
+                      properties:
+                        route_id:
+                          type: string
+                          minLength: 1
+                        route_name:
+                          type: string
+                          minLength: 1
+                        bus_stops:
+                          type: array
+                          uniqueItems: true
+                          minItems: 1
+                          items:
+                            required:
+                              - bus_stop_id
+                              - bus_stop_name
+                              - latitude
+                              - longitude
+                            properties:
+                              bus_stop_id:
+                                type: string
+                                minLength: 1
+                              bus_stop_name:
+                                type: string
+                                minLength: 1
+                              latitude:
+                                type: string
+                                minLength: 1
+                              longitude:
+                                type: string
+                                minLength: 1
+                required:
+                  - routes
+              examples:
+                example-1:
+                  value:
+                    routes:
+                      - route_id: '1'
+                        route_name: 川之内線
+                        bus_stops:
+                          - bus_stop_id: '1'
+                            bus_stop_name: 道の駅みま
+                            latitude: '33.2862625'
+                            longitude: '132.5958557'
+                          - bus_stop_id: '2'
+                            bus_stop_name: 森ヶ鼻
+                            latitude: '33.2889851'
+                            longitude: '132.597634'
+                          - bus_stop_id: '3'
+                            bus_stop_name: 三間小学校前
+                            latitude: '33.2898029'
+                            longitude: '132.6040426'
+                          - bus_stop_id: '4'
+                            bus_stop_name: JR宮野下駅前
+                            latitude: '33.2893542'
+                            longitude: '132.6060407'
+                          - bus_stop_id: '5'
+                            bus_stop_name: 宮野下
+                            latitude: '33.2905044'
+                            longitude: '132.6072449'
+                          - bus_stop_id: '6'
+                            bus_stop_name: 三間支所
+                            latitude: '33.2904506'
+                            longitude: '132.6082669'
+                          - bus_stop_id: '7'
+                            bus_stop_name: 宮野下下組
+                            latitude: '33.2903537'
+                            longitude: '132.6099587'
+                          - bus_stop_id: '8'
+                            bus_stop_name: もみの木前
+                            latitude: '33.2908141'
+                            longitude: '132.6141433'
+                          - bus_stop_id: '9'
+                            bus_stop_name: 北増穂
+                            latitude: '33.303191'
+                            longitude: '132.613377'
+                          - bus_stop_id: '10'
+                            bus_stop_name: 鬼ヶ峠
+                            latitude: '33.3002357'
+                            longitude: '132.6166102'
+                          - bus_stop_id: '11'
+                            bus_stop_name: 小沢川
+                            latitude: '33.3005573'
+                            longitude: '132.6229964'
+                          - bus_stop_id: '12'
+                            bus_stop_name: 波岡口
+                            latitude: '33.3014375'
+                            longitude: '132.6259722'
+                          - bus_stop_id: '13'
+                            bus_stop_name: 川之内
+                            latitude: '33.3096041'
+                            longitude: '132.6281472'
+                          - bus_stop_id: '14'
+                            bus_stop_name: 波岡口
+                            latitude: '33.3014375'
+                            longitude: '132.6259722'
+                          - bus_stop_id: '15'
+                            bus_stop_name: 波岡
+                            latitude: '33.2977669'
+                            longitude: '132.6272608'
+                          - bus_stop_id: '16'
+                            bus_stop_name: 田川集会所
+                            latitude: '33.3027871'
+                            longitude: '132.6358839'
+                          - bus_stop_id: '17'
+                            bus_stop_name: 田川
+                            latitude: '33.3071343'
+                            longitude: '132.6388353'
+                          - bus_stop_id: '18'
+                            bus_stop_name: 田川集会所
+                            latitude: '33.3027871'
+                            longitude: '132.6358839'
+                          - bus_stop_id: '19'
+                            bus_stop_name: 金銅橋
+                            latitude: '33.292395'
+                            longitude: '132.6335625'
+                          - bus_stop_id: '20'
+                            bus_stop_name: JR二名駅前
+                            latitude: '33.291762'
+                            longitude: '132.6289732'
+                          - bus_stop_id: '21'
+                            bus_stop_name: 元宗
+                            latitude: '33.290944'
+                            longitude: '132.622269'
+                          - bus_stop_id: '22'
+                            bus_stop_name: 増田口
+                            latitude: '33.2911794'
+                            longitude: '132.6174341'
+                          - bus_stop_id: '23'
+                            bus_stop_name: もみの木前
+                            latitude: '33.2908141'
+                            longitude: '132.6141433'
+                          - bus_stop_id: '24'
+                            bus_stop_name: 宮野下下組
+                            latitude: '33.2903537'
+                            longitude: '132.6099587'
+                          - bus_stop_id: '25'
+                            bus_stop_name: 三間支所
+                            latitude: '33.2904506'
+                            longitude: '132.6082669'
+                          - bus_stop_id: '26'
+                            bus_stop_name: 宮野下
+                            latitude: '33.2905044'
+                            longitude: '132.6072449'
+                          - bus_stop_id: '27'
+                            bus_stop_name: JR宮野下駅前
+                            latitude: '33.2893542'
+                            longitude: '132.6060407'
+                          - bus_stop_id: '28'
+                            bus_stop_name: 三間小学校前
+                            latitude: '33.2898029'
+                            longitude: '132.6040426'
+                          - bus_stop_id: '29'
+                            bus_stop_name: 森ヶ鼻
+                            latitude: '33.2889851'
+                            longitude: '132.597634'
+                          - bus_stop_id: '30'
+                            bus_stop_name: 道の駅みま
+                            latitude: '33.2862625'
+                            longitude: '132.5958557'
+                      - route_id: '2'
+                        route_name: 音地線（二名小学校便）
+                        bus_stops:
+                          - bus_stop_id: '31'
+                            bus_stop_name: 音地集会所
+                            latitude: '33.3064428'
+                            longitude: '132.6589455'
+                          - bus_stop_id: '32'
+                            bus_stop_name: 音地口
+                            latitude: '33.2947002'
+                            longitude: '132.6633851'
+                          - bus_stop_id: '33'
+                            bus_stop_name: 告森
+                            latitude: '33.2921514'
+                            longitude: '132.6616808'
+                          - bus_stop_id: '34'
+                            bus_stop_name: 大内下組
+                            latitude: '33.3064428'
+                            longitude: '132.6589455'
+                          - bus_stop_id: '35'
+                            bus_stop_name: 二名小学校前
+                            latitude: '33.2868035'
+                            longitude: '132.644125'
+                          - bus_stop_id: '31'
+                            bus_stop_name: JR大内駅前
+                            latitude: '33.2869703'
+                            longitude: '132.6424568'
+            application/xml:
+              schema:
+                type: object
+                properties: {}
+      operationId: get-api-v1-course-location
+      description: |-
+        コース一覧取得API
+        http://localhost:8080/admin/dashboard
+        バスロケーションマップにて使用
+      parameters:
+        - schema:
+            type: string
+          in: header
+          name: 'Content-Type: application/json'
+          description: ''
+    parameters: []
+  /api/v1/web/course/register/:
+    post:
+      summary: コース新規登録API
+      operationId: post-api-v1-bus-regist-course
+      responses:
+        '200':
+          description: OK
+          headers:
+            header-0:
+              schema:
+                type: string
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+              examples:
+                example-1:
+                  value:
+                    success: true
+      description: |-
+        コースの新規登録処理
+        http://localhost:8080/admin/bus#course
+        コース＞新規コース登録で使用
+      security:
+        - Bearer: []
+      parameters:
+        - schema:
+            type: string
+          in: header
+          name: 'Content-Type: application/json'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                course:
+                  type: array
+                  items:
+                    type: object
+                    properties:
+                      id:
+                        type: string
+                      name:
+                        type: string
+                      route:
+                        type: array
+                        items:
+                          type: object
+                          properties:
+                            id:
+                              type: string
+                            name:
+                              type: string
+                            time:
+                              type: string
+                            is_used:
+                              type: boolean
+                            order:
+                              type: string
+                      order:
+                        type: string
+            examples:
+              example-1:
+                value:
+                  id: '2'
+                  name: Bコース
+                  course:
+                    - id: '1'
+                      name: hogehoge線
+                      order: '1'
+                      route:
+                        - id: '1'
+                          name: バス停1
+                          time: '00:01'
+                          is_used: true
+                          order: '1'
+    parameters: []
+  /api/v1/web/course/update/:
+    post:
+      summary: コース情報編集API
+      operationId: post-api-v1-bus-update-course
+      responses:
+        '200':
+          description: OK
+          headers:
+            header-0:
+              schema:
+                type: string
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+              examples:
+                example-1:
+                  value:
+                    success: true
+      description: |-
+        コース情報の編集
+        http://localhost:8080/admin/bus#course
+        コース＞コース一覧＞編集で使用
+      security:
+        - Bearer: []
+      parameters:
+        - schema:
+            type: string
+          in: header
+          name: 'Content-Type: application/json'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                id:
+                  type: string
+                name:
+                  type: string
+                course:
+                  type: array
+                  items:
+                    type: object
+                    properties:
+                      id:
+                        type: string
+                      name:
+                        type: string
+                      route:
+                        type: array
+                        items:
+                          type: object
+                          properties:
+                            id:
+                              type: string
+                            name:
+                              type: string
+                            time:
+                              type: string
+                            is_used:
+                              type: boolean
+                            order:
+                              type: string
+                      order:
+                        type: string
+            examples:
+              example-1:
+                value:
+                  id: '1'
+                  name: コースA
+                  course:
+                    - id: '1'
+                      name: hogehoge線
+                      order: '1'
+                      route:
+                        - id: '1'
+                          name: バス停A
+                          time: '01:00'
+                          is_used: true
+                          order: '1'
+    parameters: []
+  /api/v1/web/route/register/:
+    post:
+      summary: 路線新規登録API
+      operationId: post-api-v1-bus-regist-route
+      responses:
+        '200':
+          description: OK
+          headers:
+            header-0:
+              schema:
+                type: string
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+              examples:
+                example-1:
+                  value:
+                    success: true
+      parameters:
+        - schema:
+            type: string
+          in: header
+          name: 'Content-Type: application/json'
+      security:
+        - Bearer: []
+      description: |-
+        路線登録
+        http://localhost:8080/admin/bus#route
+        路線＞路線一覧＞登録で使用
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                route:
+                  type: array
+                  items:
+                    type: object
+                    properties:
+                      id:
+                        type: string
+                      name:
+                        type: string
+                      order:
+                        type: string
+            examples:
+              example-1:
+                value:
+                  id: '1'
+                  name: hogehoge線
+                  route:
+                    - id: '1'
+                      name: バス停1
+                      order: '1'
+                    - id: '2'
+                      name: バス停2
+                      order: '2'
+    parameters: []
+  /api/v1/web/route/update/:
+    post:
+      summary: 路線編集API
+      operationId: post-api-v1-bus-update-route
+      description: |-
+        路線編集
+        http://localhost:8080/admin/bus#route
+        路線＞路線一覧＞編集で使用
+      security:
+        - Bearer: []
+      parameters:
+        - schema:
+            type: string
+          in: header
+          name: 'Content-Type: application/json'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                id:
+                  type: string
+                name:
+                  type: string
+                route:
+                  type: array
+                  items:
+                    type: object
+                    properties:
+                      id:
+                        type: string
+                      name:
+                        type: string
+                      order:
+                        type: string
+            examples:
+              example-1:
+                value:
+                  id: '1'
+                  name: hogehoge線
+                  route:
+                    - id: '1'
+                      name: バス停1
+                      order: '1'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                description: ''
+                type: object
+                properties:
+                  success:
+                    type: boolean
+                required:
+                  - success
+    parameters: []
+  /api/v1/web/bus_stop/register/:
+    post:
+      summary: バス停新規登録API
+      operationId: post-api-v1-bus-regist-bus_stop
+      responses:
+        '200':
+          description: OK
+          headers:
+            header-0:
+              schema:
+                type: string
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+              examples:
+                example-1:
+                  value:
+                    success: true
+      security:
+        - Bearer: []
+      parameters:
+        - schema:
+            type: string
+          in: header
+          name: 'Content-Type: application/json'
+      description: |-
+        バス停登録
+        http://localhost:8080/admin/bus#busStop
+        バス停＞新規バス停登録で使用
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                bus_stop_name:
+                  type: string
+                latitude:
+                  type: string
+                longitude:
+                  type: string
+                is_passing_point:
+                  type: boolean
+            examples:
+              example-1:
+                value:
+                  bus_stop_name: バス停1
+                  longitude: '123.45'
+                  latitude: '67.89'
+                  is_passing_point: false
+    parameters: []
+  /api/v1/web/bus_stop/update/:
+    post:
+      summary: バス停情報編集API
+      operationId: post-api-v1-bus-update-bus_stop
+      responses:
+        '200':
+          description: OK
+          headers:
+            header-0:
+              schema:
+                type: string
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+              examples:
+                example-1:
+                  value:
+                    success: true
+      description: |-
+        バス停の編集
+        http://localhost:8080/admin/bus#busStop
+        バス停＞バス停一覧＞編集で使用
+      security:
+        - Bearer: []
+      parameters:
+        - schema:
+            type: string
+          in: header
+          name: 'Content-Type: application/json'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                id:
+                  type: string
+                name:
+                  type: string
+                latitude:
+                  type: string
+                longitude:
+                  type: string
+                is_passing_point:
+                  type: boolean
+            examples:
+              example-1:
+                value:
+                  id: '1'
+                  name: バス停1
+                  latitude: '123.45'
+                  longitude: '678.90'
+                  is_passing_point: false
+    parameters: []
+  /api/v1/web/report/day/:
+    post:
+      summary: 日報情報取得API
+      tags: []
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                description: ''
+                type: object
+                properties:
+                  dailyReport:
+                    type: array
+                    uniqueItems: true
+                    minItems: 1
+                    items:
+                      required:
+                        - id
+                        - year
+                        - month
+                        - day
+                        - driver_name
+                        - bus_number
+                        - course_name
+                        - mileage_start
+                        - mileage_end
+                        - route_order__order
+                        - route_name
+                        - bus_stop_name
+                        - sum
+                      properties:
+                        id:
+                          type: string
+                          minLength: 1
+                        year:
+                          type: string
+                          minLength: 1
+                        month:
+                          type: string
+                          minLength: 1
+                        day:
+                          type: string
+                          minLength: 1
+                        driver_name:
+                          type: string
+                          minLength: 1
+                        bus_number:
+                          type: string
+                          minLength: 1
+                        course_name:
+                          type: string
+                          minLength: 1
+                        mileage_start:
+                          type: string
+                          minLength: 1
+                        mileage_end:
+                          type: string
+                          minLength: 1
+                        route_order__order:
+                          type: string
+                          minLength: 1
+                        route_name:
+                          type: string
+                          minLength: 1
+                        bus_stop_name:
+                          type: string
+                          minLength: 1
+                        get_off:
+                          type: object
+                          properties:
+                            boarding_id:
+                              type: string
+                              minLength: 1
+                            number:
+                              type: string
+                              minLength: 1
+                          required:
+                            - boarding_id
+                            - number
+                        cash_adult:
+                          type: object
+                          properties:
+                            boarding_id:
+                              type: string
+                              minLength: 1
+                            number:
+                              type: string
+                              minLength: 1
+                          required:
+                            - boarding_id
+                            - number
+                        cash_child:
+                          type: object
+                          properties:
+                            boarding_id:
+                              type: string
+                              minLength: 1
+                            number:
+                              type: string
+                              minLength: 1
+                          required:
+                            - boarding_id
+                            - number
+                        cash_handicapped_adult:
+                          type: object
+                          properties:
+                            boarding_id:
+                              type: string
+                              minLength: 1
+                            number:
+                              type: string
+                              minLength: 1
+                          required:
+                            - boarding_id
+                            - number
+                        cash_handicapped_child:
+                          type: object
+                          properties:
+                            boarding_id:
+                              type: string
+                              minLength: 1
+                            number:
+                              type: string
+                              minLength: 1
+                          required:
+                            - boarding_id
+                            - number
+                        coupon_adult:
+                          type: object
+                          properties:
+                            boarding_id:
+                              type: string
+                              minLength: 1
+                            number:
+                              type: string
+                              minLength: 1
+                          required:
+                            - boarding_id
+                            - number
+                        coupon_child:
+                          type: object
+                          properties:
+                            boarding_id:
+                              type: string
+                              minLength: 1
+                            number:
+                              type: string
+                              minLength: 1
+                          required:
+                            - boarding_id
+                            - number
+                        coupon_handicapped:
+                          type: object
+                          properties:
+                            boarding_id:
+                              type: string
+                              minLength: 1
+                            number:
+                              type: string
+                              minLength: 1
+                          required:
+                            - boarding_id
+                            - number
+                        commuter_pass:
+                          type: object
+                          properties:
+                            boarding_id:
+                              type: string
+                              minLength: 1
+                            number:
+                              type: string
+                              minLength: 1
+                          required:
+                            - boarding_id
+                            - number
+                        free:
+                          type: object
+                          properties:
+                            boarding_id:
+                              type: string
+                              minLength: 1
+                            number:
+                              type: string
+                              minLength: 1
+                          required:
+                            - boarding_id
+                            - number
+                        sum:
+                          type: string
+                          minLength: 1
+                required:
+                  - dailyReport
+              examples:
+                example-1:
+                  value:
+                    dailyReport:
+                      - id: '1'
+                        year: '2020'
+                        month: '12'
+                        day: '1'
+                        driver_name: 運転手A
+                        bus_number: 303-3033
+                        course_name: Aコース
+                        mileage_start: '30300'
+                        mileage_end: '30301'
+                        route_order__order: 第1便
+                        route_name: 川之内線
+                        bus_stop_name: 道の駅みま
+                        get_off:
+                          boarding_id: '0'
+                          number: '0'
+                        cash_adult:
+                          boarding_id: '1'
+                          number: '5'
+                        cash_child:
+                          boarding_id: '2'
+                          number: '2'
+                        cash_handicapped_adult:
+                          boarding_id: '3'
+                          number: '1'
+                        cash_handicapped_child:
+                          boarding_id: '4'
+                          number: '0'
+                        coupon_adult:
+                          boarding_id: '5'
+                          number: '5'
+                        coupon_child:
+                          boarding_id: '6'
+                          number: '0'
+                        coupon_handicapped:
+                          boarding_id: '7'
+                          number: '0'
+                        commuter_pass:
+                          boarding_id: '8'
+                          number: '0'
+                        free:
+                          boarding_id: '9'
+                          number: '2'
+                        sum: '15'
+                      - id: '2'
+                        year: '2020'
+                        month: '12'
+                        day: '2'
+                        driver_name: 運転手A
+                        bus_number: 303-3033
+                        course_name: Aコース
+                        mileage_start: '30300'
+                        mileage_end: '30301'
+                        route_order__order: 第1便
+                        route_name: 川之内線
+                        bus_stop_name: 森ヶ鼻
+                        get_off:
+                          boarding_id: '10'
+                          number: '0'
+                        cash_adult:
+                          boarding_id: '11'
+                          number: '2'
+                        cash_child:
+                          boarding_id: '12'
+                          number: '2'
+                        cash_handicapped_adult:
+                          boarding_id: '13'
+                          number: '1'
+                        cash_handicapped_child:
+                          boarding_id: '14'
+                          number: '0'
+                        coupon_adult:
+                          boarding_id: '15'
+                          number: '5'
+                        coupon_child:
+                          boarding_id: '16'
+                          number: '0'
+                        coupon_handicapped:
+                          boarding_id: '17'
+                          number: '0'
+                        commuter_pass:
+                          boarding_id: '18'
+                          number: '0'
+                        free:
+                          boarding_id: '19'
+                          number: '2'
+                        sum: '12'
+                      - id: '3'
+                        year: '2020'
+                        month: '12'
+                        day: '3'
+                        driver_name: 運転手A
+                        bus_number: 303-3033
+                        course_name: Aコース
+                        mileage_start: '30300'
+                        mileage_end: '30301'
+                        route_order__order: 第1便
+                        route_name: 川之内線
+                        bus_stop_name: 三間小学校
+                        get_off:
+                          boarding_id: '20'
+                          number: '0'
+                        cash_adult:
+                          boarding_id: '21'
+                          number: '2'
+                        cash_child:
+                          boarding_id: '22'
+                          number: '2'
+                        cash_handicapped_adult:
+                          boarding_id: '23'
+                          number: '1'
+                        cash_handicapped_child:
+                          boarding_id: '24'
+                          number: '0'
+                        coupon_adult:
+                          boarding_id: '25'
+                          number: '5'
+                        coupon_child:
+                          boarding_id: '26'
+                          number: '0'
+                        coupon_handicapped:
+                          boarding_id: '27'
+                          number: '0'
+                        commuter_pass:
+                          boarding_id: '28'
+                          number: '0'
+                        free:
+                          boarding_id: '29'
+                          number: '2'
+                        sum: '12'
+      operationId: get-api-v1-report-day
+      description: |-
+        http://localhost:8080/admin/report
+        指定した日付の日報を取得する
+      parameters:
+        - schema:
+            type: string
+          in: header
+          name: 'Content-Type: application/json'
+          description: ''
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                course_id:
+                  type: string
+                date:
+                  type: string
+            examples:
+              example-1:
+                value:
+                  course_id: '1'
+                  date: '2020-11-10'
+          application/xml:
+            schema:
+              type: object
+              properties: {}
+        description: ''
+      security:
+        - Bearer: []
+    parameters: []
+  /api/v1/web/report/day/update/:
+    post:
+      summary: 日報情報編集API
+      operationId: post-api-v1-report-day
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                description: ''
+                type: object
+                properties:
+                  success:
+                    type: boolean
+                required:
+                  - success
+              examples:
+                example-1:
+                  value:
+                    success: true
+      description: |-
+        http://localhost:8080/admin/report
+        編集ボタン＞確定ボタン
+        指定した日付の日報を編集する
+      security:
+        - Bearer: []
+      parameters:
+        - schema:
+            type: string
+          in: header
+          name: 'Content-Type: application/json'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              description: ''
+              type: object
+              properties:
+                course_id:
+                  type: string
+                  minLength: 1
+                date:
+                  type: string
+                  minLength: 1
+                dailyReport:
+                  type: array
+                  uniqueItems: true
+                  minItems: 1
+                  items:
+                    required:
+                      - id
+                      - year
+                      - month
+                      - day
+                      - driver_name
+                      - bus_number
+                      - course_name
+                      - mileage_start
+                      - mileage_end
+                      - route_order__order
+                      - route_name
+                      - bus_stop_name
+                      - sum
+                    properties:
+                      id:
+                        type: string
+                        minLength: 1
+                      year:
+                        type: string
+                        minLength: 1
+                      month:
+                        type: string
+                        minLength: 1
+                      day:
+                        type: string
+                        minLength: 1
+                      driver_name:
+                        type: string
+                        minLength: 1
+                      bus_number:
+                        type: string
+                        minLength: 1
+                      course_name:
+                        type: string
+                        minLength: 1
+                      mileage_start:
+                        type: string
+                        minLength: 1
+                      mileage_end:
+                        type: string
+                        minLength: 1
+                      route_order__order:
+                        type: string
+                        minLength: 1
+                      route_name:
+                        type: string
+                        minLength: 1
+                      bus_stop_name:
+                        type: string
+                        minLength: 1
+                      get_off:
+                        type: object
+                        properties:
+                          boarding_id:
+                            type: string
+                            minLength: 1
+                          number:
+                            type: string
+                            minLength: 1
+                        required:
+                          - boarding_id
+                          - number
+                      cash_adult:
+                        type: object
+                        properties:
+                          boarding_id:
+                            type: string
+                            minLength: 1
+                          number:
+                            type: string
+                            minLength: 1
+                        required:
+                          - boarding_id
+                          - number
+                      cash_child:
+                        type: object
+                        properties:
+                          boarding_id:
+                            type: string
+                            minLength: 1
+                          number:
+                            type: string
+                            minLength: 1
+                        required:
+                          - boarding_id
+                          - number
+                      cash_handicapped_adult:
+                        type: object
+                        properties:
+                          boarding_id:
+                            type: string
+                            minLength: 1
+                          number:
+                            type: string
+                            minLength: 1
+                        required:
+                          - boarding_id
+                          - number
+                      cash_handicapped_child:
+                        type: object
+                        properties:
+                          boarding_id:
+                            type: string
+                            minLength: 1
+                          number:
+                            type: string
+                            minLength: 1
+                        required:
+                          - boarding_id
+                          - number
+                      coupon_adult:
+                        type: object
+                        properties:
+                          boarding_id:
+                            type: string
+                            minLength: 1
+                          number:
+                            type: string
+                            minLength: 1
+                        required:
+                          - boarding_id
+                          - number
+                      coupon_child:
+                        type: object
+                        properties:
+                          boarding_id:
+                            type: string
+                            minLength: 1
+                          number:
+                            type: string
+                            minLength: 1
+                        required:
+                          - boarding_id
+                          - number
+                      coupon_handicapped:
+                        type: object
+                        properties:
+                          boarding_id:
+                            type: string
+                            minLength: 1
+                          number:
+                            type: string
+                            minLength: 1
+                        required:
+                          - boarding_id
+                          - number
+                      commuter_pass:
+                        type: object
+                        properties:
+                          boarding_id:
+                            type: string
+                            minLength: 1
+                          number:
+                            type: string
+                            minLength: 1
+                        required:
+                          - boarding_id
+                          - number
+                      free:
+                        type: object
+                        properties:
+                          boarding_id:
+                            type: string
+                            minLength: 1
+                          number:
+                            type: string
+                            minLength: 1
+                        required:
+                          - boarding_id
+                          - number
+                      sum:
+                        type: string
+                        minLength: 1
+              required:
+                - course_id
+                - date
+                - dailyReport
+            examples:
+              example-1:
+                value:
+                  course_id: '1'
+                  date: '2020-11-10'
+                  dailyReport:
+                    - id: '1'
+                      year: '2020'
+                      month: '12'
+                      day: '1'
+                      driver_name: 運転手A
+                      bus_number: 303-3033
+                      course_name: Aコース
+                      mileage_start: '30300'
+                      mileage_end: '30301'
+                      route_order__order: 第1便
+                      route_name: 川之内線
+                      bus_stop_name: 道の駅みま
+                      get_off:
+                        boarding_id: '0'
+                        number: '0'
+                      cash_adult:
+                        boarding_id: '1'
+                        number: '5'
+                      cash_child:
+                        boarding_id: '2'
+                        number: '2'
+                      cash_handicapped_adult:
+                        boarding_id: '3'
+                        number: '1'
+                      cash_handicapped_child:
+                        boarding_id: '4'
+                        number: '0'
+                      coupon_adult:
+                        boarding_id: '5'
+                        number: '5'
+                      coupon_child:
+                        boarding_id: '6'
+                        number: '0'
+                      coupon_handicapped:
+                        boarding_id: '7'
+                        number: '0'
+                      commuter_pass:
+                        boarding_id: '8'
+                        number: '0'
+                      free:
+                        boarding_id: '9'
+                        number: '2'
+                      sum: '15'
+                    - id: '2'
+                      year: '2020'
+                      month: '12'
+                      day: '2'
+                      driver_name: 運転手A
+                      bus_number: 303-3033
+                      course_name: Aコース
+                      mileage_start: '30300'
+                      mileage_end: '30301'
+                      route_order__order: 第1便
+                      route_name: 川之内線
+                      bus_stop_name: 森ヶ鼻
+                      get_off:
+                        boarding_id: '10'
+                        number: '0'
+                      cash_adult:
+                        boarding_id: '11'
+                        number: '2'
+                      cash_child:
+                        boarding_id: '12'
+                        number: '2'
+                      cash_handicapped_adult:
+                        boarding_id: '13'
+                        number: '1'
+                      cash_handicapped_child:
+                        boarding_id: '14'
+                        number: '0'
+                      coupon_adult:
+                        boarding_id: '15'
+                        number: '5'
+                      coupon_child:
+                        boarding_id: '16'
+                        number: '0'
+                      coupon_handicapped:
+                        boarding_id: '17'
+                        number: '0'
+                      commuter_pass:
+                        boarding_id: '18'
+                        number: '0'
+                      free:
+                        boarding_id: '19'
+                        number: '2'
+                      sum: '12'
+                    - id: '3'
+                      year: '2020'
+                      month: '12'
+                      day: '3'
+                      driver_name: 運転手A
+                      bus_number: 303-3033
+                      course_name: Aコース
+                      mileage_start: '30300'
+                      mileage_end: '30301'
+                      route_order__order: 第1便
+                      route_name: 川之内線
+                      bus_stop_name: 三間小学校
+                      get_off:
+                        boarding_id: '20'
+                        number: '0'
+                      cash_adult:
+                        boarding_id: '21'
+                        number: '2'
+                      cash_child:
+                        boarding_id: '22'
+                        number: '2'
+                      cash_handicapped_adult:
+                        boarding_id: '23'
+                        number: '1'
+                      cash_handicapped_child:
+                        boarding_id: '24'
+                        number: '0'
+                      coupon_adult:
+                        boarding_id: '25'
+                        number: '5'
+                      coupon_child:
+                        boarding_id: '26'
+                        number: '0'
+                      coupon_handicapped:
+                        boarding_id: '27'
+                        number: '0'
+                      commuter_pass:
+                        boarding_id: '28'
+                        number: '0'
+                      free:
+                        boarding_id: '29'
+                        number: '2'
+                      sum: '12'
+    parameters: []
+  /api/v1/web/report/month/:
+    post:
+      summary: 月報取得API
+      tags: []
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                description: ''
+                type: object
+                properties:
+                  monthly_report:
+                    type: array
+                    uniqueItems: true
+                    minItems: 1
+                    items:
+                      required:
+                        - day
+                        - cash_adult
+                        - cash_child
+                        - cash_handicapped
+                        - coupon_adult
+                        - coupon_child
+                        - coupon_handicapped
+                        - commuter_pass
+                        - free
+                        - sum
+                        - mileage
+                      properties:
+                        day:
+                          type: string
+                          minLength: 1
+                        cash_adult:
+                          type: string
+                          minLength: 1
+                        cash_child:
+                          type: string
+                          minLength: 1
+                        cash_handicapped:
+                          type: string
+                          minLength: 1
+                        coupon_adult:
+                          type: string
+                          minLength: 1
+                        coupon_child:
+                          type: string
+                          minLength: 1
+                        coupon_handicapped:
+                          type: string
+                          minLength: 1
+                        commuter_pass:
+                          type: string
+                          minLength: 1
+                        free:
+                          type: string
+                          minLength: 1
+                        sum:
+                          type: string
+                          minLength: 1
+                        mileage:
+                          type: string
+                          minLength: 1
+                required:
+                  - monthly_report
+              examples:
+                example-1:
+                  monthly_report:
+                    - day: '1'
+                      cash_adult: '20'
+                      cash_child: '30'
+                      cash_handicapped: '13'
+                      coupon_adult: '41'
+                      coupon_child: '24'
+                      coupon_handicapped: '45'
+                      commuter_pass: '10'
+                      free: '3'
+                      sum: '183'
+                      mileage: '123'
+                    - day: '2'
+                      cash_adult: '20'
+                      cash_child: '30'
+                      cash_handicapped: '13'
+                      coupon_adult: '41'
+                      coupon_child: '24'
+                      coupon_handicapped: '45'
+                      commuter_pass: '10'
+                      free: '3'
+                      sum: '183'
+                      mileage: '123'
+                    - day: '3'
+                      cash_adult: '20'
+                      cash_child: '30'
+                      cash_handicapped: '13'
+                      coupon_adult: '41'
+                      coupon_child: '24'
+                      coupon_handicapped: '45'
+                      commuter_pass: '10'
+                      free: '3'
+                      sum: '183'
+                      mileage: '123'
+                    - day: '4'
+                      cash_adult: '20'
+                      cash_child: '30'
+                      cash_handicapped: '13'
+                      coupon_adult: '41'
+                      coupon_child: '24'
+                      coupon_handicapped: '45'
+                      commuter_pass: '10'
+                      free: '3'
+                      sum: '183'
+                      mileage: '123'
+                    - day: '5'
+                      cash_adult: '20'
+                      cash_child: '30'
+                      cash_handicapped: '13'
+                      coupon_adult: '41'
+                      coupon_child: '24'
+                      coupon_handicapped: '45'
+                      commuter_pass: '10'
+                      free: '3'
+                      sum: '183'
+                      mileage: '123'
+                    - day: '6'
+                      cash_adult: '20'
+                      cash_child: '30'
+                      cash_handicapped: '13'
+                      coupon_adult: '41'
+                      coupon_child: '24'
+                      coupon_handicapped: '45'
+                      commuter_pass: '10'
+                      free: '3'
+                      sum: '183'
+                      mileage: '123'
+                    - day: '7'
+                      cash_adult: '20'
+                      cash_child: '30'
+                      cash_handicapped: '13'
+                      coupon_adult: '41'
+                      coupon_child: '24'
+                      coupon_handicapped: '45'
+                      commuter_pass: '10'
+                      free: '3'
+                      sum: '183'
+                      mileage: '123'
+                    - day: '8'
+                      cash_adult: '20'
+                      cash_child: '30'
+                      cash_handicapped: '13'
+                      coupon_adult: '41'
+                      coupon_child: '24'
+                      coupon_handicapped: '45'
+                      commuter_pass: '10'
+                      free: '3'
+                      sum: '183'
+                      mileage: '123'
+                    - day: '9'
+                      cash_adult: '20'
+                      cash_child: '30'
+                      cash_handicapped: '13'
+                      coupon_adult: '41'
+                      coupon_child: '24'
+                      coupon_handicapped: '45'
+                      commuter_pass: '10'
+                      free: '3'
+                      sum: '183'
+                      mileage: '123'
+                    - day: '10'
+                      cash_adult: '20'
+                      cash_child: '30'
+                      cash_handicapped: '13'
+                      coupon_adult: '41'
+                      coupon_child: '24'
+                      coupon_handicapped: '45'
+                      commuter_pass: '10'
+                      free: '3'
+                      sum: '183'
+                      mileage: '123'
+                    - day: '11'
+                      cash_adult: '20'
+                      cash_child: '30'
+                      cash_handicapped: '13'
+                      coupon_adult: '41'
+                      coupon_child: '24'
+                      coupon_handicapped: '45'
+                      commuter_pass: '10'
+                      free: '3'
+                      sum: '183'
+                      mileage: '123'
+                    - day: '12'
+                      cash_adult: '20'
+                      cash_child: '30'
+                      cash_handicapped: '13'
+                      coupon_adult: '41'
+                      coupon_child: '24'
+                      coupon_handicapped: '45'
+                      commuter_pass: '10'
+                      free: '3'
+                      sum: '183'
+                      mileage: '123'
+                    - day: '13'
+                      cash_adult: '20'
+                      cash_child: '30'
+                      cash_handicapped: '13'
+                      coupon_adult: '41'
+                      coupon_child: '24'
+                      coupon_handicapped: '45'
+                      commuter_pass: '10'
+                      free: '3'
+                      sum: '183'
+                      mileage: '123'
+                    - day: '14'
+                      cash_adult: '20'
+                      cash_child: '30'
+                      cash_handicapped: '13'
+                      coupon_adult: '41'
+                      coupon_child: '24'
+                      coupon_handicapped: '45'
+                      commuter_pass: '10'
+                      free: '3'
+                      sum: '183'
+                      mileage: '123'
+                    - day: '15'
+                      cash_adult: '20'
+                      cash_child: '30'
+                      cash_handicapped: '13'
+                      coupon_adult: '41'
+                      coupon_child: '24'
+                      coupon_handicapped: '45'
+                      commuter_pass: '10'
+                      free: '3'
+                      sum: '183'
+                      mileage: '123'
+                    - day: '16'
+                      cash_adult: '20'
+                      cash_child: '30'
+                      cash_handicapped: '13'
+                      coupon_adult: '41'
+                      coupon_child: '24'
+                      coupon_handicapped: '45'
+                      commuter_pass: '10'
+                      free: '3'
+                      sum: '183'
+                      mileage: '123'
+                    - day: '17'
+                      cash_adult: '20'
+                      cash_child: '30'
+                      cash_handicapped: '13'
+                      coupon_adult: '41'
+                      coupon_child: '24'
+                      coupon_handicapped: '45'
+                      commuter_pass: '10'
+                      free: '3'
+                      sum: '183'
+                      mileage: '123'
+                    - day: '18'
+                      cash_adult: '20'
+                      cash_child: '30'
+                      cash_handicapped: '13'
+                      coupon_adult: '41'
+                      coupon_child: '24'
+                      coupon_handicapped: '45'
+                      commuter_pass: '10'
+                      free: '3'
+                      sum: '183'
+                      mileage: '123'
+                    - day: '19'
+                      cash_adult: '20'
+                      cash_child: '30'
+                      cash_handicapped: '13'
+                      coupon_adult: '41'
+                      coupon_child: '24'
+                      coupon_handicapped: '45'
+                      commuter_pass: '10'
+                      free: '3'
+                      sum: '183'
+                      mileage: '123'
+                    - day: '20'
+                      cash_adult: '20'
+                      cash_child: '30'
+                      cash_handicapped: '13'
+                      coupon_adult: '41'
+                      coupon_child: '24'
+                      coupon_handicapped: '45'
+                      commuter_pass: '10'
+                      free: '3'
+                      sum: '183'
+                      mileage: '123'
+                    - day: '21'
+                      cash_adult: '20'
+                      cash_child: '30'
+                      cash_handicapped: '13'
+                      coupon_adult: '41'
+                      coupon_child: '24'
+                      coupon_handicapped: '45'
+                      commuter_pass: '10'
+                      free: '3'
+                      sum: '183'
+                      mileage: '123'
+                    - day: '22'
+                      cash_adult: '20'
+                      cash_child: '30'
+                      cash_handicapped: '13'
+                      coupon_adult: '41'
+                      coupon_child: '24'
+                      coupon_handicapped: '45'
+                      commuter_pass: '10'
+                      free: '3'
+                      sum: '183'
+                      mileage: '123'
+                    - day: '23'
+                      cash_adult: '20'
+                      cash_child: '30'
+                      cash_handicapped: '13'
+                      coupon_adult: '41'
+                      coupon_child: '24'
+                      coupon_handicapped: '45'
+                      commuter_pass: '10'
+                      free: '3'
+                      sum: '183'
+                      mileage: '123'
+                    - day: '24'
+                      cash_adult: '20'
+                      cash_child: '30'
+                      cash_handicapped: '13'
+                      coupon_adult: '41'
+                      coupon_child: '24'
+                      coupon_handicapped: '45'
+                      commuter_pass: '10'
+                      free: '3'
+                      sum: '183'
+                      mileage: '123'
+                    - day: '25'
+                      cash_adult: '20'
+                      cash_child: '30'
+                      cash_handicapped: '13'
+                      coupon_adult: '41'
+                      coupon_child: '24'
+                      coupon_handicapped: '45'
+                      commuter_pass: '10'
+                      free: '3'
+                      sum: '183'
+                      mileage: '123'
+                    - day: '26'
+                      cash_adult: '20'
+                      cash_child: '30'
+                      cash_handicapped: '13'
+                      coupon_adult: '41'
+                      coupon_child: '24'
+                      coupon_handicapped: '45'
+                      commuter_pass: '10'
+                      free: '3'
+                      sum: '183'
+                      mileage: '123'
+                    - day: '27'
+                      cash_adult: '20'
+                      cash_child: '30'
+                      cash_handicapped: '13'
+                      coupon_adult: '41'
+                      coupon_child: '24'
+                      coupon_handicapped: '45'
+                      commuter_pass: '10'
+                      free: '3'
+                      sum: '183'
+                      mileage: '123'
+                    - day: '28'
+                      cash_adult: '20'
+                      cash_child: '30'
+                      cash_handicapped: '13'
+                      coupon_adult: '41'
+                      coupon_child: '24'
+                      coupon_handicapped: '45'
+                      commuter_pass: '10'
+                      free: '3'
+                      sum: '183'
+                      mileage: '123'
+                    - day: '29'
+                      cash_adult: '20'
+                      cash_child: '30'
+                      cash_handicapped: '13'
+                      coupon_adult: '41'
+                      coupon_child: '24'
+                      coupon_handicapped: '45'
+                      commuter_pass: '10'
+                      free: '3'
+                      sum: '183'
+                      mileage: '123'
+                    - day: '30'
+                      cash_adult: '20'
+                      cash_child: '30'
+                      cash_handicapped: '13'
+                      coupon_adult: '41'
+                      coupon_child: '24'
+                      coupon_handicapped: '45'
+                      commuter_pass: '10'
+                      free: '3'
+                      sum: '183'
+                      mileage: '123'
+                  value:
+                    monthly_report:
+                      - day: '1'
+                        cash_adult: '20'
+                        cash_child: '30'
+                        cash_handicapped: '13'
+                        coupon_adult: '41'
+                        coupon_child: '24'
+                        coupon_handicapped: '45'
+                        commuter_pass: '10'
+                        free: '3'
+                        sum: '183'
+                        mileage: '123'
+                      - day: '2'
+                        cash_adult: '20'
+                        cash_child: '30'
+                        cash_handicapped: '13'
+                        coupon_adult: '41'
+                        coupon_child: '24'
+                        coupon_handicapped: '45'
+                        commuter_pass: '10'
+                        free: '3'
+                        sum: '183'
+                        mileage: '123'
+                      - day: '3'
+                        cash_adult: '20'
+                        cash_child: '30'
+                        cash_handicapped: '13'
+                        coupon_adult: '41'
+                        coupon_child: '24'
+                        coupon_handicapped: '45'
+                        commuter_pass: '10'
+                        free: '3'
+                        sum: '183'
+                        mileage: '123'
+                      - day: '4'
+                        cash_adult: '20'
+                        cash_child: '30'
+                        cash_handicapped: '13'
+                        coupon_adult: '41'
+                        coupon_child: '24'
+                        coupon_handicapped: '45'
+                        commuter_pass: '10'
+                        free: '3'
+                        sum: '183'
+                        mileage: '123'
+                      - day: '5'
+                        cash_adult: '20'
+                        cash_child: '30'
+                        cash_handicapped: '13'
+                        coupon_adult: '41'
+                        coupon_child: '24'
+                        coupon_handicapped: '45'
+                        commuter_pass: '10'
+                        free: '3'
+                        sum: '183'
+                        mileage: '123'
+                      - day: '6'
+                        cash_adult: '20'
+                        cash_child: '30'
+                        cash_handicapped: '13'
+                        coupon_adult: '41'
+                        coupon_child: '24'
+                        coupon_handicapped: '45'
+                        commuter_pass: '10'
+                        free: '3'
+                        sum: '183'
+                        mileage: '123'
+                      - day: '7'
+                        cash_adult: '20'
+                        cash_child: '30'
+                        cash_handicapped: '13'
+                        coupon_adult: '41'
+                        coupon_child: '24'
+                        coupon_handicapped: '45'
+                        commuter_pass: '10'
+                        free: '3'
+                        sum: '183'
+                        mileage: '123'
+                      - day: '8'
+                        cash_adult: '20'
+                        cash_child: '30'
+                        cash_handicapped: '13'
+                        coupon_adult: '41'
+                        coupon_child: '24'
+                        coupon_handicapped: '45'
+                        commuter_pass: '10'
+                        free: '3'
+                        sum: '183'
+                        mileage: '123'
+                      - day: '9'
+                        cash_adult: '20'
+                        cash_child: '30'
+                        cash_handicapped: '13'
+                        coupon_adult: '41'
+                        coupon_child: '24'
+                        coupon_handicapped: '45'
+                        commuter_pass: '10'
+                        free: '3'
+                        sum: '183'
+                        mileage: '123'
+                      - day: '10'
+                        cash_adult: '20'
+                        cash_child: '30'
+                        cash_handicapped: '13'
+                        coupon_adult: '41'
+                        coupon_child: '24'
+                        coupon_handicapped: '45'
+                        commuter_pass: '10'
+                        free: '3'
+                        sum: '183'
+                        mileage: '123'
+                      - day: '11'
+                        cash_adult: '20'
+                        cash_child: '30'
+                        cash_handicapped: '13'
+                        coupon_adult: '41'
+                        coupon_child: '24'
+                        coupon_handicapped: '45'
+                        commuter_pass: '10'
+                        free: '3'
+                        sum: '183'
+                        mileage: '123'
+                      - day: '12'
+                        cash_adult: '20'
+                        cash_child: '30'
+                        cash_handicapped: '13'
+                        coupon_adult: '41'
+                        coupon_child: '24'
+                        coupon_handicapped: '45'
+                        commuter_pass: '10'
+                        free: '3'
+                        sum: '183'
+                        mileage: '123'
+                      - day: '13'
+                        cash_adult: '20'
+                        cash_child: '30'
+                        cash_handicapped: '13'
+                        coupon_adult: '41'
+                        coupon_child: '24'
+                        coupon_handicapped: '45'
+                        commuter_pass: '10'
+                        free: '3'
+                        sum: '183'
+                        mileage: '123'
+                      - day: '14'
+                        cash_adult: '20'
+                        cash_child: '30'
+                        cash_handicapped: '13'
+                        coupon_adult: '41'
+                        coupon_child: '24'
+                        coupon_handicapped: '45'
+                        commuter_pass: '10'
+                        free: '3'
+                        sum: '183'
+                        mileage: '123'
+                      - day: '15'
+                        cash_adult: '20'
+                        cash_child: '30'
+                        cash_handicapped: '13'
+                        coupon_adult: '41'
+                        coupon_child: '24'
+                        coupon_handicapped: '45'
+                        commuter_pass: '10'
+                        free: '3'
+                        sum: '183'
+                        mileage: '123'
+                      - day: '16'
+                        cash_adult: '20'
+                        cash_child: '30'
+                        cash_handicapped: '13'
+                        coupon_adult: '41'
+                        coupon_child: '24'
+                        coupon_handicapped: '45'
+                        commuter_pass: '10'
+                        free: '3'
+                        sum: '183'
+                        mileage: '123'
+                      - day: '17'
+                        cash_adult: '20'
+                        cash_child: '30'
+                        cash_handicapped: '13'
+                        coupon_adult: '41'
+                        coupon_child: '24'
+                        coupon_handicapped: '45'
+                        commuter_pass: '10'
+                        free: '3'
+                        sum: '183'
+                        mileage: '123'
+                      - day: '18'
+                        cash_adult: '20'
+                        cash_child: '30'
+                        cash_handicapped: '13'
+                        coupon_adult: '41'
+                        coupon_child: '24'
+                        coupon_handicapped: '45'
+                        commuter_pass: '10'
+                        free: '3'
+                        sum: '183'
+                        mileage: '123'
+                      - day: '19'
+                        cash_adult: '20'
+                        cash_child: '30'
+                        cash_handicapped: '13'
+                        coupon_adult: '41'
+                        coupon_child: '24'
+                        coupon_handicapped: '45'
+                        commuter_pass: '10'
+                        free: '3'
+                        sum: '183'
+                        mileage: '123'
+                      - day: '20'
+                        cash_adult: '20'
+                        cash_child: '30'
+                        cash_handicapped: '13'
+                        coupon_adult: '41'
+                        coupon_child: '24'
+                        coupon_handicapped: '45'
+                        commuter_pass: '10'
+                        free: '3'
+                        sum: '183'
+                        mileage: '123'
+                      - day: '21'
+                        cash_adult: '20'
+                        cash_child: '30'
+                        cash_handicapped: '13'
+                        coupon_adult: '41'
+                        coupon_child: '24'
+                        coupon_handicapped: '45'
+                        commuter_pass: '10'
+                        free: '3'
+                        sum: '183'
+                        mileage: '123'
+                      - day: '22'
+                        cash_adult: '20'
+                        cash_child: '30'
+                        cash_handicapped: '13'
+                        coupon_adult: '41'
+                        coupon_child: '24'
+                        coupon_handicapped: '45'
+                        commuter_pass: '10'
+                        free: '3'
+                        sum: '183'
+                        mileage: '123'
+                      - day: '23'
+                        cash_adult: '20'
+                        cash_child: '30'
+                        cash_handicapped: '13'
+                        coupon_adult: '41'
+                        coupon_child: '24'
+                        coupon_handicapped: '45'
+                        commuter_pass: '10'
+                        free: '3'
+                        sum: '183'
+                        mileage: '123'
+                      - day: '24'
+                        cash_adult: '20'
+                        cash_child: '30'
+                        cash_handicapped: '13'
+                        coupon_adult: '41'
+                        coupon_child: '24'
+                        coupon_handicapped: '45'
+                        commuter_pass: '10'
+                        free: '3'
+                        sum: '183'
+                        mileage: '123'
+                      - day: '25'
+                        cash_adult: '20'
+                        cash_child: '30'
+                        cash_handicapped: '13'
+                        coupon_adult: '41'
+                        coupon_child: '24'
+                        coupon_handicapped: '45'
+                        commuter_pass: '10'
+                        free: '3'
+                        sum: '183'
+                        mileage: '123'
+                      - day: '26'
+                        cash_adult: '20'
+                        cash_child: '30'
+                        cash_handicapped: '13'
+                        coupon_adult: '41'
+                        coupon_child: '24'
+                        coupon_handicapped: '45'
+                        commuter_pass: '10'
+                        free: '3'
+                        sum: '183'
+                        mileage: '123'
+                      - day: '27'
+                        cash_adult: '20'
+                        cash_child: '30'
+                        cash_handicapped: '13'
+                        coupon_adult: '41'
+                        coupon_child: '24'
+                        coupon_handicapped: '45'
+                        commuter_pass: '10'
+                        free: '3'
+                        sum: '183'
+                        mileage: '123'
+                      - day: '28'
+                        cash_adult: '20'
+                        cash_child: '30'
+                        cash_handicapped: '13'
+                        coupon_adult: '41'
+                        coupon_child: '24'
+                        coupon_handicapped: '45'
+                        commuter_pass: '10'
+                        free: '3'
+                        sum: '183'
+                        mileage: '123'
+                      - day: '29'
+                        cash_adult: '20'
+                        cash_child: '30'
+                        cash_handicapped: '13'
+                        coupon_adult: '41'
+                        coupon_child: '24'
+                        coupon_handicapped: '45'
+                        commuter_pass: '10'
+                        free: '3'
+                        sum: '183'
+                        mileage: '123'
+                      - day: '30'
+                        cash_adult: '20'
+                        cash_child: '30'
+                        cash_handicapped: '13'
+                        coupon_adult: '41'
+                        coupon_child: '24'
+                        coupon_handicapped: '45'
+                        commuter_pass: '10'
+                        free: '3'
+                        sum: '183'
+                        mileage: '123'
+      operationId: get-api-v1-report-month
+      description: |-
+        http://localhost:8080/admin/report
+
+        月報のダウンロード＞表
+        指定した月の月報を取得する
+      security:
+        - Bearer: []
+      parameters:
+        - schema:
+            type: string
+          in: header
+          name: 'Content-Type: application/json'
+          description: ''
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                year:
+                  type: string
+                month:
+                  type: string
+    parameters: []
+  /api/v1/web/bus_stop/delete/:
+    post:
+      summary: バス停削除API
+      operationId: post-api-v1-bus-delete-bus_stop
+      responses:
+        '200':
+          description: OK
+          headers:
+            header-0:
+              schema:
+                type: string
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+              examples:
+                example-1:
+                  value:
+                    success: true
+      description: |-
+        http://localhost:8080/admin/bus#busStop
+        バス停＞バス停一覧＞削除にて使用
+      security:
+        - Bearer: []
+      parameters:
+        - schema:
+            type: string
+          in: header
+          name: 'Content-Type: application/json'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                bus_stop_id:
+                  type: string
+            examples:
+              example-1:
+                value:
+                  bus_stop_id: '1'
+        description: バス停の削除
+    parameters: []
+  /api/v1/web/route/delete/:
+    post:
+      summary: 路線削除API
+      operationId: post-api-v1-bus-delete-route
+      responses:
+        '200':
+          description: OK
+          headers:
+            header-0:
+              schema:
+                type: string
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+              examples:
+                example-1:
+                  value:
+                    success: true
+      description: |-
+        http://localhost:8080/admin/bus#route
+        路線＞路線一覧＞削除にて使用
+      security:
+        - Bearer: []
+      parameters:
+        - schema:
+            type: string
+          in: header
+          name: 'Content-Type: application/json'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                route_id:
+                  type: string
+            examples:
+              example-1:
+                value:
+                  route_id: '1'
+        description: 路線削除用API
+    parameters: []
+  /api/v1/web/course/delete/:
+    post:
+      summary: コース削除API
+      operationId: post-api-v1-bus-delete-course
+      responses:
+        '200':
+          description: OK
+          headers:
+            header-0:
+              schema:
+                type: string
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+                examples:
+                  example-1:
+                    value:
+                      success: true
+      description: |-
+        http://localhost:8080/admin/bus#course
+        コース＞コース一覧＞削除にて使用
+      security:
+        - Bearer: []
+      parameters:
+        - schema:
+            type: string
+          in: header
+          name: 'Content-Type: application/json'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                course_id:
+                  type: string
+            examples:
+              example-1:
+                value:
+                  course_id: '1'
+    parameters: []
+  /api/v1/web/user/register/:
+    post:
+      summary: ユーザー情報登録API
+      tags: []
+      responses:
+        '200':
+          description: OK
+          headers:
+            header-0:
+              schema:
+                type: string
+          content:
+            application/json:
+              schema:
+                description: ''
+                type: object
+                properties:
+                  success:
+                    type: boolean
+                required:
+                  - success
+              examples:
+                example-1:
+                  value:
+                    success: true
+      operationId: get-api-v1-user
+      security: []
+      parameters:
+        - schema:
+            type: string
+          in: header
+          name: 'Content-Type: application/json'
+      description: |-
+        http://localhost:8080/admin/user
+        システムユーザー＞新規ユーザー登録にて使用
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                user_name:
+                  type: string
+                email:
+                  type: string
+                password:
+                  type: string
+            examples:
+              example-1:
+                value:
+                  user_name: user1
+                  email: '1'
+                  password: string
+    parameters: []
+  /api/v1/web/user/update/:
+    post:
+      summary: ユーザー情報編集API
+      tags: []
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                description: ''
+                type: object
+                properties:
+                  success:
+                    type: boolean
+                required:
+                  - success
+              examples:
+                example-1:
+                  value:
+                    success: true
+      operationId: post-api-v1-user-update
+      description: |-
+        http://localhost:8080/admin/user
+        システムユーザー＞ユーザー一覧＞編集にて使用
+      requestBody:
+        content:
+          application/json:
+            schema:
+              description: ''
+              type: object
+              properties:
+                id:
+                  type: string
+                  minLength: 1
+                name:
+                  type: string
+                  minLength: 1
+                email:
+                  type: string
+                  minLength: 1
+                password:
+                  type: string
+                  minLength: 1
+              required:
+                - id
+                - name
+                - email
+                - password
+            examples: {}
+      security:
+        - Bearer: []
+      parameters:
+        - schema:
+            type: string
+          in: header
+          name: 'Content-Type: application/json'
+    parameters: []
+  /api/v1/web/user/delete/:
+    post:
+      summary: ユーザー情報編集API
+      tags: []
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                description: ''
+                type: object
+                properties:
+                  success:
+                    type: boolean
+                required:
+                  - success
+              examples:
+                example-1:
+                  value:
+                    success: true
+      operationId: post-api-v1-user-update
+      description: |-
+        http://localhost:8080/admin/user
+        システムユーザー＞ユーザー一覧＞削除にて使用
+      requestBody:
+        content:
+          application/json:
+            schema:
+              description: ''
+              type: object
+              properties:
+                id:
+                  type: string
+                  minLength: 1
+              required:
+                - id
+            examples: {}
+      security:
+        - Bearer: []
+      parameters:
+        - schema:
+            type: string
+          in: header
+          name: 'Content-Type: application/json'
+    parameters: []
+  /api/v1/web/buses/register/:
+    post:
+      summary: 車両の新規登録
+      operationId: post-api-v1-bus-buses
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+              examples:
+                example-1:
+                  value:
+                    success: true
+        '':
+          headers:
+            header-0:
+              schema:
+                type: string
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+              examples:
+                example-1:
+                  value:
+                    success: true
+      description: |-
+        http://localhost:8080/admin/driver#bus
+        車両管理＞新規車両登録にて使用
+      security:
+        - Bearer: []
+      parameters:
+        - schema:
+            type: string
+          in: header
+          name: 'Content-Type: application/json'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                bus_number:
+                  type: string
+                bus_name:
+                  type: string
+            examples:
+              example-1:
+                value:
+                  bus_number: 愛媛 12-345
+                  bus_name: 1号車
+    parameters: []
+  /api/v1/web/buses/update/:
+    post:
+      summary: 車両の更新用API
+      operationId: post-api-v1-bus-buses-update
+      responses:
+        '200':
+          description: OK
+          headers:
+            header-0:
+              schema:
+                type: string
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+              examples:
+                example-1:
+                  value:
+                    success: true
+      security:
+        - Bearer: []
+      parameters:
+        - schema:
+            type: string
+          in: header
+          name: 'Content-Type: application/json'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                bus_number:
+                  type: string
+                bus_name:
+                  type: string
+                id:
+                  type: string
+            examples:
+              example-1:
+                value:
+                  id: '1'
+                  bus_number: 愛媛 123 45-678
+                  bus_name: 1号車
+      description: |-
+        http://localhost:8080/admin/driver#bus
+        車両管理＞車両一覧＞編集にて使用
+    parameters: []
+  /api/v1/web/buses/delete/:
+    post:
+      summary: 車両の削除
+      operationId: post-api-v1-bus-buses-delete
+      responses:
+        '200':
+          description: OK
+          headers:
+            header-0:
+              schema:
+                type: string
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+              examples:
+                example-1:
+                  value:
+                    success: true
+      security:
+        - Bearer: []
+      parameters:
+        - schema:
+            type: string
+          in: header
+          name: 'Content-Type: application/json'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                bus_id:
+                  type: string
+            examples:
+              example-1:
+                value:
+                  bus_id: '1'
+      description: |-
+        http://localhost:8080/admin/driver#bus
+        車両管理＞車両一覧＞削除にて使用
+    parameters: []
+  /api/v1/web/drivers/register/:
+    post:
+      summary: 運転手登録
+      operationId: post-api-v1-bus-drivers-register
+      responses:
+        '200':
+          description: OK
+          headers:
+            header-0:
+              schema:
+                type: string
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+      security:
+        - Bearer: []
+      parameters:
+        - schema:
+            type: string
+          in: header
+          name: 'Content-Type: application/json'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                driver_name:
+                  type: string
+                email:
+                  type: string
+                password:
+                  type: string
+            examples:
+              example-1:
+                value:
+                  driver_name: 田川くん
+                  email: tagawa@example.com
+                  password: hogehogetagawa
+      description: |-
+        http://localhost:8080/admin/driver
+        運転手管理＞新規運転手登録にて使用
+    parameters: []
+  /api/v1/web/drivers/update/:
+    post:
+      summary: 運転手の更新
+      operationId: post-api-v1-bus-drivers-update
+      responses:
+        '200':
+          description: OK
+          headers:
+            header-0:
+              schema:
+                type: string
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+              examples:
+                example-1:
+                  value:
+                    success: true
+      security:
+        - Bearer: []
+      parameters:
+        - schema:
+            type: string
+          in: header
+          name: 'Content-Type: application/json'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                driver_name:
+                  type: string
+                email:
+                  type: string
+                password:
+                  type: string
+                driver_id:
+                  type: string
+            examples:
+              example-1:
+                value:
+                  driver_id: '1'
+                  driver_name: 田川くん
+                  email: string
+                  password: string
+        description: ''
+      description: |-
+        http://localhost:8080/admin/driver
+        運転手管理＞運転手一覧＞編集にて使用
+    parameters: []
+  /api/v1/web/drivers/delete/:
+    post:
+      summary: 運転手の削除
+      operationId: post-api-v1-drivers-delete
+      responses:
+        '200':
+          description: OK
+          headers:
+            header-0:
+              schema:
+                type: string
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+              examples:
+                example-1:
+                  value:
+                    success: true
+      security:
+        - Bearer: []
+      parameters:
+        - schema:
+            type: string
+          in: header
+          name: 'Content-Type: application/json'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                driver_id:
+                  type: string
+            examples:
+              example-1:
+                value:
+                  driver_id: '1'
+      description: |-
+        http://localhost:8080/admin/driver
+        運転手管理＞運転手一覧＞削除にて使用
+    parameters: []
+  /api/v1/web/notification/update/:
+    post:
+      summary: お知らせ管理の更新
+      operationId: post-api-notification-update
+      responses:
+        '200':
+          description: OK
+          headers:
+            header-0:
+              schema:
+                type: string
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+              examples:
+                example-1:
+                  value:
+                    success: true
+      security:
+        - Bearer: []
+      parameters:
+        - schema:
+            type: string
+          in: header
+          name: 'Content-Type: application/json'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                notification:
+                  type: string
+            examples:
+              example-1:
+                value:
+                  notification: 明日の運行はありません．
+      description: |-
+        http://localhost:8080/admin/notifications
+        お知らせメッセージの変更にて使用
+    parameters: []
+  /api/v1/web/statistics/rids/:
+    post:
+      summary: 統計情報取得API
+      operationId: post-api-notification-update
+      responses:
+        '200':
+          description: OK
+          headers:
+            header-0:
+              schema:
+                type: string
+          content:
+            application/json:
+              schema:
+                description: ''
+                type: object
+                properties:
+                  labels:
+                    type: array
+                    items:
+                      required: []
+                      properties: {}
+                  series:
+                    type: array
+                    items:
+                      required: []
+                      properties:
+                        '0':
+                          type: array
+                          uniqueItems: true
+                          items:
+                            required: []
+                            properties: {}
+                required:
+                  - labels
+                  - series
+              examples:
+                daily:
+                  value:
+                    labels:
+                      - 月
+                      - 火
+                      - 水
+                      - 木
+                      - 金
+                      - 土
+                      - 日
+                    series:
+                      - - 12
+                        - 17
+                        - 10
+                        - 17
+                        - 23
+                        - 5
+                        - 10
+                monthly:
+                  value:
+                    labels:
+                      - 1月
+                      - 2月
+                      - 3月
+                      - 4月
+                      - 5月
+                      - 6月
+                      - 7月
+                      - 8月
+                      - 9月
+                      - 10月
+                      - 11月
+                      - 12月
+                    series:
+                      - - 42
+                        - 43
+                        - 20
+                        - 80
+                        - 53
+                        - 53
+                        - 26
+                        - 34
+                        - 68
+                        - 10
+                        - 10
+                        - 40
+      security:
+        - Bearer: []
+      parameters:
+        - schema:
+            type: string
+          in: header
+          name: 'Content-Type: application/json'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                option:
+                  type: string
+            examples:
+              daily:
+                value:
+                  option: daily
+              monthly:
+                value:
+                  option: monthly
+      description: |-
+        http://localhost:8080/admin/dashboard
+        今週，今月の乗車数の推移で使用
+    parameters: []
+  /api/v1/web/monitor/notification/update/:
+    post:
+      summary: 見守りメッセージの更新処理
+      operationId: post-api-v1-web-monitor-notificaton-update
+      responses:
+        '200':
+          description: OK
+          headers:
+            header-0:
+              schema:
+                type: string
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+              examples:
+                example-1:
+                  value:
+                    success: true
+        '201':
+          description: Created
+          headers:
+            header-0:
+              schema:
+                type: string
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+              examples:
+                example-1:
+                  value:
+                    success: true
+        '':
+          headers:
+            header-0:
+              schema:
+                type: string
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+              examples:
+                example-1:
+                  value:
+                    success: true
+      description: /monitor#notification
+      security:
+        - Bearer: []
+      parameters:
+        - schema:
+            type: string
+          in: header
+          name: 'Content-Type: application/json'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                message:
+                  type: string
+            examples:
+              example-1:
+                value:
+                  message: 明日は運行しません
+    parameters: []
+  /api/v1/web/monitor/management/delete/:
+    post:
+      summary: 見守りユーザーの削除
+      operationId: post-api-v1-web-monitor-management-delete
+      responses:
+        '200':
+          description: OK
+          headers:
+            header-0:
+              schema:
+                type: string
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+              examples:
+                example-1:
+                  value:
+                    success: true
+        '':
+          headers:
+            header-0:
+              schema:
+                type: string
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+              examples:
+                example-1:
+                  value:
+                    success: true
+      description: /monitor/management/delete
+      security:
+        - Bearer: []
+      parameters:
+        - schema:
+            type: string
+          in: header
+          name: 'Content-Type: application/json'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              description: ''
+              type: object
+              properties:
+                user_id:
+                  type: string
+                  minLength: 1
+              required:
+                - user_id
+            examples:
+              example-1:
+                value:
+                  monitor_id: '1'
+    parameters: []
+  /api/v1/web/monitor/management/register/:
+    parameters: []
+    post:
+      summary: 見守り利用者登録
+      operationId: post-api-v1-web-monitor-management-register
+      responses:
+        '200':
+          description: OK
+          headers:
+            header-0:
+              schema:
+                type: string
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+              examples:
+                example-1:
+                  value:
+                    success: true
+      description: /monitor/management/register/
+      security:
+        - Bearer: []
+      parameters:
+        - schema:
+            type: string
+          in: header
+          name: 'Content-Type: application/json'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              description: ''
+              type: object
+              properties:
+                monitor_user_name:
+                  type: string
+                  minLength: 1
+                monitor_email:
+                  type: string
+                  minLength: 1
+                card_number:
+                  type: string
+                  minLength: 1
+                monitor_target_user_name:
+                  type: string
+                  minLength: 1
+              required:
+                - monitor_user_name
+                - monitor_email
+                - card_number
+                - monitor_target_user_name
+            examples:
+              example-1:
+                value:
+                  monitor_user_name: 見守りユーザー01（保護者）
+                  monitor_email: test@test.com
+                  card_number: '1234567890123456'
+                  monitor_target_user_name: 見守り対象ユーザー01
+  /api/v1/web/monitor/management/update/:
+    post:
+      summary: 見守り利用者の更新
+      operationId: post-api-v1-web-monitor-management-upate
+      responses:
+        '200':
+          description: OK
+          headers:
+            header-0:
+              schema:
+                type: string
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+              examples:
+                example-1:
+                  value:
+                    success: true
+        '':
+          headers:
+            header-0:
+              schema:
+                type: string
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+              examples:
+                example-1:
+                  value:
+                    success: true
+      description: /monitor/management/update/
+      security:
+        - Bearer: []
+      parameters:
+        - schema:
+            type: string
+          in: header
+          name: 'Content-Type: application/json'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              description: ''
+              type: object
+              properties:
+                user_id:
+                  type: string
+                  minLength: 1
+                monitor_user_name:
+                  type: string
+                  minLength: 1
+                monitor_email:
+                  type: string
+                  minLength: 1
+                card_number:
+                  type: string
+                  minLength: 1
+                monitor_target_user_name:
+                  type: string
+                  minLength: 1
+              required:
+                - user_id
+                - monitor_user_name
+                - monitor_email
+                - card_number
+                - monitor_target_user_name
+            examples:
+              example-1:
+                value:
+                  user_id: '1'
+                  monitor_user_name: 見守りユーザー01（保護者）
+                  monitor_email: test2@test.com
+                  card_number: '1234567890123456'
+                  monitor_target_user_name: 見守り対象ユーザー01
+    parameters: []
+  /api/v1/web/service/notification/history/:
+    post:
+      summary: 運行履歴取得API
+      operationId: post-api-notification-update
+      responses:
+        '200':
+          description: OK
+          headers:
+            header-0:
+              schema:
+                type: string
+          content:
+            application/json:
+              schema:
+                description: ''
+                type: object
+                properties:
+                  histories:
+                    type: array
+                    uniqueItems: true
+                    minItems: 1
+                    items:
+                      required:
+                        - date
+                        - time
+                        - bus_name
+                        - course_name
+                        - content
+                      properties:
+                        date:
+                          type: string
+                        time:
+                          type: string
+                        bus_name:
+                          type: string
+                        course_name:
+                          type: string
+                        content:
+                          type: string
+                required:
+                  - histories
+              examples:
+                example-1:
+                  value:
+                    histories:
+                      - date: 2020/10/10
+                        time: '17:10'
+                        bus_name: バスの名前
+                        course_name: コースA
+                        content: 運行を終了しました
+                      - date: 2020/10/10
+                        time: '17:00'
+                        bus_name: バスの名前
+                        course_name: コースB
+                        content: 運行を終了しました
+                      - date: 2020/10/10
+                        time: '7:01'
+                        bus_name: バスの名前
+                        course_name: コースB
+                        content: 運行を開始しました
+                      - date: 2020/10/10
+                        time: '7:00'
+                        bus_name: バスの名前B
+                        course_name: コースA
+                        content: 運行を開始しました
+                      - date: 2020/10/9
+                        time: '17:00'
+                        bus_name: バスの名前A
+                        course_name: コースA
+                        content: 運行を終了しました
+      security:
+        - Bearer: []
+      parameters:
+        - schema:
+            type: string
+          in: header
+          name: 'Content-Type: application/json'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                limit:
+                  type: string
+            examples:
+              example-1:
+                value:
+                  limit: '5'
+      description: |
+        http://localhost:8080/admin/dashboard
+        システム通知＞運行履歴
+    parameters: []
+  /api/v1/web/system/notification/history/:
+    post:
+      summary: システム変更履歴取得API
+      operationId: post-api-notification-update
+      responses:
+        '200':
+          description: OK
+          headers:
+            header-0:
+              schema:
+                type: string
+          content:
+            application/json:
+              schema:
+                description: ''
+                type: object
+                properties:
+                  histories:
+                    type: array
+                    uniqueItems: true
+                    minItems: 1
+                    items:
+                      required:
+                        - date
+                        - time
+                        - content
+                      properties:
+                        date:
+                          type: string
+                          minLength: 1
+                        time:
+                          type: string
+                          minLength: 1
+                        content:
+                          type: string
+                          minLength: 1
+                required:
+                  - histories
+              examples:
+                example-1:
+                  value:
+                    histories:
+                      - date: 2020/10/10
+                        time: '17:00'
+                        content: 料金の設定が変更されました
+                      - date: 2020/10/9
+                        time: '13:00'
+                        content: お知らせの文章が変更されました
+      security:
+        - Bearer: []
+      parameters:
+        - schema:
+            type: string
+          in: header
+          name: 'Content-Type: application/json'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                limit:
+                  type: string
+            examples:
+              example-1:
+                value:
+                  limit: '2'
+      description: |
+        http://localhost:8080/admin/dashboard
+        システム通知＞システム変更履歴
+    parameters: []
+components:
+  schemas:
+    400error:
+      title: 400error
+      type: object
+      x-examples:
+        example-1:
+          error: 不足している引数があります
+      properties:
+        error:
+          type: string
+  securitySchemes:
+    Bearer:
+      type: http
+      scheme: bearer
+      description: Credentials or access token for API

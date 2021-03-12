@@ -1,0 +1,1199 @@
+[
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 1,
+            "route_id": 1,
+            "bus_stop_id": 8,
+            "order": 1
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 2,
+            "route_id": 1,
+            "bus_stop_id": 9,
+            "order": 2
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 3,
+            "route_id": 1,
+            "bus_stop_id": 7,
+            "order": 3
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 4,
+            "route_id": 1,
+            "bus_stop_id": 6,
+            "order": 4
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 5,
+            "route_id": 1,
+            "bus_stop_id": 10,
+            "order": 5
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 6,
+            "route_id": 1,
+            "bus_stop_id": 5,
+            "order": 6
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 7,
+            "route_id": 1,
+            "bus_stop_id": 11,
+            "order": 7
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 8,
+            "route_id": 1,
+            "bus_stop_id": 12,
+            "order": 8
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 9,
+            "route_id": 1,
+            "bus_stop_id": 13,
+            "order": 9
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 10,
+            "route_id": 1,
+            "bus_stop_id": 4,
+            "order": 10
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 11,
+            "route_id": 1,
+            "bus_stop_id": 3,
+            "order": 11
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 12,
+            "route_id": 1,
+            "bus_stop_id": 2,
+            "order": 12
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 13,
+            "route_id": 1,
+            "bus_stop_id": 1,
+            "order": 13
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 14,
+            "route_id": 1,
+            "bus_stop_id": 2,
+            "order": 14
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 15,
+            "route_id": 1,
+            "bus_stop_id": 14,
+            "order": 15
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 16,
+            "route_id": 1,
+            "bus_stop_id": 15,
+            "order": 16
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 17,
+            "route_id": 1,
+            "bus_stop_id": 16,
+            "order": 17
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 18,
+            "route_id": 1,
+            "bus_stop_id": 15,
+            "order": 18
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 19,
+            "route_id": 1,
+            "bus_stop_id": 17,
+            "order": 19
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 20,
+            "route_id": 1,
+            "bus_stop_id": 18,
+            "order": 20
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 21,
+            "route_id": 1,
+            "bus_stop_id": 19,
+            "order": 21
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 22,
+            "route_id": 1,
+            "bus_stop_id": 20,
+            "order": 22
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 23,
+            "route_id": 1,
+            "bus_stop_id": 12,
+            "order": 23
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 24,
+            "route_id": 1,
+            "bus_stop_id": 11,
+            "order": 24
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 25,
+            "route_id": 1,
+            "bus_stop_id": 5,
+            "order": 25
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 26,
+            "route_id": 1,
+            "bus_stop_id": 10,
+            "order": 26
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 27,
+            "route_id": 1,
+            "bus_stop_id": 6,
+            "order": 27
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 28,
+            "route_id": 1,
+            "bus_stop_id": 7,
+            "order": 28
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 29,
+            "route_id": 1,
+            "bus_stop_id": 9,
+            "order": 29
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 30,
+            "route_id": 1,
+            "bus_stop_id": 8,
+            "order": 30
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 31,
+            "route_id": 2,
+            "bus_stop_id": 5,
+            "order": 1
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 32,
+            "route_id": 2,
+            "bus_stop_id": 11,
+            "order": 2
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 33,
+            "route_id": 2,
+            "bus_stop_id": 12,
+            "order": 3
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 34,
+            "route_id": 2,
+            "bus_stop_id": 20,
+            "order": 4
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 35,
+            "route_id": 2,
+            "bus_stop_id": 19,
+            "order": 5
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 36,
+            "route_id": 2,
+            "bus_stop_id": 18,
+            "order": 6
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 37,
+            "route_id": 2,
+            "bus_stop_id": 17,
+            "order": 7
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 38,
+            "route_id": 2,
+            "bus_stop_id": 26,
+            "order": 8
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 39,
+            "route_id": 2,
+            "bus_stop_id": 41,
+            "order": 9
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 40,
+            "route_id": 2,
+            "bus_stop_id": 42,
+            "order": 10
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 41,
+            "route_id": 2,
+            "bus_stop_id": 43,
+            "order": 12
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 42,
+            "route_id": 2,
+            "bus_stop_id": 25,
+            "order": 13
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 43,
+            "route_id": 2,
+            "bus_stop_id": 24,
+            "order": 14
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 44,
+            "route_id": 2,
+            "bus_stop_id": 44,
+            "order": 15
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 45,
+            "route_id": 2,
+            "bus_stop_id": 23,
+            "order": 16
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 46,
+            "route_id": 2,
+            "bus_stop_id": 21,
+            "order": 17
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 47,
+            "route_id": 2,
+            "bus_stop_id": 22,
+            "order": 18
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 48,
+            "route_id": 2,
+            "bus_stop_id": 21,
+            "order": 19
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 49,
+            "route_id": 2,
+            "bus_stop_id": 23,
+            "order": 20
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 50,
+            "route_id": 2,
+            "bus_stop_id": 24,
+            "order": 21
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 51,
+            "route_id": 2,
+            "bus_stop_id": 25,
+            "order": 22
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 52,
+            "route_id": 2,
+            "bus_stop_id": 26,
+            "order": 23
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 53,
+            "route_id": 2,
+            "bus_stop_id": 17,
+            "order": 24
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 54,
+            "route_id": 2,
+            "bus_stop_id": 18,
+            "order": 25
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 55,
+            "route_id": 2,
+            "bus_stop_id": 19,
+            "order": 26
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 56,
+            "route_id": 2,
+            "bus_stop_id": 20,
+            "order": 27
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 57,
+            "route_id": 2,
+            "bus_stop_id": 12,
+            "order": 28
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 58,
+            "route_id": 2,
+            "bus_stop_id": 11,
+            "order": 29
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 59,
+            "route_id": 2,
+            "bus_stop_id": 5,
+            "order": 30
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 60,
+            "route_id": 2,
+            "bus_stop_id": 10,
+            "order": 31
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 61,
+            "route_id": 2,
+            "bus_stop_id": 6,
+            "order": 32
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 62,
+            "route_id": 3,
+            "bus_stop_id": 8,
+            "order": 1
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 63,
+            "route_id": 3,
+            "bus_stop_id": 9,
+            "order": 2
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 64,
+            "route_id": 3,
+            "bus_stop_id": 7,
+            "order": 3
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 65,
+            "route_id": 3,
+            "bus_stop_id": 6,
+            "order": 4
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 66,
+            "route_id": 3,
+            "bus_stop_id": 10,
+            "order": 5
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 67,
+            "route_id": 3,
+            "bus_stop_id": 5,
+            "order": 6
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 68,
+            "route_id": 3,
+            "bus_stop_id": 11,
+            "order": 7
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 69,
+            "route_id": 3,
+            "bus_stop_id": 12,
+            "order": 8
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 70,
+            "route_id": 3,
+            "bus_stop_id": 7,
+            "order": 9
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 71,
+            "route_id": 3,
+            "bus_stop_id": 27,
+            "order": 10
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 72,
+            "route_id": 3,
+            "bus_stop_id": 28,
+            "order": 11
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 73,
+            "route_id": 3,
+            "bus_stop_id": 29,
+            "order": 12
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 74,
+            "route_id": 3,
+            "bus_stop_id": 30,
+            "order": 13
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 75,
+            "route_id": 3,
+            "bus_stop_id": 31,
+            "order": 14
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 76,
+            "route_id": 3,
+            "bus_stop_id": 32,
+            "order": 15
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 77,
+            "route_id": 3,
+            "bus_stop_id": 33,
+            "order": 16
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 78,
+            "route_id": 3,
+            "bus_stop_id": 34,
+            "order": 17
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 79,
+            "route_id": 3,
+            "bus_stop_id": 35,
+            "order": 18
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 80,
+            "route_id": 3,
+            "bus_stop_id": 36,
+            "order": 19
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 81,
+            "route_id": 3,
+            "bus_stop_id": 37,
+            "order": 20
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 82,
+            "route_id": 3,
+            "bus_stop_id": 38,
+            "order": 21
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 83,
+            "route_id": 3,
+            "bus_stop_id": 39,
+            "order": 22
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 84,
+            "route_id": 3,
+            "bus_stop_id": 40,
+            "order": 23
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 85,
+            "route_id": 3,
+            "bus_stop_id": 8,
+            "order": 24
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 86,
+            "route_id": 3,
+            "bus_stop_id": 9,
+            "order": 25
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 87,
+            "route_id": 3,
+            "bus_stop_id": 7,
+            "order": 26
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 88,
+            "route_id": 3,
+            "bus_stop_id": 6,
+            "order": 27
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 89,
+            "route_id": 3,
+            "bus_stop_id": 10,
+            "order": 28
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 90,
+            "route_id": 3,
+            "bus_stop_id": 5,
+            "order": 29
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 91,
+            "route_id": 3,
+            "bus_stop_id": 11,
+            "order": 30
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 92,
+            "route_id": 3,
+            "bus_stop_id": 12,
+            "order": 31
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 93,
+            "route_id": 4,
+            "bus_stop_id": 8,
+            "order": 1
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 93,
+            "route_id": 4,
+            "bus_stop_id": 8,
+            "order": 1
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 94,
+            "route_id": 4,
+            "bus_stop_id": 45,
+            "order": 2
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 95,
+            "route_id": 4,
+            "bus_stop_id": 46,
+            "order": 3
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 96,
+            "route_id": 4,
+            "bus_stop_id": 47,
+            "order": 4
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 97,
+            "route_id": 4,
+            "bus_stop_id": 6,
+            "order": 5
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 98,
+            "route_id": 4,
+            "bus_stop_id": 10,
+            "order": 6
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 99,
+            "route_id": 4,
+            "bus_stop_id": 5,
+            "order": 7
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 100,
+            "route_id": 4,
+            "bus_stop_id": 11,
+            "order": 8
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 101,
+            "route_id": 4,
+            "bus_stop_id": 12,
+            "order": 9
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 102,
+            "route_id": 4,
+            "bus_stop_id": 20,
+            "order": 10
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 103,
+            "route_id": 4,
+            "bus_stop_id": 48,
+            "order": 11
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 104,
+            "route_id": 4,
+            "bus_stop_id": 49,
+            "order": 14
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 105,
+            "route_id": 4,
+            "bus_stop_id": 50,
+            "order": 17
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 106,
+            "route_id": 4,
+            "bus_stop_id": 46,
+            "order": 18
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 107,
+            "route_id": 4,
+            "bus_stop_id": 45,
+            "order": 19
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 108,
+            "route_id": 4,
+            "bus_stop_id": 8,
+            "order": 20
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 109,
+            "route_id": 4,
+            "bus_stop_id": 45,
+            "order": 21
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 110,
+            "route_id": 4,
+            "bus_stop_id": 46,
+            "order": 22
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 111,
+            "route_id": 4,
+            "bus_stop_id": 47,
+            "order": 23
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 112,
+            "route_id": 4,
+            "bus_stop_id": 6,
+            "order": 24
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 113,
+            "route_id": 4,
+            "bus_stop_id": 10,
+            "order": 25
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 114,
+            "route_id": 4,
+            "bus_stop_id": 5,
+            "order": 26
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 115,
+            "route_id": 5,
+            "bus_stop_id": 1,
+            "order": 1
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 116,
+            "route_id": 5,
+            "bus_stop_id": 2,
+            "order": 2
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 117,
+            "route_id": 5,
+            "bus_stop_id": 3,
+            "order": 3
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 118,
+            "route_id": 5,
+            "bus_stop_id": 4,
+            "order": 4
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 119,
+            "route_id": 5,
+            "bus_stop_id": 5,
+            "order": 5
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 120,
+            "route_id": 5,
+            "bus_stop_id": 6,
+            "order": 6
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 121,
+            "route_id": 5,
+            "bus_stop_id": 7,
+            "order": 7
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 122,
+            "route_id": 6,
+            "bus_stop_id": 22,
+            "order": 1
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 123,
+            "route_id": 6,
+            "bus_stop_id": 21,
+            "order": 2
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 124,
+            "route_id": 6,
+            "bus_stop_id": 23,
+            "order": 3
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 125,
+            "route_id": 6,
+            "bus_stop_id": 24,
+            "order": 4
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 126,
+            "route_id": 6,
+            "bus_stop_id": 25,
+            "order": 5
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 127,
+            "route_id": 6,
+            "bus_stop_id": 26,
+            "order": 6
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 128,
+            "route_id": 2,
+            "bus_stop_id": 51,
+            "order": 11
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 129,
+            "route_id": 4,
+            "bus_stop_id": 52,
+            "order": 12
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 130,
+            "route_id": 4,
+            "bus_stop_id": 53,
+            "order": 13
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 131,
+            "route_id": 4,
+            "bus_stop_id": 54,
+            "order": 15
+        }
+    },
+    {
+        "model": "bus.RouteBusStops",
+        "fields": {
+            "id": 132,
+            "route_id": 4,
+            "bus_stop_id": 55,
+            "order": 16
+        }
+    }
+]

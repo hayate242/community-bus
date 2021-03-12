@@ -1,0 +1,23 @@
+# Data Structures
+## Courses
++ Courses (array, fixed-type) - コース一覧
+    + (Course)
+
+## Course
++ course_id: `1` (string) - コースID
++ course_name: `Aコース` (string) - コース名
+
+# Group Bus Course API
+コース情報一覧の取得
+
+## コース情報一覧の取得 [GET /api/v1/bus/course]
+コース情報の一覧を取得する
+
++ Request
+    + Headers
+    ```
+    Authorization: Bearer {token}
+    ```
+
++ Response 200 (application/json)
+    + Attributes (Courses)

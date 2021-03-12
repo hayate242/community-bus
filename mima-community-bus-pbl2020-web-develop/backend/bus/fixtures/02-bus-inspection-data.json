@@ -1,0 +1,25 @@
+[
+    {
+        "model": "bus.VehicleInspections",
+        "fields": {
+            "bus_id": 1,
+            "driver_id": 1,
+            "chack_fuel":true,
+            "chack_engine":true,
+            "chack_brake":true,
+            "chack_wiper":true, 
+            "chack_horn":true,
+            "chack_turn_signal":true,
+            "chack_light":true,
+            "chack_mirror":true,
+            "chack_instrument":true,
+            "chack_tire":true,
+            "chack_exhaust_sound":true,
+            "chack_cooling_water":true,
+            "chack_battery":true,
+            "chack_door":true,
+            "chack_inside":true,
+            "remark": "text"
+        }
+    }
+]

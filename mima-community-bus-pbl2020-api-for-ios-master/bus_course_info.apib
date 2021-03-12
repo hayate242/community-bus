@@ -1,0 +1,130 @@
+# Group Bus Course Info API
+コース情報を取得する
+
+## コース情報の取得 [POST /api/v1/bus/course/info]
+コース情報を取得する
+
++ Request
+    + Headers
+        ```
+        Authorization: Bearer {token}
+        ```
+    + Body
+        ```
+        {
+            "course_id": "1"
+        }
+        ```
+
++ Response 200 (application/json)
+    + Body
+        ```
+        {
+            "course": [
+                {
+                    "route_id": "1",
+                    "route_name": "川之内線",
+                    "route_order_id": "1",
+                    "route_order_name": "第一便",
+                    "bus_stops": [
+                        {
+                            "bus_stop_id": "1",
+                            "bus_stop_order": "1",
+                            "bus_stop_name": "道の駅みま",
+                            "longitude": "132.5958557",
+                            "latitude": "33.2862625"
+                        },
+                        {
+                            "bus_stop_id": "2",
+                            "bus_stop_order": "2",
+                            "bus_stop_name": "森ヶ鼻",
+                            "longitude": "132.597634",
+                            "latitude": "33.2889851"
+                        },
+                    ]
+                },
+                {
+                    "route_id": "2",
+                    "route_name": "大藤線",
+                    "route_order_id": "1",
+                    "route_order_name": "第二便",
+                    "bus_stops": [
+                        {
+                            "bus_stop_id": "3",
+                            "bus_stop_order": "1",
+                            "bus_stop_name": "三間小学校前",
+                            "longitude": "132.6040426",
+                            "latitude": "33.2898029"
+                        },
+                        {
+                            "bus_stop_id": "4",
+                            "bus_stop_order": "2",
+                            "bus_stop_name": "JR宮野下駅前",
+                            "longitude": "132.6060407",
+                            "latitude": "33.2893542"
+                        },
+                    ]
+                },
+                {
+                    "route_id": "3",
+                    "route_name": "音地線",
+                    "route_order_id": "1",
+                    "route_order_name": "第二便",
+                    "bus_stops": [
+                        {
+                            "bus_stop_id": "5",
+                            "bus_stop_order": "1",
+                            "bus_stop_name": "三間支所",
+                            "longitude": "132.6082669",
+                            "latitude": "33.2904506"
+                        },
+                        {
+                            "bus_stop_id": "6",
+                            "bus_stop_order": "2",
+                            "bus_stop_name": "宮野下下組",
+                            "longitude": "132.6099587",
+                            "latitude": "33.2903537"
+                        },
+                    ]
+                },
+                {
+                    "route_id": "4",
+                    "route_name": "増田線",
+                    "route_order_id": "1",
+                    "route_order_name": "第三便",
+                    "bus_stops": [
+                        {
+                            "bus_stop_id": "7",
+                            "bus_stop_order": "1",
+                            "bus_stop_name": "道の駅みま",
+                            "longitude": "132.5958557",
+                            "latitude": "33.2862625"
+                        },
+                        {
+                            "bus_stop_id": "8",
+                            "bus_stop_order": "2",
+                            "bus_stop_name": "務田公民館前",
+                            "longitude": "132.5963447",
+                            "latitude": "33.2847909"
+                        },
+                    ]
+                },
+            ]
+        }
+        ```
+
++ Response 400 (application/json)
+    + Body
+        ```
+        {
+            "error": "there are missing arguments (driver)"
+        }
+        ```
+
++ Response 401 (application/json)
+    + Body
+        ```
+        {
+            "error": "Unauthorized"
+        }
+        ```

@@ -1,0 +1,1119 @@
+# Data Structures
+## Routes (object)
++ route_id: `1` (string) - 路線ID
++ route_name: `河内線` (string) - 路線名
++ route_orders (array, fixed-type) - 便一覧
+    + (Route Orders)
+
+## Route Orders (object)
++ route_id: `1` (string) - 路線ID
++ route_order_id: `1` (string) - 便ID
+# Group Login API
+認証用WebAPI
+iOSアプリで使用
+
+## ユーザ登録 [POST /api/v1/user]
+新規ユーザを登録する
+
++ Request (application/json)
+    + Attributes
+        + user_name: `ehimeict` (string, required) - 氏名
+        + phone_number: `08038473847` (string, required) - 電話番号
+        + email: `ehimeict@gmail.com` (string, required) - メールアドレス
+        + password: `1xU35jQy` (string, required) - パスワード
+
++ Response 200 (application/json)
+    + Attributes
+        + result: `true` (boolean) - 登録結果
+        + name: `ehimeict` (string) - ユーザ名
+        + phone_number: `08038473847` (string, required) - 電話番号
+        + email: `ehimeict@gmail.com` (string) - メールアドレス
+        + message: `User creation succeeded.` (string) - 登録メッセージ
+
++ Response 400 (application/json)
+    + Body
+        ```
+        {
+            "error": "there are missing arguments (user_name,phone_number)"
+        }
+        ```
++ Response 401 (application/json)
+    + Body
+        ```
+        {
+            "error": "failed to create user"
+        }
+        ```
+
+
+## トークン発行 [POST /api/v1/login]
+JWT認証用のトークンを発行する
+
++ Request (application/json)
+    + Attributes
+        + email: `ehimeict@gmail.com` (string, required)
+        + password: `1xU35jQy` (string, required)
+
++ Response 200 (application/json)
+    + Attributes
+        + access_token: `{token}` (string)
+        + token_type: `bearer` (string)
+        + expire_in: `60` (number) - トークンの有効期限(日)
+
++ Response 400 (application/json)
+    + Body
+        ```
+        {
+            "error": "there are missing arguments (email,password)"
+        }
+        ```
++ Response 401 (application/json)
+    + Body
+        ```
+        {
+            "error": "Unauthorized"
+        }
+        ```
+
+## ログアウト [POST /api/v1/logout]
+JWT認証用のトークンを破棄する
+
++ Request
+    + Headers
+        ```
+        Authorization: Bearer {token}
+        ```
+
++ Response 200 (application/json)
+    + Attributes
+        + success: `Successfully logged out from application` (string)
+
++ Response 401 (application/json)
+    + Body
+        ```
+        {
+            "error": "Unauthorized"
+        }
+        ```
+
+
+## ユーザ情報取得 [GET /api/v1/user/info]
+自分自身のアカウント情報を取得する
+
++ Request
+    + Headers
+        ```
+        Authorization: Bearer {token}
+        ```
+
++ Response 200 (application/json)
+    + Attributes
+        + id: `1` (string) - ユーザーID
+        + name: `ehimeict` (string) - ユーザ名
+        + phone_number: `08038473847` (string, required) - 電話番号
+        + email: `ehimeict@gmail.com` (string) - メールアドレス
+
++ Response 401 (application/json)
+    + Body
+        ```
+        {
+            "error": "Unauthorized"
+        }
+        ```# Group Bus Boarding Number API
+乗降情報記録API
+
+
+## 乗降情報の保存 [POST /api/v1/bus/boardings/create]
+乗降情報を登録する
+
++ Request (application/json)
+    + Headers
+        ```
+        Authorization: Bearer {token}
+        ```
+    + Attributes
+        + boardings (array[object], fixed-type) - 乗降情報
+            + (object)
+                + bus_id: `1` (string) - バスID
+                + route_id: `1` (string) - 路線ID
+                + route_order_id: `1` (string) - 便ID
+                + bus_stop_id: `1` (string) - バス停ID
+                + bus_stop_order: `1` (string) - バス停の順番
+                + driver_id: `1` (string) - ドライバーID
+                + fare_id: `1` (string) - 運賃ID
+                + number: `1` (string) - 乗降者数
+                + memo: `memo` (string) - メモ
+                + send_at: `2020-09-11 00:00:00` (string) - 乗降時刻
+
++ Response 200 (application/json)
+    + Body
+        ```
+        {
+            "success": "saved information successfully"
+        }
+        ```
++ Response 400 (application/json)
+    + Body
+        ```
+        {
+            "error": "there are missing arguments (bus_id)"
+        }
+        ```
++ Response 401 (application/json)
+    + Body
+        ```
+        {
+            "error": "Unauthorized"
+        }
+        ```
+# Data Structures
+## Courses
++ Courses (array, fixed-type) - コース一覧
+    + (Course)
+
+## Course
++ course_id: `1` (string) - コースID
++ course_name: `Aコース` (string) - コース名
+
+# Group Bus Course API
+コース情報一覧の取得
+
+## コース情報一覧の取得 [GET /api/v1/bus/course]
+コース情報の一覧を取得する
+
++ Request
+    + Headers
+    ```
+    Authorization: Bearer {token}
+    ```
+
++ Response 200 (application/json)
+    + Attributes (Courses)
+# Group Bus Course Info API
+コース情報を取得する
+
+## コース情報の取得 [POST /api/v1/bus/course/info]
+コース情報を取得する
+
++ Request
+    + Headers
+        ```
+        Authorization: Bearer {token}
+        ```
+    + Body
+        ```
+        {
+            "course_id": "1"
+        }
+        ```
+
++ Response 200 (application/json)
+    + Body
+        ```
+        {
+            "course": [
+                {
+                    "route_id": "1",
+                    "route_name": "川之内線",
+                    "route_order_id": "1",
+                    "route_order_name": "第一便",
+                    "bus_stops": [
+                        {
+                            "bus_stop_id": "1",
+                            "bus_stop_order": "1",
+                            "bus_stop_name": "道の駅みま",
+                            "longitude": "132.5958557",
+                            "latitude": "33.2862625"
+                        },
+                        {
+                            "bus_stop_id": "2",
+                            "bus_stop_order": "2",
+                            "bus_stop_name": "森ヶ鼻",
+                            "longitude": "132.597634",
+                            "latitude": "33.2889851"
+                        },
+                    ]
+                },
+                {
+                    "route_id": "2",
+                    "route_name": "大藤線",
+                    "route_order_id": "1",
+                    "route_order_name": "第二便",
+                    "bus_stops": [
+                        {
+                            "bus_stop_id": "3",
+                            "bus_stop_order": "1",
+                            "bus_stop_name": "三間小学校前",
+                            "longitude": "132.6040426",
+                            "latitude": "33.2898029"
+                        },
+                        {
+                            "bus_stop_id": "4",
+                            "bus_stop_order": "2",
+                            "bus_stop_name": "JR宮野下駅前",
+                            "longitude": "132.6060407",
+                            "latitude": "33.2893542"
+                        },
+                    ]
+                },
+                {
+                    "route_id": "3",
+                    "route_name": "音地線",
+                    "route_order_id": "1",
+                    "route_order_name": "第二便",
+                    "bus_stops": [
+                        {
+                            "bus_stop_id": "5",
+                            "bus_stop_order": "1",
+                            "bus_stop_name": "三間支所",
+                            "longitude": "132.6082669",
+                            "latitude": "33.2904506"
+                        },
+                        {
+                            "bus_stop_id": "6",
+                            "bus_stop_order": "2",
+                            "bus_stop_name": "宮野下下組",
+                            "longitude": "132.6099587",
+                            "latitude": "33.2903537"
+                        },
+                    ]
+                },
+                {
+                    "route_id": "4",
+                    "route_name": "増田線",
+                    "route_order_id": "1",
+                    "route_order_name": "第三便",
+                    "bus_stops": [
+                        {
+                            "bus_stop_id": "7",
+                            "bus_stop_order": "1",
+                            "bus_stop_name": "道の駅みま",
+                            "longitude": "132.5958557",
+                            "latitude": "33.2862625"
+                        },
+                        {
+                            "bus_stop_id": "8",
+                            "bus_stop_order": "2",
+                            "bus_stop_name": "務田公民館前",
+                            "longitude": "132.5963447",
+                            "latitude": "33.2847909"
+                        },
+                    ]
+                },
+            ]
+        }
+        ```
+
++ Response 400 (application/json)
+    + Body
+        ```
+        {
+            "error": "there are missing arguments (driver)"
+        }
+        ```
+
++ Response 401 (application/json)
+    + Body
+        ```
+        {
+            "error": "Unauthorized"
+        }
+        ```
+# Group Bus Fare API
+
+バス運賃情報の取得
+
+## バスの運賃情報の取得 [GET /api/v1/bus/fare]
+バスの運賃情報を取得する
+
++ Request
+    + Headers
+        ```
+        Authorization: Bearer {token}
+        ```
+
++ Response 200 (application/json)
+    + Body
+        ```
+        {
+            "table": [
+                {
+                    "row1_name": "降車数",
+                    "row2": [
+                        {
+                            "row2_name": "",
+                            "row3": [
+                                {
+                                    "row3_name": "",
+                                    "fare_id": "1"
+                                },
+                            ]
+                        },
+                    ]
+                },
+                {
+                    "row1_name": "乗車数",
+                    "row2": [
+                        {
+                            "row2_name": "現金",
+                            "row3": [
+                                {
+                                    "row3_name": "大人",
+                                    "fare_id": "2"
+                                },
+                                {
+                                    "row3_name": "子供",
+                                    "fare_id": "3"
+                                },
+                                {
+                                    "row3_name": "障大人",
+                                    "fare_id": "4"
+                                },
+                                {
+                                    "row3_name": "障子人",
+                                    "fare_id": "5"
+                                }
+                            ]
+                        },
+                        {
+                            "row2_name": "回数券",
+                            "row3": [
+                                {
+                                    "row3_name": "大人",
+                                    "fare_id": "6"
+                                },
+                                {
+                                    "row3_name": "子供",
+                                    "fare_id": "7"
+                                },
+                                {
+                                    "row3_name": "障害者",
+                                    "fare_id": "8"
+                                },
+                            ]
+                        },
+                        {
+                            "row2_name": "定期券",
+                            "row3": [
+                                {
+                                    "row3_name": "",
+                                    "fare_id": "9"
+                                },
+                            ]
+                        },
+                        {
+                            "row2_name": "無賃",
+                            "row3": [
+                                {
+                                    "row3_name": "",
+                                    "fare_id": "10"
+                                },
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "row1_name": "回数券の販売数",
+                    "row2": [
+                        {
+                            "row2_name": "",
+                            "row3": [
+                                {
+                                    "row3_name": "大人",
+                                    "fare_id": "11"
+                                },
+                                {
+                                    "row3_name": "子供",
+                                    "fare_id": "12"
+                                },
+                                {
+                                    "row3_name": "障害者",
+                                    "fare_id": "13"
+                                }
+                            ]
+                        },
+                    ]
+                }
+            ]
+        }
+        ```
++ Response 401 (application/json)
+    + Body
+        ```
+        {
+            "error": "Unauthorized"
+        }
+        ```
+# Group Bus Initial API
+
+業務開始・終了情報の保存
+
+
+
+## 業務開始・終了情報の保存 [POST /api/v1/bus/init/create]
+業務開始・終了情報を登録する
+
++ Request (application/json)
+    + Headers
+        ```
+        Authorization: Bearer {token}
+        ```
+    + Attributes
+        + bus_id: `1` (string) - バスID
+        + driver_id: `1` (string) - ドライバーID
+        + course_id: `1` (string) - コースID
+        + trip_meter: `1234` (string) - トリップメーターの値
+        + money: `10200` (string) - 所持金額
+        + work_start_end_flag: `0` (string) - 業務開始終了フラグ
+        + send_at: `2020-09-11 00:00:00` - 送信時間
+
++ Response 200 (application/json)
+    + Body
+        ```
+        {
+            "success": "情報の保存に成功しました．"
+        }
+        ```
++ Response 400 (application/json)
+    + Body
+        ```
+        {
+            "error": "バスIDが渡されていません．"
+        }
+        ```
++ Response 401 (application/json)
+    + Body
+        ```
+        {
+            "error": "認証に失敗しました．"
+        }
+        ```
+# Group Bus Inspection API
+
+バス点検情報の取得，保存
+
+## 運転手，バス一覧，バス点検項目の取得 [GET /api/v1/bus/inspections]
+バスの点検項目情報を取得する
+
+
+
++ Request
+    + Headers
+        ```
+        Authorization: Bearer {token}
+        ```
+
++ Response 200 (application/json)
+    + Body
+         ```
+        {
+        "drivers": [
+            {
+            "driver_id": "1",
+            "driver_name": "愛大太郎"
+            },
+            {
+            "driver_id": "2",
+            "driver_name": "愛大次郎"
+            }
+        ],
+        "buses": [
+            {
+            "bus_id": "1",
+            "bus_name": "11111"
+            },
+             {
+            "bus_id": "2",
+            "bus_name": "22222"
+            }
+        ],
+        "item": [
+            {
+            "inspection_id": "1",
+            "inspection_name": "燃料"
+            },
+             {
+            "inspection_id": "2",
+            "inspection_name": "エンジン"
+            },
+             {
+            "inspection_id": "3",
+            "inspection_name": "ブレーキ"
+            },
+             {
+            "inspection_id": "4",
+            "inspection_name": "ワイパー"
+            },
+             {
+            "inspection_id": "5",
+            "inspection_name": "クラクション"
+            },
+             {
+            "inspection_id": "6",
+            "inspection_name": "ウィンカー"
+            },
+             {
+            "inspection_id": "7",
+            "inspection_name": "灯火"
+            },
+             {
+            "inspection_id": "8",
+            "inspection_name": "ミラー"
+            },
+             {
+            "inspection_id": "9",
+            "inspection_name": "計器"
+            },
+             {
+            "inspection_id": "10",
+            "inspection_name": "タイヤ"
+            },
+             {
+            "inspection_id": "11",
+            "inspection_name": "排気音"
+            },
+             {
+            "inspection_id": "12",
+            "inspection_name": "冷却水"
+            },
+             {
+            "inspection_id": "13",
+            "inspection_name": "バッテリー"
+            },
+             {
+            "inspection_id": "14",
+            "inspection_name": "乗降ドア"
+            },
+             {
+            "inspection_id": "15",
+            "inspection_name": "車内点検"
+            }
+        ]
+        }
+        ```
+
++ Response 401 (application/json)
+    + Body
+        ```
+        {
+            "error": "Unauthorized"
+        }
+        ```
+
+## 運転手，バス一覧，バス点検項目の登録 [POST /api/v1/bus/inspections/create]
+バスの点検項目情報を登録する
+
++ Request (application/json)
+    + Headers
+        ```
+        Authorization: Bearer {token}
+        ```
+    + Attributes
+        + driver_id: `1` (string) - ドライバーID
+        + bus_id: `1` (string) - バスID
+        + checked: `true` (string) - 点検項目
+        + remark: `text` (string) - 備考
+
++ Response 200 (application/json)
+    + Body
+        ```
+        {
+            "success": "saved information successfully"
+        }
+        ```
++ Response 400 (application/json)
+    + Body
+        ```
+        {
+            "error": "there are missing arguments (driver)"
+        }
+        ```
++ Response 401 (application/json)
+    + Body
+        ```
+        {
+            "error": "Unauthorized"
+        }
+        ```
+# Group Bus Location API
+
+バスロケーションの取得，保存
+
+## バスロケーションの取得 [GET /api/v1/bus/locations]
+バスロケーションを取得する
+
++ Request
+    + Headers
+        ```
+        Authorization: Bearer {token}
+        ```
+    + Attributes
+        + bus_id: `1` (string) - バスID
+        + start_from: `2020-09-11` (string) - 開始日
+        + end_at: `2020-09-11` (string) - 終了日
+
++ Response 200 (application/json)
+    + Attributes
+        + bus_id: `1` (string) - ドライバーID
+        + locations (array[object], fixed-type) - ロケーション一覧
+            + (object)
+                + date_time: `2020-09-11 00:00:00` (string) - 記録日
+                + longitude: `33.687781` (string) - 緯度
+                + latitude: `132.802734` (string) - 経度
+
++ Response 400 (application/json)
+    + Body
+        ```
+        {
+            "error": "there are no record"
+        }
+        ```
++ Response 401 (application/json)
+    + Body
+        ```
+        {
+            "error": "Unauthorized"
+        }
+        ```
+
+## バスロケーションの保存 [POST /api/v1/bus/locations/create]
+バスロケーションを登録する
+
++ Request (application/json)
+    + Headers
+        ```
+        Authorization: Bearer {token}
+        ```
+    + Attributes
+        + course_id: `1` (string) - コースID
+        + bus_id: `1` (string) - バスID
+        + route_order_id: `1` (string) - 便ID
+        + route_name: `音地線` (string) - 路線名
+        + longitude: `132.802734` (string) - 緯度
+        + latitude: `33.687781` (string) - 経度
+        + vacancy_num: `4` (string) - 空席数
+        + next_bus_stop_name: `田川集会所` (string) - 次のバス停情報
+        + send_at: `2020-09-11 00:00:00` - 送信時間
+
+
++ Response 200 (application/json)
+    + Body
+        ```
+        {
+            "success": "saved location successfully"
+        }
+        ```
++ Response 400 (application/json)
+    + Body
+        ```
+        {
+            "error": "there are missing arguments (bus_id)"
+        }
+        ```
++ Response 401 (application/json)
+    + Body
+        ```
+        {
+            "error": "Unauthorized"
+        }
+        ```
+# Group Bus List API
+便，路線，バス停の一覧取得
+
+
+
+## 路線情報の一覧取得 [GET /api/v1/bus/routes]
+路線，便情報の一覧を取得する
+
++ Request
+    + Headers
+        ```
+        Authorization: Bearer {token}
+        ```
+
+
++ Response 200 (application/json)
+    + Body
+    ```
+    {
+        "routes": [
+            {
+                "route_id": "1",
+                "route_name": "河内線",
+                "route_orders": [
+                    {
+                        "route_order_id": "1",
+                        "route_order_name": "第一便"
+                    },
+                    {
+                        "route_order_id": "2",
+                        "route_order_name": "第二便"
+                    },
+                    {
+                        "route_order_id": "3",
+                        "route_order_name": "第三便"
+                    },
+                    {
+                        "route_order_id": "4",
+                        "route_order_name": "第四便"
+                    },
+                    {
+                        "route_order_id": "5",
+                        "route_order_name": "第五便"
+                    }
+                ]
+            },
+            {
+                "route_id": "2",
+                "route_name": "音地線",
+                "route_orders": [
+                    {
+                        "route_order_id": "1",
+                        "route_order_name": "第一便"
+                    },
+                    {
+                        "route_order_id": "2",
+                        "route_order_name": "第二便"
+                    },
+                    {
+                        "route_order_id": "3",
+                        "route_order_name": "第三便"
+                    },
+                    {
+                        "route_order_id": "4",
+                        "route_order_name": "第四便"
+                    },
+                    {
+                        "route_order_id": "5",
+                        "route_order_name": "第五便"
+                    },
+                    {
+                        "route_order_id": "6",
+                        "route_order_name": "第六便"
+                    }
+                ]
+            },
+            {
+                "route_id": "3",
+                "route_name": "大藤線",
+                "route_orders": [
+                    {
+                        "route_order_id": "1",
+                        "route_order_name": "第一便"
+                    },
+                    {
+                        "route_order_id": "2",
+                        "route_order_name": "第二便"
+                    },
+                    {
+                        "route_order_id": "3",
+                        "route_order_name": "第三便"
+                    }
+                ]
+            },
+            {
+                "route_id": "4",
+                "route_name": "増田線",
+                "route_orders": [
+                    {
+                        "route_order_id": "1",
+                        "route_order_name": "第一便"
+                    },
+                    {
+                        "route_order_id": "2",
+                        "route_order_name": "第二便"
+                    },
+                    {
+                        "route_order_id": "3",
+                        "route_order_name": "第三便"
+                    }
+                ]
+            }
+        ]
+    }
+    ```
+
+
++ Response 400 (application/json)
+    + Body
+        ```
+        {
+            "error": "there are no record"
+        }
+        ```
++ Response 401 (application/json)
+    + Body
+        ```
+        {
+            "error": "Unauthorized"
+        }
+        ```
+# Data Structures
+## Buses
++ bus_stops (array, fixed-type) - バス停一覧
+    + (Bus stops)
+
+## Bus stops
++ bus_stop_id: `1` (string) - バス停ID
++ bus_stop_name: `川乃内` (string) - バス停名
+
+# Group Bus stop API
+バス停一覧の取得
+
+## バス停一覧の取得 [POST /api/v1/bus/bus_stops]
+バス停一覧を取得する
+
++ Request
+    + Headers
+        ```
+        Authorization: Bearer {token}
+        ```
+    + Body
+        ```
+        {
+            "route_id": "1",
+            "route_order_id": "1"
+        }
+        ```
+
++ Response 200 (application/json)
+    + Body
+    ```
+    {
+        "bus_stops": [
+            {
+                "bus_stop_id": "1",
+                "bus_stop_order": "1",
+                "bus_stop_name": "川乃内",
+                "latitude": "33.3096041",
+                "longitude": "132.6281472"
+            },
+            {
+                "bus_stop_id": "2",
+                "bus_stop_order": "2",
+                "bus_stop_name": "波岡口",
+                "latitude": "33.3014375",
+                "longitude": "132.6259722"
+            },
+            {
+                "bus_stop_id": "3",
+                "bus_stop_order": "3",
+                "bus_stop_name": "小沢川",
+                "latitude": "33.3005573",
+                "longitude": "132.6229964"
+            },
+            {
+                "bus_stop_id": "4",
+                "bus_stop_order": "4",
+                "bus_stop_name": "鬼ヶ峠",
+                "latitude": "33.3002357",
+                "longitude": "132.6166102"
+            },
+            {
+                "bus_stop_id": "5",
+                "bus_stop_order": "5",
+                "bus_stop_name": "三間支所",
+                "latitude": "33.2904506",
+                "longitude": "132.6082669"
+            },
+            {
+                "bus_stop_id": "6",
+                "bus_stop_order": "6",
+                "bus_stop_name": "JR宮野下駅前",
+                "latitude": "33.2893542",
+                "longitude": "132.6060407"
+            },
+            {
+                "bus_stop_id": "7",
+                "bus_stop_order": "7",
+                "bus_stop_name": "三間小学校",
+                "latitude": "33.2898029",
+                "longitude": "132.6040426"
+            }
+        ]
+    }
+    ```
++ Response 401 (application/json)
+    + Body
+        ```
+        {
+            "error": "Unauthorized"
+        }
+        ```
+# Group Bus Watch Over Boarding API
+見守り情報の取得，保存
+
+## 見守り情報の取得 [GET /api/v1/bus/watch_over_boarding]
+見守り情報を取得する
+
++ Request
+    + Headers
+        ```
+        Authorization: Bearer {token}
+        ```
+    + Attributes
+        + card_id: `1` (string) - cardID
+        + start_from: `2020-09-11` (string) - 開始日
+        + end_at: `2020-09-11` (string) - 終了日
+        + send_at: `2020-09-11 00:00:00` (string) - 送信時間
+        + boarding_type: `1` (string) - 降車or乗車(1 or 2)
+
++ Response 200 (application/json)
+    + Attributes
+        + bus_id: `1` (string) - ドライバーID
+        + locations (array[object], fixed-type) - ロケーション一覧
+            + (object)
+                + boarding_type: `1` (string) - 降車or乗車(1 or 2)
+                + route_name: `路線名` (string) - 路線名
+                + bus_stop_name: `バス停名` (string) - バス停名
+                + date_time: `2020-09-11 00:00:00` (string) - 乗降時間
+
++ Response 400 (application/json)
+    + Body
+        ```
+        {
+            "error": "there are no record"
+        }
+        ```
++ Response 401 (application/json)
+    + Body
+        ```
+        {
+            "error": "Unauthorized"
+        }
+        ```
+
+## バスロケーションの保存 [POST /api/v1/bus/watch_over_boarding/create]
+見守り情報を登録する
+
++ Request (application/json)
+    + Headers
+        ```
+        Authorization: Bearer {token}
+        ```
+    + Attributes
+        + driver_id: `1` (string) - 運転手ID
+        + bus_id: `1` (string) - バスID
+        + card_id: `1` (string) - カードID
+        + bus_stop_id: `1` (string) - バス停ID
+        + send_at: `2020-09-11 00:00:00` (string) - 送信時間
+        + boarding_type: `1` (string) - 降車or乗車(1 or 2)
+
++ Response 200 (application/json)
+    + Body
+        ```
+        {
+            "success": "saved watch orver information successfully"
+        }
+        ```
++ Response 400 (application/json)
+    + Body
+        ```
+        {
+            "error": "there are missing arguments (bus_id)"
+        }
+        ```
++ Response 401 (application/json)
+    + Body
+        ```
+        {
+            "error": "Unauthorized"
+        }
+        ```
+# Group Card Information API
+
+IDmの取得・保存
+
+## IDm一覧の取得 [GET /api/v1/bus/card/IDm/info/]
+IDm一覧を取得する
+
+
++ Request
+    + Headers
+        ```
+        Authorization: Bearer {token}
+        ```
+
++ Response 200 (application/json)
+    + Body
+        ```
+        {
+            "cards": [
+                {
+                    "card_id": "1",
+                    "card_number": "112e4ce3af0d9a9e"
+                },
+                {
+                    "card_id": "2",
+                    "card_number": "012e4ce16ace5b31"
+                }
+            ]
+        }
+        ```
+
++ Response 401 (application/json)
+    + Body
+        ```
+        {
+            "error": "Unauthorized"
+        }
+        ```
+
+## IDm，時刻の登録 [POST /api/v1/bus/card/IDm/create]
+IDm，時刻を登録する
+
+boarding_typeは固定値で１
+
++ Request (application/json)
+    + Headers
+        ```
+        Authorization: Bearer {token}
+        ```
+
+    + Attributes
+        + driver_id: `1` (string) - ドライバーid
+        + card_id: `1` (string) - カードid
+        + send_at: `2020-09-11 00:00:00` - 送信時刻
+        + boarding_type: `1` (string) - 乗車区分
+
++ Response 200 (application/json)
+    + Body
+        ```
+        {
+            "success": "saved information successfully"
+        }
+        ```
++ Response 400 (application/json)
+    + Body
+        ```
+        {
+            "error": "there are missing arguments (driver)"
+        }
+        ```
++ Response 401 (application/json)
+    + Body
+        ```
+        {
+            "error": "Unauthorized"
+        }
+        ```
+FORMAT: 1A
+HOST: http://localhost/api
+
+# Mima-community-bus api
+- login api
+- バス点検情報 api
+
+<!-- include(01.data_structures.apib) -->
+<!-- include(auth.apib) -->
+<!-- include(bus_init.apib) -->
+<!-- include(bus_inspection.apib) -->
+<!-- include(bus_routes.apib) -->
+<!-- include(bus_course.apib) -->
+<!-- include(bus_course_info.apib) -->
+<!-- include(bus_stops.apib) -->
+<!-- include(bus_fare.apib) -->
+<!-- include(bus_location.apib) -->
+<!-- include(bus_boarding_number.apib) -->
+<!-- include(bus_watch_over_boarding.apib) -->
+<!-- include(card_idm.apib) -->

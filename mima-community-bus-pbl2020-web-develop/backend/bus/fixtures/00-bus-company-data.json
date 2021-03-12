@@ -1,0 +1,9 @@
+[
+    {
+        "model": "bus.MasterBusCompany",
+        "fields": {
+            "id": 1,
+            "name": "三間タクシー"
+        }
+    }
+]

@@ -1,0 +1,18 @@
+[
+    {
+        "model": "bus.MasterCourse",
+        "fields": {
+            "id": 1,
+            "user": 1,
+            "course_name": "Aコース"
+        }
+    },
+    {
+        "model": "bus.MasterCourse",
+        "fields": {
+            "id": 2,
+            "user": 1,
+            "course_name": "Bコース"
+        }
+    }
+]

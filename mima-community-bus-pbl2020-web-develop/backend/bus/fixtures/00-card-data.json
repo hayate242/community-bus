@@ -1,0 +1,18 @@
+[
+    {
+        "model": "bus.MasterCards",
+        "fields": {
+            "id": 1,
+            "card_number": "112e4ce3af0d9a9e",
+            "name": "大西くん"
+        }
+    },
+    {
+        "model": "bus.MasterCards",
+        "fields": {
+            "id": 2,
+            "card_number": "012e4ce16ace5b31",
+            "name": "三好くん"
+        }
+    }
+]
